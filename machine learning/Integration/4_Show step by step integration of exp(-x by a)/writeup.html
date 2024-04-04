@@ -1,0 +1,899 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+    </style>
+</head>
+
+<div class="markdown prose w-full break-words dark:prose-invert light">
+    <p>Certainly! To integrate the function <span class="math math-inline"><span class="katex"><span
+                    class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <msup>
+                                    <mi>e</mi>
+                                    <mrow>
+                                        <mo>−</mo>
+                                        <mfrac>
+                                            <mi>x</mi>
+                                            <mi>a</mi>
+                                        </mfrac>
+                                    </mrow>
+                                </msup>
+                            </mrow>
+                            <annotation encoding="application/x-tex">e^{-\frac{x}{a}}</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.8471em;"></span><span class="mord"><span
+                                class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span
+                                        class="vlist-r"><span class="vlist" style="height: 0.8471em;"><span
+                                                style="top: -3.363em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 3em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span class="mord mtight">−</span><span
+                                                            class="mord mtight"><span
+                                                                class="mopen nulldelimiter sizing reset-size3 size6"></span><span
+                                                                class="mfrac"><span class="vlist-t vlist-t2"><span
+                                                                        class="vlist-r"><span class="vlist"
+                                                                            style="height: 0.6915em;"><span
+                                                                                style="top: -2.656em;"><span
+                                                                                    class="pstrut"
+                                                                                    style="height: 3em;"></span><span
+                                                                                    class="sizing reset-size3 size1 mtight"><span
+                                                                                        class="mord mtight"><span
+                                                                                            class="mord mathnormal mtight">a</span></span></span></span><span
+                                                                                style="top: -3.2255em;"><span
+                                                                                    class="pstrut"
+                                                                                    style="height: 3em;"></span><span
+                                                                                    class="frac-line mtight"
+                                                                                    style="border-bottom-width: 0.049em;"></span></span><span
+                                                                                style="top: -3.384em;"><span
+                                                                                    class="pstrut"
+                                                                                    style="height: 3em;"></span><span
+                                                                                    class="sizing reset-size3 size1 mtight"><span
+                                                                                        class="mord mtight"><span
+                                                                                            class="mord mathnormal mtight">x</span></span></span></span></span><span
+                                                                            class="vlist-s">​</span></span><span
+                                                                        class="vlist-r"><span class="vlist"
+                                                                            style="height: 0.344em;"><span></span></span></span></span></span><span
+                                                                class="mclose nulldelimiter sizing reset-size3 size6"></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+        with respect to <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>x</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">x</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.4306em;"></span><span
+                            class="mord mathnormal">x</span></span></span></span></span>, where <span
+            class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>a</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">a</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.4306em;"></span><span
+                            class="mord mathnormal">a</span></span></span></span></span> is a constant, you can follow
+        these steps:</p>
+    <ol>
+        <li>
+            <p><strong>Recognize the Integral:</strong>
+                Identify the function to integrate: <span class="math math-inline"><span class="katex"><span
+                            class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <semantics>
+                                    <mrow>
+                                        <mo>∫</mo>
+                                        <msup>
+                                            <mi>e</mi>
+                                            <mrow>
+                                                <mo>−</mo>
+                                                <mfrac>
+                                                    <mi>x</mi>
+                                                    <mi>a</mi>
+                                                </mfrac>
+                                            </mrow>
+                                        </msup>
+                                        <mtext> </mtext>
+                                        <mi>d</mi>
+                                        <mi>x</mi>
+                                    </mrow>
+                                    <annotation encoding="application/x-tex">\int e^{-\frac{x}{a}} \, dx</annotation>
+                                </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span
+                                    class="strut" style="height: 1.1532em; vertical-align: -0.3061em;"></span><span
+                                    class="mop op-symbol small-op"
+                                    style="margin-right: 0.19445em; position: relative; top: -0.0006em;">∫</span><span
+                                    class="mspace" style="margin-right: 0.1667em;"></span><span class="mord"><span
+                                        class="mord mathnormal">e</span><span class="msupsub"><span
+                                            class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                                    style="height: 0.8471em;"><span
+                                                        style="top: -3.363em; margin-right: 0.05em;"><span
+                                                            class="pstrut" style="height: 3em;"></span><span
+                                                            class="sizing reset-size6 size3 mtight"><span
+                                                                class="mord mtight"><span
+                                                                    class="mord mtight">−</span><span
+                                                                    class="mord mtight"><span
+                                                                        class="mopen nulldelimiter sizing reset-size3 size6"></span><span
+                                                                        class="mfrac"><span
+                                                                            class="vlist-t vlist-t2"><span
+                                                                                class="vlist-r"><span class="vlist"
+                                                                                    style="height: 0.6915em;"><span
+                                                                                        style="top: -2.656em;"><span
+                                                                                            class="pstrut"
+                                                                                            style="height: 3em;"></span><span
+                                                                                            class="sizing reset-size3 size1 mtight"><span
+                                                                                                class="mord mtight"><span
+                                                                                                    class="mord mathnormal mtight">a</span></span></span></span><span
+                                                                                        style="top: -3.2255em;"><span
+                                                                                            class="pstrut"
+                                                                                            style="height: 3em;"></span><span
+                                                                                            class="frac-line mtight"
+                                                                                            style="border-bottom-width: 0.049em;"></span></span><span
+                                                                                        style="top: -3.384em;"><span
+                                                                                            class="pstrut"
+                                                                                            style="height: 3em;"></span><span
+                                                                                            class="sizing reset-size3 size1 mtight"><span
+                                                                                                class="mord mtight"><span
+                                                                                                    class="mord mathnormal mtight">x</span></span></span></span></span><span
+                                                                                    class="vlist-s">​</span></span><span
+                                                                                class="vlist-r"><span class="vlist"
+                                                                                    style="height: 0.344em;"><span></span></span></span></span></span><span
+                                                                        class="mclose nulldelimiter sizing reset-size3 size6"></span></span></span></span></span></span></span></span></span></span><span
+                                    class="mspace" style="margin-right: 0.1667em;"></span><span
+                                    class="mord mathnormal">d</span><span
+                                    class="mord mathnormal">x</span></span></span></span></span>.</p>
+        </li>
+        <li>
+            <p><strong>Use the Power Rule of Integration:</strong>
+                Recall the power rule of integration: <span class="math math-inline"><span class="katex"><span
+                            class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <semantics>
+                                    <mrow>
+                                        <mo>∫</mo>
+                                        <msup>
+                                            <mi>x</mi>
+                                            <mi>n</mi>
+                                        </msup>
+                                        <mtext> </mtext>
+                                        <mi>d</mi>
+                                        <mi>x</mi>
+                                        <mo>=</mo>
+                                        <mfrac>
+                                            <mn>1</mn>
+                                            <mrow>
+                                                <mi>n</mi>
+                                                <mo>+</mo>
+                                                <mn>1</mn>
+                                            </mrow>
+                                        </mfrac>
+                                        <msup>
+                                            <mi>x</mi>
+                                            <mrow>
+                                                <mi>n</mi>
+                                                <mo>+</mo>
+                                                <mn>1</mn>
+                                            </mrow>
+                                        </msup>
+                                        <mo>+</mo>
+                                        <mi>C</mi>
+                                    </mrow>
+                                    <annotation encoding="application/x-tex">\int x^n \, dx = \frac{1}{n+1} x^{n+1} + C
+                                    </annotation>
+                                </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span
+                                    class="strut" style="height: 1.1111em; vertical-align: -0.3061em;"></span><span
+                                    class="mop op-symbol small-op"
+                                    style="margin-right: 0.19445em; position: relative; top: -0.0006em;">∫</span><span
+                                    class="mspace" style="margin-right: 0.1667em;"></span><span class="mord"><span
+                                        class="mord mathnormal">x</span><span class="msupsub"><span
+                                            class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                                    style="height: 0.6644em;"><span
+                                                        style="top: -3.063em; margin-right: 0.05em;"><span
+                                                            class="pstrut" style="height: 2.7em;"></span><span
+                                                            class="sizing reset-size6 size3 mtight"><span
+                                                                class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span
+                                    class="mspace" style="margin-right: 0.1667em;"></span><span
+                                    class="mord mathnormal">d</span><span class="mord mathnormal">x</span><span
+                                    class="mspace" style="margin-right: 0.2778em;"></span><span
+                                    class="mrel">=</span><span class="mspace"
+                                    style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                                    style="height: 1.2484em; vertical-align: -0.4033em;"></span><span class="mord"><span
+                                        class="mopen nulldelimiter"></span><span class="mfrac"><span
+                                            class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                                    style="height: 0.8451em;"><span style="top: -2.655em;"><span
+                                                            class="pstrut" style="height: 3em;"></span><span
+                                                            class="sizing reset-size6 size3 mtight"><span
+                                                                class="mord mtight"><span
+                                                                    class="mord mathnormal mtight">n</span><span
+                                                                    class="mbin mtight">+</span><span
+                                                                    class="mord mtight">1</span></span></span></span><span
+                                                        style="top: -3.23em;"><span class="pstrut"
+                                                            style="height: 3em;"></span><span class="frac-line"
+                                                            style="border-bottom-width: 0.04em;"></span></span><span
+                                                        style="top: -3.394em;"><span class="pstrut"
+                                                            style="height: 3em;"></span><span
+                                                            class="sizing reset-size6 size3 mtight"><span
+                                                                class="mord mtight"><span
+                                                                    class="mord mtight">1</span></span></span></span></span><span
+                                                    class="vlist-s">​</span></span><span class="vlist-r"><span
+                                                    class="vlist"
+                                                    style="height: 0.4033em;"><span></span></span></span></span></span><span
+                                        class="mclose nulldelimiter"></span></span><span class="mord"><span
+                                        class="mord mathnormal">x</span><span class="msupsub"><span
+                                            class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                                    style="height: 0.8141em;"><span
+                                                        style="top: -3.063em; margin-right: 0.05em;"><span
+                                                            class="pstrut" style="height: 2.7em;"></span><span
+                                                            class="sizing reset-size6 size3 mtight"><span
+                                                                class="mord mtight"><span
+                                                                    class="mord mathnormal mtight">n</span><span
+                                                                    class="mbin mtight">+</span><span
+                                                                    class="mord mtight">1</span></span></span></span></span></span></span></span></span><span
+                                    class="mspace" style="margin-right: 0.2222em;"></span><span
+                                    class="mbin">+</span><span class="mspace"
+                                    style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut"
+                                    style="height: 0.6833em;"></span><span class="mord mathnormal"
+                                    style="margin-right: 0.07153em;">C</span></span></span></span></span>, where <span
+                    class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                                xmlns="http://www.w3.org/1998/Math/MathML">
+                                <semantics>
+                                    <mrow>
+                                        <mi>n</mi>
+                                    </mrow>
+                                    <annotation encoding="application/x-tex">n</annotation>
+                                </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span
+                                    class="strut" style="height: 0.4306em;"></span><span
+                                    class="mord mathnormal">n</span></span></span></span></span> is any constant except
+                -1.</p>
+        </li>
+        <li>
+            <p><strong>Adjust the Exponential Function:</strong>
+                The given function is in the form <span class="math math-inline"><span class="katex"><span
+                            class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <semantics>
+                                    <mrow>
+                                        <msup>
+                                            <mi>e</mi>
+                                            <mrow>
+                                                <mo>−</mo>
+                                                <mfrac>
+                                                    <mi>x</mi>
+                                                    <mi>a</mi>
+                                                </mfrac>
+                                            </mrow>
+                                        </msup>
+                                    </mrow>
+                                    <annotation encoding="application/x-tex">e^{-\frac{x}{a}}</annotation>
+                                </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span
+                                    class="strut" style="height: 0.8471em;"></span><span class="mord"><span
+                                        class="mord mathnormal">e</span><span class="msupsub"><span
+                                            class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                                    style="height: 0.8471em;"><span
+                                                        style="top: -3.363em; margin-right: 0.05em;"><span
+                                                            class="pstrut" style="height: 3em;"></span><span
+                                                            class="sizing reset-size6 size3 mtight"><span
+                                                                class="mord mtight"><span
+                                                                    class="mord mtight">−</span><span
+                                                                    class="mord mtight"><span
+                                                                        class="mopen nulldelimiter sizing reset-size3 size6"></span><span
+                                                                        class="mfrac"><span
+                                                                            class="vlist-t vlist-t2"><span
+                                                                                class="vlist-r"><span class="vlist"
+                                                                                    style="height: 0.6915em;"><span
+                                                                                        style="top: -2.656em;"><span
+                                                                                            class="pstrut"
+                                                                                            style="height: 3em;"></span><span
+                                                                                            class="sizing reset-size3 size1 mtight"><span
+                                                                                                class="mord mtight"><span
+                                                                                                    class="mord mathnormal mtight">a</span></span></span></span><span
+                                                                                        style="top: -3.2255em;"><span
+                                                                                            class="pstrut"
+                                                                                            style="height: 3em;"></span><span
+                                                                                            class="frac-line mtight"
+                                                                                            style="border-bottom-width: 0.049em;"></span></span><span
+                                                                                        style="top: -3.384em;"><span
+                                                                                            class="pstrut"
+                                                                                            style="height: 3em;"></span><span
+                                                                                            class="sizing reset-size3 size1 mtight"><span
+                                                                                                class="mord mtight"><span
+                                                                                                    class="mord mathnormal mtight">x</span></span></span></span></span><span
+                                                                                    class="vlist-s">​</span></span><span
+                                                                                class="vlist-r"><span class="vlist"
+                                                                                    style="height: 0.344em;"><span></span></span></span></span></span><span
+                                                                        class="mclose nulldelimiter sizing reset-size3 size6"></span></span></span></span></span></span></span></span></span></span></span></span></span></span>,
+                which is similar to <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                                xmlns="http://www.w3.org/1998/Math/MathML">
+                                <semantics>
+                                    <mrow>
+                                        <msup>
+                                            <mi>e</mi>
+                                            <mrow>
+                                                <mi>k</mi>
+                                                <mi>x</mi>
+                                            </mrow>
+                                        </msup>
+                                    </mrow>
+                                    <annotation encoding="application/x-tex">e^{kx}</annotation>
+                                </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span
+                                    class="strut" style="height: 0.8491em;"></span><span class="mord"><span
+                                        class="mord mathnormal">e</span><span class="msupsub"><span
+                                            class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                                    style="height: 0.8491em;"><span
+                                                        style="top: -3.063em; margin-right: 0.05em;"><span
+                                                            class="pstrut" style="height: 2.7em;"></span><span
+                                                            class="sizing reset-size6 size3 mtight"><span
+                                                                class="mord mtight"><span class="mord mathnormal mtight"
+                                                                    style="margin-right: 0.03148em;">k</span><span
+                                                                    class="mord mathnormal mtight">x</span></span></span></span></span></span></span></span></span></span></span></span></span>
+                where <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                                xmlns="http://www.w3.org/1998/Math/MathML">
+                                <semantics>
+                                    <mrow>
+                                        <mi>k</mi>
+                                        <mo>=</mo>
+                                        <mo>−</mo>
+                                        <mfrac>
+                                            <mn>1</mn>
+                                            <mi>a</mi>
+                                        </mfrac>
+                                    </mrow>
+                                    <annotation encoding="application/x-tex">k = -\frac{1}{a}</annotation>
+                                </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span
+                                    class="strut" style="height: 0.6944em;"></span><span class="mord mathnormal"
+                                    style="margin-right: 0.03148em;">k</span><span class="mspace"
+                                    style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span
+                                    class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                class="base"><span class="strut"
+                                    style="height: 1.1901em; vertical-align: -0.345em;"></span><span
+                                    class="mord">−</span><span class="mord"><span
+                                        class="mopen nulldelimiter"></span><span class="mfrac"><span
+                                            class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                                    style="height: 0.8451em;"><span style="top: -2.655em;"><span
+                                                            class="pstrut" style="height: 3em;"></span><span
+                                                            class="sizing reset-size6 size3 mtight"><span
+                                                                class="mord mtight"><span
+                                                                    class="mord mathnormal mtight">a</span></span></span></span><span
+                                                        style="top: -3.23em;"><span class="pstrut"
+                                                            style="height: 3em;"></span><span class="frac-line"
+                                                            style="border-bottom-width: 0.04em;"></span></span><span
+                                                        style="top: -3.394em;"><span class="pstrut"
+                                                            style="height: 3em;"></span><span
+                                                            class="sizing reset-size6 size3 mtight"><span
+                                                                class="mord mtight"><span
+                                                                    class="mord mtight">1</span></span></span></span></span><span
+                                                    class="vlist-s">​</span></span><span class="vlist-r"><span
+                                                    class="vlist"
+                                                    style="height: 0.345em;"><span></span></span></span></span></span><span
+                                        class="mclose nulldelimiter"></span></span></span></span></span></span>. The
+                integration of <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                                xmlns="http://www.w3.org/1998/Math/MathML">
+                                <semantics>
+                                    <mrow>
+                                        <msup>
+                                            <mi>e</mi>
+                                            <mrow>
+                                                <mi>k</mi>
+                                                <mi>x</mi>
+                                            </mrow>
+                                        </msup>
+                                    </mrow>
+                                    <annotation encoding="application/x-tex">e^{kx}</annotation>
+                                </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span
+                                    class="strut" style="height: 0.8491em;"></span><span class="mord"><span
+                                        class="mord mathnormal">e</span><span class="msupsub"><span
+                                            class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                                    style="height: 0.8491em;"><span
+                                                        style="top: -3.063em; margin-right: 0.05em;"><span
+                                                            class="pstrut" style="height: 2.7em;"></span><span
+                                                            class="sizing reset-size6 size3 mtight"><span
+                                                                class="mord mtight"><span class="mord mathnormal mtight"
+                                                                    style="margin-right: 0.03148em;">k</span><span
+                                                                    class="mord mathnormal mtight">x</span></span></span></span></span></span></span></span></span></span></span></span></span>
+                involves multiplying by the reciprocal of the coefficient of <span class="math math-inline"><span
+                        class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <semantics>
+                                    <mrow>
+                                        <mi>x</mi>
+                                    </mrow>
+                                    <annotation encoding="application/x-tex">x</annotation>
+                                </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span
+                                    class="strut" style="height: 0.4306em;"></span><span
+                                    class="mord mathnormal">x</span></span></span></span></span> (which is <span
+                    class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                                xmlns="http://www.w3.org/1998/Math/MathML">
+                                <semantics>
+                                    <mrow>
+                                        <mi>k</mi>
+                                    </mrow>
+                                    <annotation encoding="application/x-tex">k</annotation>
+                                </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span
+                                    class="strut" style="height: 0.6944em;"></span><span class="mord mathnormal"
+                                    style="margin-right: 0.03148em;">k</span></span></span></span></span> in this case).
+            </p>
+        </li>
+        <li>
+            <p><strong>Apply the Integration Rule:</strong>
+                Apply the integration rule to find the antiderivative of <span class="math math-inline"><span
+                        class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <semantics>
+                                    <mrow>
+                                        <msup>
+                                            <mi>e</mi>
+                                            <mrow>
+                                                <mo>−</mo>
+                                                <mfrac>
+                                                    <mi>x</mi>
+                                                    <mi>a</mi>
+                                                </mfrac>
+                                            </mrow>
+                                        </msup>
+                                    </mrow>
+                                    <annotation encoding="application/x-tex">e^{-\frac{x}{a}}</annotation>
+                                </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span
+                                    class="strut" style="height: 0.8471em;"></span><span class="mord"><span
+                                        class="mord mathnormal">e</span><span class="msupsub"><span
+                                            class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                                    style="height: 0.8471em;"><span
+                                                        style="top: -3.363em; margin-right: 0.05em;"><span
+                                                            class="pstrut" style="height: 3em;"></span><span
+                                                            class="sizing reset-size6 size3 mtight"><span
+                                                                class="mord mtight"><span
+                                                                    class="mord mtight">−</span><span
+                                                                    class="mord mtight"><span
+                                                                        class="mopen nulldelimiter sizing reset-size3 size6"></span><span
+                                                                        class="mfrac"><span
+                                                                            class="vlist-t vlist-t2"><span
+                                                                                class="vlist-r"><span class="vlist"
+                                                                                    style="height: 0.6915em;"><span
+                                                                                        style="top: -2.656em;"><span
+                                                                                            class="pstrut"
+                                                                                            style="height: 3em;"></span><span
+                                                                                            class="sizing reset-size3 size1 mtight"><span
+                                                                                                class="mord mtight"><span
+                                                                                                    class="mord mathnormal mtight">a</span></span></span></span><span
+                                                                                        style="top: -3.2255em;"><span
+                                                                                            class="pstrut"
+                                                                                            style="height: 3em;"></span><span
+                                                                                            class="frac-line mtight"
+                                                                                            style="border-bottom-width: 0.049em;"></span></span><span
+                                                                                        style="top: -3.384em;"><span
+                                                                                            class="pstrut"
+                                                                                            style="height: 3em;"></span><span
+                                                                                            class="sizing reset-size3 size1 mtight"><span
+                                                                                                class="mord mtight"><span
+                                                                                                    class="mord mathnormal mtight">x</span></span></span></span></span><span
+                                                                                    class="vlist-s">​</span></span><span
+                                                                                class="vlist-r"><span class="vlist"
+                                                                                    style="height: 0.344em;"><span></span></span></span></span></span><span
+                                                                        class="mclose nulldelimiter sizing reset-size3 size6"></span></span></span></span></span></span></span></span></span></span></span></span></span></span>:
+            </p>
+            <div class="math math-display"><span class="katex-display" style=""><span class="katex"><span
+                            class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                                <semantics>
+                                    <mrow>
+                                        <mo>∫</mo>
+                                        <msup>
+                                            <mi>e</mi>
+                                            <mrow>
+                                                <mo>−</mo>
+                                                <mfrac>
+                                                    <mi>x</mi>
+                                                    <mi>a</mi>
+                                                </mfrac>
+                                            </mrow>
+                                        </msup>
+                                        <mtext> </mtext>
+                                        <mi>d</mi>
+                                        <mi>x</mi>
+                                        <mo>=</mo>
+                                        <mo>−</mo>
+                                        <mi>a</mi>
+                                        <msup>
+                                            <mi>e</mi>
+                                            <mrow>
+                                                <mo>−</mo>
+                                                <mfrac>
+                                                    <mi>x</mi>
+                                                    <mi>a</mi>
+                                                </mfrac>
+                                            </mrow>
+                                        </msup>
+                                        <mo>+</mo>
+                                        <mi>C</mi>
+                                    </mrow>
+                                    <annotation encoding="application/x-tex">\int e^{-\frac{x}{a}} \, dx = -a
+                                        e^{-\frac{x}{a}} + C</annotation>
+                                </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span
+                                    class="strut" style="height: 2.2222em; vertical-align: -0.8622em;"></span><span
+                                    class="mop op-symbol large-op"
+                                    style="margin-right: 0.44445em; position: relative; top: -0.0011em;">∫</span><span
+                                    class="mspace" style="margin-right: 0.1667em;"></span><span class="mord"><span
+                                        class="mord mathnormal">e</span><span class="msupsub"><span
+                                            class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                                    style="height: 0.8971em;"><span
+                                                        style="top: -3.413em; margin-right: 0.05em;"><span
+                                                            class="pstrut" style="height: 3em;"></span><span
+                                                            class="sizing reset-size6 size3 mtight"><span
+                                                                class="mord mtight"><span
+                                                                    class="mord mtight">−</span><span
+                                                                    class="mord mtight"><span
+                                                                        class="mopen nulldelimiter sizing reset-size3 size6"></span><span
+                                                                        class="mfrac"><span
+                                                                            class="vlist-t vlist-t2"><span
+                                                                                class="vlist-r"><span class="vlist"
+                                                                                    style="height: 0.6915em;"><span
+                                                                                        style="top: -2.656em;"><span
+                                                                                            class="pstrut"
+                                                                                            style="height: 3em;"></span><span
+                                                                                            class="sizing reset-size3 size1 mtight"><span
+                                                                                                class="mord mtight"><span
+                                                                                                    class="mord mathnormal mtight">a</span></span></span></span><span
+                                                                                        style="top: -3.2255em;"><span
+                                                                                            class="pstrut"
+                                                                                            style="height: 3em;"></span><span
+                                                                                            class="frac-line mtight"
+                                                                                            style="border-bottom-width: 0.049em;"></span></span><span
+                                                                                        style="top: -3.384em;"><span
+                                                                                            class="pstrut"
+                                                                                            style="height: 3em;"></span><span
+                                                                                            class="sizing reset-size3 size1 mtight"><span
+                                                                                                class="mord mtight"><span
+                                                                                                    class="mord mathnormal mtight">x</span></span></span></span></span><span
+                                                                                    class="vlist-s">​</span></span><span
+                                                                                class="vlist-r"><span class="vlist"
+                                                                                    style="height: 0.344em;"><span></span></span></span></span></span><span
+                                                                        class="mclose nulldelimiter sizing reset-size3 size6"></span></span></span></span></span></span></span></span></span></span><span
+                                    class="mspace" style="margin-right: 0.1667em;"></span><span
+                                    class="mord mathnormal">d</span><span class="mord mathnormal">x</span><span
+                                    class="mspace" style="margin-right: 0.2778em;"></span><span
+                                    class="mrel">=</span><span class="mspace"
+                                    style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                                    style="height: 0.9804em; vertical-align: -0.0833em;"></span><span
+                                    class="mord">−</span><span class="mord mathnormal">a</span><span class="mord"><span
+                                        class="mord mathnormal">e</span><span class="msupsub"><span
+                                            class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                                    style="height: 0.8971em;"><span
+                                                        style="top: -3.413em; margin-right: 0.05em;"><span
+                                                            class="pstrut" style="height: 3em;"></span><span
+                                                            class="sizing reset-size6 size3 mtight"><span
+                                                                class="mord mtight"><span
+                                                                    class="mord mtight">−</span><span
+                                                                    class="mord mtight"><span
+                                                                        class="mopen nulldelimiter sizing reset-size3 size6"></span><span
+                                                                        class="mfrac"><span
+                                                                            class="vlist-t vlist-t2"><span
+                                                                                class="vlist-r"><span class="vlist"
+                                                                                    style="height: 0.6915em;"><span
+                                                                                        style="top: -2.656em;"><span
+                                                                                            class="pstrut"
+                                                                                            style="height: 3em;"></span><span
+                                                                                            class="sizing reset-size3 size1 mtight"><span
+                                                                                                class="mord mtight"><span
+                                                                                                    class="mord mathnormal mtight">a</span></span></span></span><span
+                                                                                        style="top: -3.2255em;"><span
+                                                                                            class="pstrut"
+                                                                                            style="height: 3em;"></span><span
+                                                                                            class="frac-line mtight"
+                                                                                            style="border-bottom-width: 0.049em;"></span></span><span
+                                                                                        style="top: -3.384em;"><span
+                                                                                            class="pstrut"
+                                                                                            style="height: 3em;"></span><span
+                                                                                            class="sizing reset-size3 size1 mtight"><span
+                                                                                                class="mord mtight"><span
+                                                                                                    class="mord mathnormal mtight">x</span></span></span></span></span><span
+                                                                                    class="vlist-s">​</span></span><span
+                                                                                class="vlist-r"><span class="vlist"
+                                                                                    style="height: 0.344em;"><span></span></span></span></span></span><span
+                                                                        class="mclose nulldelimiter sizing reset-size3 size6"></span></span></span></span></span></span></span></span></span></span><span
+                                    class="mspace" style="margin-right: 0.2222em;"></span><span
+                                    class="mbin">+</span><span class="mspace"
+                                    style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut"
+                                    style="height: 0.6833em;"></span><span class="mord mathnormal"
+                                    style="margin-right: 0.07153em;">C</span></span></span></span></span></div>
+            <p>where <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                                xmlns="http://www.w3.org/1998/Math/MathML">
+                                <semantics>
+                                    <mrow>
+                                        <mi>C</mi>
+                                    </mrow>
+                                    <annotation encoding="application/x-tex">C</annotation>
+                                </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span
+                                    class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal"
+                                    style="margin-right: 0.07153em;">C</span></span></span></span></span> is the
+                constant of integration.</p>
+        </li>
+        <li>
+            <p><strong>Final Answer:</strong>
+                The final result of the integration is <span class="math math-inline"><span class="katex"><span
+                            class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <semantics>
+                                    <mrow>
+                                        <mo>−</mo>
+                                        <mi>a</mi>
+                                        <msup>
+                                            <mi>e</mi>
+                                            <mrow>
+                                                <mo>−</mo>
+                                                <mfrac>
+                                                    <mi>x</mi>
+                                                    <mi>a</mi>
+                                                </mfrac>
+                                            </mrow>
+                                        </msup>
+                                        <mo>+</mo>
+                                        <mi>C</mi>
+                                    </mrow>
+                                    <annotation encoding="application/x-tex">-a e^{-\frac{x}{a}} + C</annotation>
+                                </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span
+                                    class="strut" style="height: 0.9304em; vertical-align: -0.0833em;"></span><span
+                                    class="mord">−</span><span class="mord mathnormal">a</span><span class="mord"><span
+                                        class="mord mathnormal">e</span><span class="msupsub"><span
+                                            class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                                    style="height: 0.8471em;"><span
+                                                        style="top: -3.363em; margin-right: 0.05em;"><span
+                                                            class="pstrut" style="height: 3em;"></span><span
+                                                            class="sizing reset-size6 size3 mtight"><span
+                                                                class="mord mtight"><span
+                                                                    class="mord mtight">−</span><span
+                                                                    class="mord mtight"><span
+                                                                        class="mopen nulldelimiter sizing reset-size3 size6"></span><span
+                                                                        class="mfrac"><span
+                                                                            class="vlist-t vlist-t2"><span
+                                                                                class="vlist-r"><span class="vlist"
+                                                                                    style="height: 0.6915em;"><span
+                                                                                        style="top: -2.656em;"><span
+                                                                                            class="pstrut"
+                                                                                            style="height: 3em;"></span><span
+                                                                                            class="sizing reset-size3 size1 mtight"><span
+                                                                                                class="mord mtight"><span
+                                                                                                    class="mord mathnormal mtight">a</span></span></span></span><span
+                                                                                        style="top: -3.2255em;"><span
+                                                                                            class="pstrut"
+                                                                                            style="height: 3em;"></span><span
+                                                                                            class="frac-line mtight"
+                                                                                            style="border-bottom-width: 0.049em;"></span></span><span
+                                                                                        style="top: -3.384em;"><span
+                                                                                            class="pstrut"
+                                                                                            style="height: 3em;"></span><span
+                                                                                            class="sizing reset-size3 size1 mtight"><span
+                                                                                                class="mord mtight"><span
+                                                                                                    class="mord mathnormal mtight">x</span></span></span></span></span><span
+                                                                                    class="vlist-s">​</span></span><span
+                                                                                class="vlist-r"><span class="vlist"
+                                                                                    style="height: 0.344em;"><span></span></span></span></span></span><span
+                                                                        class="mclose nulldelimiter sizing reset-size3 size6"></span></span></span></span></span></span></span></span></span></span><span
+                                    class="mspace" style="margin-right: 0.2222em;"></span><span
+                                    class="mbin">+</span><span class="mspace"
+                                    style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut"
+                                    style="height: 0.6833em;"></span><span class="mord mathnormal"
+                                    style="margin-right: 0.07153em;">C</span></span></span></span></span>.</p>
+        </li>
+    </ol>
+    <p>So, the step-by-step integration of <span class="math math-inline"><span class="katex"><span
+                    class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <msup>
+                                    <mi>e</mi>
+                                    <mrow>
+                                        <mo>−</mo>
+                                        <mfrac>
+                                            <mi>x</mi>
+                                            <mi>a</mi>
+                                        </mfrac>
+                                    </mrow>
+                                </msup>
+                            </mrow>
+                            <annotation encoding="application/x-tex">e^{-\frac{x}{a}}</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.8471em;"></span><span class="mord"><span
+                                class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span
+                                        class="vlist-r"><span class="vlist" style="height: 0.8471em;"><span
+                                                style="top: -3.363em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 3em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span class="mord mtight">−</span><span
+                                                            class="mord mtight"><span
+                                                                class="mopen nulldelimiter sizing reset-size3 size6"></span><span
+                                                                class="mfrac"><span class="vlist-t vlist-t2"><span
+                                                                        class="vlist-r"><span class="vlist"
+                                                                            style="height: 0.6915em;"><span
+                                                                                style="top: -2.656em;"><span
+                                                                                    class="pstrut"
+                                                                                    style="height: 3em;"></span><span
+                                                                                    class="sizing reset-size3 size1 mtight"><span
+                                                                                        class="mord mtight"><span
+                                                                                            class="mord mathnormal mtight">a</span></span></span></span><span
+                                                                                style="top: -3.2255em;"><span
+                                                                                    class="pstrut"
+                                                                                    style="height: 3em;"></span><span
+                                                                                    class="frac-line mtight"
+                                                                                    style="border-bottom-width: 0.049em;"></span></span><span
+                                                                                style="top: -3.384em;"><span
+                                                                                    class="pstrut"
+                                                                                    style="height: 3em;"></span><span
+                                                                                    class="sizing reset-size3 size1 mtight"><span
+                                                                                        class="mord mtight"><span
+                                                                                            class="mord mathnormal mtight">x</span></span></span></span></span><span
+                                                                            class="vlist-s">​</span></span><span
+                                                                        class="vlist-r"><span class="vlist"
+                                                                            style="height: 0.344em;"><span></span></span></span></span></span><span
+                                                                class="mclose nulldelimiter sizing reset-size3 size6"></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+        with respect to <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>x</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">x</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.4306em;"></span><span
+                            class="mord mathnormal">x</span></span></span></span></span> is:</p>
+    <div class="math math-display"><span class="katex-display" style=""><span class="katex"><span
+                    class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                        <semantics>
+                            <mrow>
+                                <mo>∫</mo>
+                                <msup>
+                                    <mi>e</mi>
+                                    <mrow>
+                                        <mo>−</mo>
+                                        <mfrac>
+                                            <mi>x</mi>
+                                            <mi>a</mi>
+                                        </mfrac>
+                                    </mrow>
+                                </msup>
+                                <mtext> </mtext>
+                                <mi>d</mi>
+                                <mi>x</mi>
+                                <mo>=</mo>
+                                <mo>−</mo>
+                                <mi>a</mi>
+                                <msup>
+                                    <mi>e</mi>
+                                    <mrow>
+                                        <mo>−</mo>
+                                        <mfrac>
+                                            <mi>x</mi>
+                                            <mi>a</mi>
+                                        </mfrac>
+                                    </mrow>
+                                </msup>
+                                <mo>+</mo>
+                                <mi>C</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">\int e^{-\frac{x}{a}} \, dx = -a e^{-\frac{x}{a}} +
+                                C</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 2.2222em; vertical-align: -0.8622em;"></span><span
+                            class="mop op-symbol large-op"
+                            style="margin-right: 0.44445em; position: relative; top: -0.0011em;">∫</span><span
+                            class="mspace" style="margin-right: 0.1667em;"></span><span class="mord"><span
+                                class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span
+                                        class="vlist-r"><span class="vlist" style="height: 0.8971em;"><span
+                                                style="top: -3.413em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 3em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span class="mord mtight">−</span><span
+                                                            class="mord mtight"><span
+                                                                class="mopen nulldelimiter sizing reset-size3 size6"></span><span
+                                                                class="mfrac"><span class="vlist-t vlist-t2"><span
+                                                                        class="vlist-r"><span class="vlist"
+                                                                            style="height: 0.6915em;"><span
+                                                                                style="top: -2.656em;"><span
+                                                                                    class="pstrut"
+                                                                                    style="height: 3em;"></span><span
+                                                                                    class="sizing reset-size3 size1 mtight"><span
+                                                                                        class="mord mtight"><span
+                                                                                            class="mord mathnormal mtight">a</span></span></span></span><span
+                                                                                style="top: -3.2255em;"><span
+                                                                                    class="pstrut"
+                                                                                    style="height: 3em;"></span><span
+                                                                                    class="frac-line mtight"
+                                                                                    style="border-bottom-width: 0.049em;"></span></span><span
+                                                                                style="top: -3.384em;"><span
+                                                                                    class="pstrut"
+                                                                                    style="height: 3em;"></span><span
+                                                                                    class="sizing reset-size3 size1 mtight"><span
+                                                                                        class="mord mtight"><span
+                                                                                            class="mord mathnormal mtight">x</span></span></span></span></span><span
+                                                                            class="vlist-s">​</span></span><span
+                                                                        class="vlist-r"><span class="vlist"
+                                                                            style="height: 0.344em;"><span></span></span></span></span></span><span
+                                                                class="mclose nulldelimiter sizing reset-size3 size6"></span></span></span></span></span></span></span></span></span></span><span
+                            class="mspace" style="margin-right: 0.1667em;"></span><span
+                            class="mord mathnormal">d</span><span class="mord mathnormal">x</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                            style="height: 0.9804em; vertical-align: -0.0833em;"></span><span class="mord">−</span><span
+                            class="mord mathnormal">a</span><span class="mord"><span
+                                class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span
+                                        class="vlist-r"><span class="vlist" style="height: 0.8971em;"><span
+                                                style="top: -3.413em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 3em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span class="mord mtight">−</span><span
+                                                            class="mord mtight"><span
+                                                                class="mopen nulldelimiter sizing reset-size3 size6"></span><span
+                                                                class="mfrac"><span class="vlist-t vlist-t2"><span
+                                                                        class="vlist-r"><span class="vlist"
+                                                                            style="height: 0.6915em;"><span
+                                                                                style="top: -2.656em;"><span
+                                                                                    class="pstrut"
+                                                                                    style="height: 3em;"></span><span
+                                                                                    class="sizing reset-size3 size1 mtight"><span
+                                                                                        class="mord mtight"><span
+                                                                                            class="mord mathnormal mtight">a</span></span></span></span><span
+                                                                                style="top: -3.2255em;"><span
+                                                                                    class="pstrut"
+                                                                                    style="height: 3em;"></span><span
+                                                                                    class="frac-line mtight"
+                                                                                    style="border-bottom-width: 0.049em;"></span></span><span
+                                                                                style="top: -3.384em;"><span
+                                                                                    class="pstrut"
+                                                                                    style="height: 3em;"></span><span
+                                                                                    class="sizing reset-size3 size1 mtight"><span
+                                                                                        class="mord mtight"><span
+                                                                                            class="mord mathnormal mtight">x</span></span></span></span></span><span
+                                                                            class="vlist-s">​</span></span><span
+                                                                        class="vlist-r"><span class="vlist"
+                                                                            style="height: 0.344em;"><span></span></span></span></span></span><span
+                                                                class="mclose nulldelimiter sizing reset-size3 size6"></span></span></span></span></span></span></span></span></span></span><span
+                            class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span
+                            class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span
+                            class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.07153em;">C</span></span></span></span></span></div>
+    <p>where <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>C</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">C</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.6833em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.07153em;">C</span></span></span></span></span> is the constant of
+        integration.</p>
+</div>

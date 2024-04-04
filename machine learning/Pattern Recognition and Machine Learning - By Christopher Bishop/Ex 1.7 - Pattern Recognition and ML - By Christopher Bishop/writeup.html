@@ -1,0 +1,122 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+    </style>
+</head>
+
+<!-- 
+    Exercise 1.7 - Pattern Recognition and ML - By Christopher Bishop (Identifying normalization constant for Gaussian Distribution and Proving that it's integral equals 1)
+-->
+
+<h2>Pre-read</h2>
+Fig 1:
+<div class="separator" style="clear: both;"><a
+        href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjvdPQBq8STs3pcs4Em3lP089WwBuIYlDprnKk5W6h5mMpNDlzwL9KK3Vjqs9btnRN8ZGKYNJmhJoaQnmGs7DCt4sbOoLWmk5EweDN6e-SQcqJtV5Wq5hmg-u4SkoN5k0WDbMmBPU_EP3_OA_YuBAVx4RQ4tMNuVNYmI8w__Jpaj4DMV5Kgx_QLVOEVRBd/s619/pre-read%201.png"
+        style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+            data-original-height="442" data-original-width="619"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjvdPQBq8STs3pcs4Em3lP089WwBuIYlDprnKk5W6h5mMpNDlzwL9KK3Vjqs9btnRN8ZGKYNJmhJoaQnmGs7DCt4sbOoLWmk5EweDN6e-SQcqJtV5Wq5hmg-u4SkoN5k0WDbMmBPU_EP3_OA_YuBAVx4RQ4tMNuVNYmI8w__Jpaj4DMV5Kgx_QLVOEVRBd/s600/pre-read%201.png" /></a>
+</div>
+
+Fig 2:
+<div class="separator" style="clear: both;"><a
+        href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6yEobht4galRCbqFesobx9w7nTrGyTjC6EeWZgYe0bBs1ZPE49bXJLKOKvu0q6qmxAcCG_EjtGN2TRzVRt3hxZdy-nn7MON6Nq5eIIaq2KFuNuWS39CuSGX2V1pVIJ2pZkaYaENVt2gWp1421_UrXpTLLMrhsQFKEuYPeociYzjC-_k_r9RSaSGcYQPJM/s732/pre-read%202.png"
+        style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" height="600"
+            data-original-height="732" data-original-width="616"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6yEobht4galRCbqFesobx9w7nTrGyTjC6EeWZgYe0bBs1ZPE49bXJLKOKvu0q6qmxAcCG_EjtGN2TRzVRt3hxZdy-nn7MON6Nq5eIIaq2KFuNuWS39CuSGX2V1pVIJ2pZkaYaENVt2gWp1421_UrXpTLLMrhsQFKEuYPeociYzjC-_k_r9RSaSGcYQPJM/s600/pre-read%202.png" /></a>
+</div>
+
+<h2>Question</h2>
+Fig 3:
+<div class="separator" style="clear: both;"><a
+        href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCNmOrDnJi60O_wqd2NFFqe6op-b-ucmCeB3pbjTpo7UIa5Y4iV7sh0bVu1D9ykFe6JDvDGH6LtctQoNxk_ES7PGyo7y3c7vdd4gVe_gCvwBVbLR0K3tirwaMFd7TKvRIQm9A0qoB4lAEouKv5onPN3QXepVaxpLOTOaiALp8pM8yMtA3l5kNQgyoZr8f_/s619/question.png"
+        style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+            data-original-height="398" data-original-width="619"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCNmOrDnJi60O_wqd2NFFqe6op-b-ucmCeB3pbjTpo7UIa5Y4iV7sh0bVu1D9ykFe6JDvDGH6LtctQoNxk_ES7PGyo7y3c7vdd4gVe_gCvwBVbLR0K3tirwaMFd7TKvRIQm9A0qoB4lAEouKv5onPN3QXepVaxpLOTOaiALp8pM8yMtA3l5kNQgyoZr8f_/s600/question.png" /></a>
+</div>
+
+<h2>Solution</h2>
+Fig 4:
+<div class="separator" style="clear: both;"><a
+        href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmWkA-HtKXlghRYfpGEVxZqiBsJ5yXx2JGVTTCyXVXo7Yndwh5UbZ97lACvMMydt1zcP00onY413fzTTHC6nq_nCQURshR7LLpk0J4_dstziwHA_lHWVIrj5zO0fQKETU6_WIv4lZGieAr-XFPg3HlgpQUOEgLxH58grJ5q-XRvwmZnLf7z3ZK8mXcmWj3/s584/sol1.png"
+        style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+            data-original-height="95" data-original-width="584"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmWkA-HtKXlghRYfpGEVxZqiBsJ5yXx2JGVTTCyXVXo7Yndwh5UbZ97lACvMMydt1zcP00onY413fzTTHC6nq_nCQURshR7LLpk0J4_dstziwHA_lHWVIrj5zO0fQKETU6_WIv4lZGieAr-XFPg3HlgpQUOEgLxH58grJ5q-XRvwmZnLf7z3ZK8mXcmWj3/s600/sol1.png" /></a>
+</div>
+
+Fig 5:
+<div class="separator" style="clear: both;"><a
+        href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2EKeDPH_gctD5gn21nHEbNznr3Exss8GnelwzGXmd9w08Hid91WRiUO8S3UjdfaXxt1HRYCk3hBdg27o23pAFpyPCY7vM5cUCX2yBpF8s9HHR1-l_vn792rUmgZo52RbQANkkVXAE_wcbHiu7hNmCwm_JZYjPOkDFy3dbHkNT3Ksg7BtAnyatDluK7X87/s573/sol2.png"
+        style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+            data-original-height="206" data-original-width="573"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2EKeDPH_gctD5gn21nHEbNznr3Exss8GnelwzGXmd9w08Hid91WRiUO8S3UjdfaXxt1HRYCk3hBdg27o23pAFpyPCY7vM5cUCX2yBpF8s9HHR1-l_vn792rUmgZo52RbQANkkVXAE_wcbHiu7hNmCwm_JZYjPOkDFy3dbHkNT3Ksg7BtAnyatDluK7X87/s600/sol2.png" /></a>
+</div>
+
+Fig 6:
+<div class="separator" style="clear: both;"><a
+        href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjxY5uIo8aktJ9ssAcUPZB-wcUdHABC53KOixt5FCmlk37UThKhfCSQAU7IDklXPK7Do9zC_a-xq95FvMX9UP2aTEoS2IXC-2OW-coLmwNZTCP45U3CROwNBIaNoJMuVYm-hskCsRFSZl37bN3UFWW7yhccXpoKD8XzSTAicR6UROndK_CeFFKYTDAQe9q/s990/sol3.jpeg"
+        style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+            data-original-height="755" data-original-width="990"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjxY5uIo8aktJ9ssAcUPZB-wcUdHABC53KOixt5FCmlk37UThKhfCSQAU7IDklXPK7Do9zC_a-xq95FvMX9UP2aTEoS2IXC-2OW-coLmwNZTCP45U3CROwNBIaNoJMuVYm-hskCsRFSZl37bN3UFWW7yhccXpoKD8XzSTAicR6UROndK_CeFFKYTDAQe9q/s600/sol3.jpeg" /></a>
+</div>
+
+Fig 7:
+<div class="separator" style="clear: both;"><a
+        href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitkm0bdfi3d1QP-hoF7fFIaJR2jjADOFy8n2_7Y7vzqZ4SkgcLGDoPzzbHUP67yyqqxunbyGlLc29XuUin4dXk24uVM-KuXuETVwxWGv59yQ2Acbz6uWflq8QJsWuOxaZB9ieOA7cP0vbrnZFMW7bERmvd1Nhvs6gTOhsry9loWY3EGjlEWqzdLeOptusO/s592/sol4.png"
+        style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+            data-original-height="271" data-original-width="592"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitkm0bdfi3d1QP-hoF7fFIaJR2jjADOFy8n2_7Y7vzqZ4SkgcLGDoPzzbHUP67yyqqxunbyGlLc29XuUin4dXk24uVM-KuXuETVwxWGv59yQ2Acbz6uWflq8QJsWuOxaZB9ieOA7cP0vbrnZFMW7bERmvd1Nhvs6gTOhsry9loWY3EGjlEWqzdLeOptusO/s600/sol4.png" /></a>
+</div>
+
+Fig 8:
+<div class="separator" style="clear: both;"><a
+        href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZNajyDdmWwCUSAGGGXZBSIiIMTrJ2I43l3zYrCqwXrv92zTB3rTd9Lmr5lEyowI17i8H6jZ1VWhA-Sdgfg1UIHwY2jRSqHeZtCm5oIPbG0Z2Kd95AYmcYg6xJmj18mQae5QU5StjWVlrMr8Rr7gogNfAEy1NaMF7ynwivNUnxXjcwygVAhc0Sx20FGAHA/s986/sol5.jpeg"
+        style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+            data-original-height="962" data-original-width="986"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZNajyDdmWwCUSAGGGXZBSIiIMTrJ2I43l3zYrCqwXrv92zTB3rTd9Lmr5lEyowI17i8H6jZ1VWhA-Sdgfg1UIHwY2jRSqHeZtCm5oIPbG0Z2Kd95AYmcYg6xJmj18mQae5QU5StjWVlrMr8Rr7gogNfAEy1NaMF7ynwivNUnxXjcwygVAhc0Sx20FGAHA/s600/sol5.jpeg" /></a>
+</div>
+
+Fig 9:
+<div class="separator" style="clear: both;"><a
+        href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlV6JsYdGHGtff9MEZaiJA42Ep9fq_KdFOSBtvqG4MQt3A-dZozFeanWO8aFqDxPuU8U0rEUcAilyChUr1VNx-THKzsshmETOV70ZgpVO620MrQNpEYtBtLfFzmwI22JUXIdLYPl7oydApUMD2LLF0GbwdxQzDkrHdyK8UTkWhdgs3Scr8RRIoq1WzIWcN/s1335/sol6.jpeg"
+        style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" height="600"
+            data-original-height="1335" data-original-width="881"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlV6JsYdGHGtff9MEZaiJA42Ep9fq_KdFOSBtvqG4MQt3A-dZozFeanWO8aFqDxPuU8U0rEUcAilyChUr1VNx-THKzsshmETOV70ZgpVO620MrQNpEYtBtLfFzmwI22JUXIdLYPl7oydApUMD2LLF0GbwdxQzDkrHdyK8UTkWhdgs3Scr8RRIoq1WzIWcN/s600/sol6.jpeg" /></a>
+</div>
+
+Fig 10:
+<div class="separator" style="clear: both;"><a
+        href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoKawtaY7WXPJfn-PuoZFilhFJo51Guz4x3KvqUIQ83Hesrlh_Z5qAJW8d2xlBrRk0hLAuDIyQMqSziUnkf0FrhOkSpt_EfhskBlrynGaaGe6-tjiVHZYpql8vTd0JOzlbdTRMLiKX_ojrpNhqXuwKnKZ4FHfcuN7_UjUswTVs8QtdzvsorKrPwE7tdwny/s1272/sol7.jpeg"
+        style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" height="600"
+            data-original-height="1272" data-original-width="873"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoKawtaY7WXPJfn-PuoZFilhFJo51Guz4x3KvqUIQ83Hesrlh_Z5qAJW8d2xlBrRk0hLAuDIyQMqSziUnkf0FrhOkSpt_EfhskBlrynGaaGe6-tjiVHZYpql8vTd0JOzlbdTRMLiKX_ojrpNhqXuwKnKZ4FHfcuN7_UjUswTVs8QtdzvsorKrPwE7tdwny/s600/sol7.jpeg" /></a>
+</div>
+
+Fig 11:
+<div class="separator" style="clear: both;"><a
+        href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT2KPa39F9gsR1QGf3XlayM7RwZqsRUMp1xVZtdgNSI9I8X70xPj0fH0XYX3LcVws3FEN7kfle0FT_qoUxvlgdoLJrc5ZEG8O-V42m_obmQ5yvebIBYRbn8w9UA2doCEa0qKTSVwOrwm3pjc1cj-6ARxl8iZkM1aZ1QGE_-eH03nTTDZ9Z3VqfMf_pfy5m/s576/sol8.png"
+        style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+            data-original-height="181" data-original-width="576"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT2KPa39F9gsR1QGf3XlayM7RwZqsRUMp1xVZtdgNSI9I8X70xPj0fH0XYX3LcVws3FEN7kfle0FT_qoUxvlgdoLJrc5ZEG8O-V42m_obmQ5yvebIBYRbn8w9UA2doCEa0qKTSVwOrwm3pjc1cj-6ARxl8iZkM1aZ1QGE_-eH03nTTDZ9Z3VqfMf_pfy5m/s600/sol8.png" /></a>
+</div>

@@ -1,0 +1,5 @@
+Gaussian Integral - Integrate exp(-x^2) from -infinite to +infinite
+
+
+In this video, we talk about Gaussian Integral and what it evaluates to. In the process, we will look at some of the mathematical results and properties that find application here.
+Link to the slides: https://survival8.blogspot.com/2024/01/gaussian-integral-integrate-exp-x2-from.html

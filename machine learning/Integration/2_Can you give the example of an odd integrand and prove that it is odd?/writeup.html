@@ -1,0 +1,784 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+    </style>
+</head>
+
+<pre><b>Example of an odd integrand and it's proof.</b></pre>
+
+<div class="markdown prose w-full break-words dark:prose-invert light">
+    <p>Certainly! Let's consider the function <span class="math math-inline"><span class="katex"><span
+                    class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>f</mi>
+                                <mo stretchy="false">(</mo>
+                                <mi>x</mi>
+                                <mo stretchy="false">)</mo>
+                                <mo>=</mo>
+                                <msup>
+                                    <mi>x</mi>
+                                    <mn>3</mn>
+                                </msup>
+                            </mrow>
+                            <annotation encoding="application/x-tex">f(x) = x^3</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.10764em;">f</span><span class="mopen">(</span><span
+                            class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                            style="height: 0.8141em;"></span><span class="mord"><span
+                                class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span
+                                        class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span
+                                                style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span></span>.
+        We'll integrate this function over a symmetric interval, say <span class="math math-inline"><span
+                class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mo stretchy="false">[</mo>
+                                <mo>−</mo>
+                                <mi>a</mi>
+                                <mo separator="true">,</mo>
+                                <mi>a</mi>
+                                <mo stretchy="false">]</mo>
+                            </mrow>
+                            <annotation encoding="application/x-tex">[-a, a]</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">[</span><span
+                            class="mord">−</span><span class="mord mathnormal">a</span><span
+                            class="mpunct">,</span><span class="mspace" style="margin-right: 0.1667em;"></span><span
+                            class="mord mathnormal">a</span><span class="mclose">]</span></span></span></span></span>,
+        and then show that the result is zero, proving that <span class="math math-inline"><span class="katex"><span
+                    class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>f</mi>
+                                <mo stretchy="false">(</mo>
+                                <mi>x</mi>
+                                <mo stretchy="false">)</mo>
+                            </mrow>
+                            <annotation encoding="application/x-tex">f(x)</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.10764em;">f</span><span class="mopen">(</span><span
+                            class="mord mathnormal">x</span><span class="mclose">)</span></span></span></span></span> is
+        an odd function.</p>
+    <p>The integral is given by:</p>
+    <p><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <msubsup>
+                                    <mo>∫</mo>
+                                    <mrow>
+                                        <mo>−</mo>
+                                        <mi>a</mi>
+                                    </mrow>
+                                    <mi>a</mi>
+                                </msubsup>
+                                <msup>
+                                    <mi>x</mi>
+                                    <mn>3</mn>
+                                </msup>
+                                <mtext> </mtext>
+                                <mi>d</mi>
+                                <mi>x</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">\int_{-a}^{a} x^3 \,dx</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1.2734em; vertical-align: -0.4142em;"></span><span class="mop"><span
+                                class="mop op-symbol small-op"
+                                style="margin-right: 0.19445em; position: relative; top: -0.0006em;">∫</span><span
+                                class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.8593em;"><span
+                                                style="top: -2.3442em; margin-left: -0.1945em; margin-right: 0.05em;"><span
+                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span class="mord mtight">−</span><span
+                                                            class="mord mathnormal mtight">a</span></span></span></span><span
+                                                style="top: -3.2579em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span
+                                                            class="mord mathnormal mtight">a</span></span></span></span></span><span
+                                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.4142em;"><span></span></span></span></span></span></span><span
+                            class="mspace" style="margin-right: 0.1667em;"></span><span class="mord"><span
+                                class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span
+                                        class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span
+                                                style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight">3</span></span></span></span></span></span></span></span><span
+                            class="mspace" style="margin-right: 0.1667em;"></span><span
+                            class="mord mathnormal">d</span><span
+                            class="mord mathnormal">x</span></span></span></span></span></p>
+    <p>To evaluate this integral, we'll use the properties of odd functions. An odd function <span
+            class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>f</mi>
+                                <mo stretchy="false">(</mo>
+                                <mi>x</mi>
+                                <mo stretchy="false">)</mo>
+                            </mrow>
+                            <annotation encoding="application/x-tex">f(x)</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.10764em;">f</span><span class="mopen">(</span><span
+                            class="mord mathnormal">x</span><span class="mclose">)</span></span></span></span></span>
+        satisfies <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>f</mi>
+                                <mo stretchy="false">(</mo>
+                                <mo>−</mo>
+                                <mi>x</mi>
+                                <mo stretchy="false">)</mo>
+                                <mo>=</mo>
+                                <mo>−</mo>
+                                <mi>f</mi>
+                                <mo stretchy="false">(</mo>
+                                <mi>x</mi>
+                                <mo stretchy="false">)</mo>
+                            </mrow>
+                            <annotation encoding="application/x-tex">f(-x) = -f(x)</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.10764em;">f</span><span class="mopen">(</span><span
+                            class="mord">−</span><span class="mord mathnormal">x</span><span
+                            class="mclose">)</span><span class="mspace" style="margin-right: 0.2778em;"></span><span
+                            class="mrel">=</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">−</span><span
+                            class="mord mathnormal" style="margin-right: 0.10764em;">f</span><span
+                            class="mopen">(</span><span class="mord mathnormal">x</span><span
+                            class="mclose">)</span></span></span></span></span>. Let's evaluate <span
+            class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>f</mi>
+                                <mo stretchy="false">(</mo>
+                                <mo>−</mo>
+                                <mi>x</mi>
+                                <mo stretchy="false">)</mo>
+                            </mrow>
+                            <annotation encoding="application/x-tex">f(-x)</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.10764em;">f</span><span class="mopen">(</span><span
+                            class="mord">−</span><span class="mord mathnormal">x</span><span
+                            class="mclose">)</span></span></span></span></span> for <span class="math math-inline"><span
+                class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>f</mi>
+                                <mo stretchy="false">(</mo>
+                                <mi>x</mi>
+                                <mo stretchy="false">)</mo>
+                                <mo>=</mo>
+                                <msup>
+                                    <mi>x</mi>
+                                    <mn>3</mn>
+                                </msup>
+                            </mrow>
+                            <annotation encoding="application/x-tex">f(x) = x^3</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.10764em;">f</span><span class="mopen">(</span><span
+                            class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                            style="height: 0.8141em;"></span><span class="mord"><span
+                                class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span
+                                        class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span
+                                                style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span></span>:
+    </p>
+    <p><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>f</mi>
+                                <mo stretchy="false">(</mo>
+                                <mo>−</mo>
+                                <mi>x</mi>
+                                <mo stretchy="false">)</mo>
+                                <mo>=</mo>
+                                <mo stretchy="false">(</mo>
+                                <mo>−</mo>
+                                <mi>x</mi>
+                                <msup>
+                                    <mo stretchy="false">)</mo>
+                                    <mn>3</mn>
+                                </msup>
+                                <mo>=</mo>
+                                <mo>−</mo>
+                                <msup>
+                                    <mi>x</mi>
+                                    <mn>3</mn>
+                                </msup>
+                            </mrow>
+                            <annotation encoding="application/x-tex">f(-x) = (-x)^3 = -x^3</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.10764em;">f</span><span class="mopen">(</span><span
+                            class="mord">−</span><span class="mord mathnormal">x</span><span
+                            class="mclose">)</span><span class="mspace" style="margin-right: 0.2778em;"></span><span
+                            class="mrel">=</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                            style="height: 1.0641em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span
+                            class="mord">−</span><span class="mord mathnormal">x</span><span class="mclose"><span
+                                class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span
+                                        class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span
+                                                style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight">3</span></span></span></span></span></span></span></span><span
+                            class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span
+                            class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span
+                            class="strut" style="height: 0.8974em; vertical-align: -0.0833em;"></span><span
+                            class="mord">−</span><span class="mord"><span class="mord mathnormal">x</span><span
+                                class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.8141em;"><span
+                                                style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span></span>
+    </p>
+    <p>Now, compare <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>f</mi>
+                                <mo stretchy="false">(</mo>
+                                <mo>−</mo>
+                                <mi>x</mi>
+                                <mo stretchy="false">)</mo>
+                            </mrow>
+                            <annotation encoding="application/x-tex">f(-x)</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.10764em;">f</span><span class="mopen">(</span><span
+                            class="mord">−</span><span class="mord mathnormal">x</span><span
+                            class="mclose">)</span></span></span></span></span> with <span
+            class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mo>−</mo>
+                                <mi>f</mi>
+                                <mo stretchy="false">(</mo>
+                                <mi>x</mi>
+                                <mo stretchy="false">)</mo>
+                            </mrow>
+                            <annotation encoding="application/x-tex">-f(x)</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">−</span><span
+                            class="mord mathnormal" style="margin-right: 0.10764em;">f</span><span
+                            class="mopen">(</span><span class="mord mathnormal">x</span><span
+                            class="mclose">)</span></span></span></span></span>:</p>
+    <p><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mo>−</mo>
+                                <mi>f</mi>
+                                <mo stretchy="false">(</mo>
+                                <mi>x</mi>
+                                <mo stretchy="false">)</mo>
+                                <mo>=</mo>
+                                <mo>−</mo>
+                                <msup>
+                                    <mi>x</mi>
+                                    <mn>3</mn>
+                                </msup>
+                            </mrow>
+                            <annotation encoding="application/x-tex">-f(x) = -x^3</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">−</span><span
+                            class="mord mathnormal" style="margin-right: 0.10764em;">f</span><span
+                            class="mopen">(</span><span class="mord mathnormal">x</span><span
+                            class="mclose">)</span><span class="mspace" style="margin-right: 0.2778em;"></span><span
+                            class="mrel">=</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                            style="height: 0.8974em; vertical-align: -0.0833em;"></span><span class="mord">−</span><span
+                            class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span
+                                    class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.8141em;"><span
+                                                style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span></span>
+    </p>
+    <p>As we can see, <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>f</mi>
+                                <mo stretchy="false">(</mo>
+                                <mo>−</mo>
+                                <mi>x</mi>
+                                <mo stretchy="false">)</mo>
+                                <mo>=</mo>
+                                <mo>−</mo>
+                                <mi>f</mi>
+                                <mo stretchy="false">(</mo>
+                                <mi>x</mi>
+                                <mo stretchy="false">)</mo>
+                            </mrow>
+                            <annotation encoding="application/x-tex">f(-x) = -f(x)</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.10764em;">f</span><span class="mopen">(</span><span
+                            class="mord">−</span><span class="mord mathnormal">x</span><span
+                            class="mclose">)</span><span class="mspace" style="margin-right: 0.2778em;"></span><span
+                            class="mrel">=</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">−</span><span
+                            class="mord mathnormal" style="margin-right: 0.10764em;">f</span><span
+                            class="mopen">(</span><span class="mord mathnormal">x</span><span
+                            class="mclose">)</span></span></span></span></span>. This property holds for all values of
+        <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>x</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">x</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.4306em;"></span><span
+                            class="mord mathnormal">x</span></span></span></span></span>.</p>
+    <p>Now, let's calculate the integral:</p>
+    <p><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <msubsup>
+                                    <mo>∫</mo>
+                                    <mrow>
+                                        <mo>−</mo>
+                                        <mi>a</mi>
+                                    </mrow>
+                                    <mi>a</mi>
+                                </msubsup>
+                                <msup>
+                                    <mi>x</mi>
+                                    <mn>3</mn>
+                                </msup>
+                                <mtext> </mtext>
+                                <mi>d</mi>
+                                <mi>x</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mn>1</mn>
+                                    <mn>4</mn>
+                                </mfrac>
+                                <msup>
+                                    <mi>x</mi>
+                                    <mn>4</mn>
+                                </msup>
+                                <msubsup>
+                                    <mo fence="false" stretchy="true" minsize="1.8em" maxsize="1.8em">∣</mo>
+                                    <mrow>
+                                        <mo>−</mo>
+                                        <mi>a</mi>
+                                    </mrow>
+                                    <mi>a</mi>
+                                </msubsup>
+                            </mrow>
+                            <annotation encoding="application/x-tex">\int_{-a}^{a} x^3 \,dx = \frac{1}{4}x^4
+                                \Big|_{-a}^{a}</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1.2734em; vertical-align: -0.4142em;"></span><span class="mop"><span
+                                class="mop op-symbol small-op"
+                                style="margin-right: 0.19445em; position: relative; top: -0.0006em;">∫</span><span
+                                class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.8593em;"><span
+                                                style="top: -2.3442em; margin-left: -0.1945em; margin-right: 0.05em;"><span
+                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span class="mord mtight">−</span><span
+                                                            class="mord mathnormal mtight">a</span></span></span></span><span
+                                                style="top: -3.2579em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span
+                                                            class="mord mathnormal mtight">a</span></span></span></span></span><span
+                                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.4142em;"><span></span></span></span></span></span></span><span
+                            class="mspace" style="margin-right: 0.1667em;"></span><span class="mord"><span
+                                class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span
+                                        class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span
+                                                style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight">3</span></span></span></span></span></span></span></span><span
+                            class="mspace" style="margin-right: 0.1667em;"></span><span
+                            class="mord mathnormal">d</span><span class="mord mathnormal">x</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                            style="height: 1.9743em; vertical-align: -0.758em;"></span><span class="mord"><span
+                                class="mopen nulldelimiter"></span><span class="mfrac"><span
+                                    class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.8451em;"><span style="top: -2.655em;"><span class="pstrut"
+                                                    style="height: 3em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span
+                                                            class="mord mtight">4</span></span></span></span><span
+                                                style="top: -3.23em;"><span class="pstrut"
+                                                    style="height: 3em;"></span><span class="frac-line"
+                                                    style="border-bottom-width: 0.04em;"></span></span><span
+                                                style="top: -3.394em;"><span class="pstrut"
+                                                    style="height: 3em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span
+                                                            class="mord mtight">1</span></span></span></span></span><span
+                                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.345em;"><span></span></span></span></span></span><span
+                                class="mclose nulldelimiter"></span></span><span class="mord"><span
+                                class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span
+                                        class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span
+                                                style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight">4</span></span></span></span></span></span></span></span><span
+                            class="mord"><span class="mord"><span class="delimsizing mult"><span
+                                        class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                                style="height: 1.162em;"><span style="top: -1.966em;"><span
+                                                        class="pstrut" style="height: 2.616em;"></span><span
+                                                        class="delimsizinginner delim-size1"><span>∣</span></span></span><span
+                                                    style="top: -2.564em;"><span class="pstrut"
+                                                        style="height: 2.616em;"></span><span
+                                                        style="height: 0.616em; width: 0.3333em;"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="0.3333em"
+                                                            height="0.616em" style="width: 0.3333em;"
+                                                            viewBox="0 0 333.33000000000004 616"
+                                                            preserveAspectRatio="xMinYMin">
+                                                            <path d="M145 0 H188 V616 H145z M145 0 H188 V616 H145z">
+                                                            </path>
+                                                        </svg></span></span><span style="top: -3.172em;"><span
+                                                        class="pstrut" style="height: 2.616em;"></span><span
+                                                        class="delimsizinginner delim-size1"><span>∣</span></span></span></span><span
+                                                class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                                style="height: 0.65em;"><span></span></span></span></span></span></span><span
+                                class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                            style="height: 1.2163em;"><span
+                                                style="top: -2.0003em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span class="mord mtight">−</span><span
+                                                            class="mord mathnormal mtight">a</span></span></span></span><span
+                                                style="top: -3.6149em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span
+                                                            class="mord mathnormal mtight">a</span></span></span></span></span><span
+                                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.758em;"><span></span></span></span></span></span></span></span></span></span></span>
+    </p>
+    <p><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mn>1</mn>
+                                    <mn>4</mn>
+                                </mfrac>
+                                <mo stretchy="false">(</mo>
+                                <msup>
+                                    <mi>a</mi>
+                                    <mn>4</mn>
+                                </msup>
+                                <mo>−</mo>
+                                <mo stretchy="false">(</mo>
+                                <mo>−</mo>
+                                <mi>a</mi>
+                                <msup>
+                                    <mo stretchy="false">)</mo>
+                                    <mn>4</mn>
+                                </msup>
+                                <mo stretchy="false">)</mo>
+                            </mrow>
+                            <annotation encoding="application/x-tex">= \frac{1}{4}(a^4 - (-a)^4)</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.3669em;"></span><span class="mrel">=</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                            style="height: 1.1901em; vertical-align: -0.345em;"></span><span class="mord"><span
+                                class="mopen nulldelimiter"></span><span class="mfrac"><span
+                                    class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.8451em;"><span style="top: -2.655em;"><span class="pstrut"
+                                                    style="height: 3em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span
+                                                            class="mord mtight">4</span></span></span></span><span
+                                                style="top: -3.23em;"><span class="pstrut"
+                                                    style="height: 3em;"></span><span class="frac-line"
+                                                    style="border-bottom-width: 0.04em;"></span></span><span
+                                                style="top: -3.394em;"><span class="pstrut"
+                                                    style="height: 3em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span
+                                                            class="mord mtight">1</span></span></span></span></span><span
+                                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.345em;"><span></span></span></span></span></span><span
+                                class="mclose nulldelimiter"></span></span><span class="mopen">(</span><span
+                            class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span
+                                    class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.8141em;"><span
+                                                style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight">4</span></span></span></span></span></span></span></span><span
+                            class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">−</span><span
+                            class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span
+                            class="strut" style="height: 1.0641em; vertical-align: -0.25em;"></span><span
+                            class="mopen">(</span><span class="mord">−</span><span class="mord mathnormal">a</span><span
+                            class="mclose"><span class="mclose">)</span><span class="msupsub"><span
+                                    class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.8141em;"><span
+                                                style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight">4</span></span></span></span></span></span></span></span><span
+                            class="mclose">)</span></span></span></span></span></p>
+    <p><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mn>1</mn>
+                                    <mn>4</mn>
+                                </mfrac>
+                                <mo stretchy="false">(</mo>
+                                <msup>
+                                    <mi>a</mi>
+                                    <mn>4</mn>
+                                </msup>
+                                <mo>−</mo>
+                                <msup>
+                                    <mi>a</mi>
+                                    <mn>4</mn>
+                                </msup>
+                                <mo stretchy="false">)</mo>
+                            </mrow>
+                            <annotation encoding="application/x-tex">= \frac{1}{4}(a^4 - a^4)</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.3669em;"></span><span class="mrel">=</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                            style="height: 1.1901em; vertical-align: -0.345em;"></span><span class="mord"><span
+                                class="mopen nulldelimiter"></span><span class="mfrac"><span
+                                    class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.8451em;"><span style="top: -2.655em;"><span class="pstrut"
+                                                    style="height: 3em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span
+                                                            class="mord mtight">4</span></span></span></span><span
+                                                style="top: -3.23em;"><span class="pstrut"
+                                                    style="height: 3em;"></span><span class="frac-line"
+                                                    style="border-bottom-width: 0.04em;"></span></span><span
+                                                style="top: -3.394em;"><span class="pstrut"
+                                                    style="height: 3em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span
+                                                            class="mord mtight">1</span></span></span></span></span><span
+                                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.345em;"><span></span></span></span></span></span><span
+                                class="mclose nulldelimiter"></span></span><span class="mopen">(</span><span
+                            class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span
+                                    class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.8141em;"><span
+                                                style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight">4</span></span></span></span></span></span></span></span><span
+                            class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">−</span><span
+                            class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span
+                            class="strut" style="height: 1.0641em; vertical-align: -0.25em;"></span><span
+                            class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span
+                                    class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.8141em;"><span
+                                                style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight">4</span></span></span></span></span></span></span></span><span
+                            class="mclose">)</span></span></span></span></span></p>
+    <p><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mn>1</mn>
+                                    <mn>4</mn>
+                                </mfrac>
+                                <mo stretchy="false">(</mo>
+                                <mn>0</mn>
+                                <mo stretchy="false">)</mo>
+                            </mrow>
+                            <annotation encoding="application/x-tex">= \frac{1}{4}(0)</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.3669em;"></span><span class="mrel">=</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                            style="height: 1.1901em; vertical-align: -0.345em;"></span><span class="mord"><span
+                                class="mopen nulldelimiter"></span><span class="mfrac"><span
+                                    class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.8451em;"><span style="top: -2.655em;"><span class="pstrut"
+                                                    style="height: 3em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span
+                                                            class="mord mtight">4</span></span></span></span><span
+                                                style="top: -3.23em;"><span class="pstrut"
+                                                    style="height: 3em;"></span><span class="frac-line"
+                                                    style="border-bottom-width: 0.04em;"></span></span><span
+                                                style="top: -3.394em;"><span class="pstrut"
+                                                    style="height: 3em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span
+                                                            class="mord mtight">1</span></span></span></span></span><span
+                                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.345em;"><span></span></span></span></span></span><span
+                                class="mclose nulldelimiter"></span></span><span class="mopen">(</span><span
+                            class="mord">0</span><span class="mclose">)</span></span></span></span></span></p>
+    <p><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mo>=</mo>
+                                <mn>0</mn>
+                            </mrow>
+                            <annotation encoding="application/x-tex">= 0</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.3669em;"></span><span class="mrel">=</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                            style="height: 0.6444em;"></span><span class="mord">0</span></span></span></span></span></p>
+    <p>The result is zero, which means that the integral of the odd function <span class="math math-inline"><span
+                class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>f</mi>
+                                <mo stretchy="false">(</mo>
+                                <mi>x</mi>
+                                <mo stretchy="false">)</mo>
+                                <mo>=</mo>
+                                <msup>
+                                    <mi>x</mi>
+                                    <mn>3</mn>
+                                </msup>
+                            </mrow>
+                            <annotation encoding="application/x-tex">f(x) = x^3</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.10764em;">f</span><span class="mopen">(</span><span
+                            class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                            style="height: 0.8141em;"></span><span class="mord"><span
+                                class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span
+                                        class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span
+                                                style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span></span>
+        over the symmetric interval <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mo stretchy="false">[</mo>
+                                <mo>−</mo>
+                                <mi>a</mi>
+                                <mo separator="true">,</mo>
+                                <mi>a</mi>
+                                <mo stretchy="false">]</mo>
+                            </mrow>
+                            <annotation encoding="application/x-tex">[-a, a]</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">[</span><span
+                            class="mord">−</span><span class="mord mathnormal">a</span><span
+                            class="mpunct">,</span><span class="mspace" style="margin-right: 0.1667em;"></span><span
+                            class="mord mathnormal">a</span><span class="mclose">]</span></span></span></span></span> is
+        zero. This demonstrates that <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>f</mi>
+                                <mo stretchy="false">(</mo>
+                                <mi>x</mi>
+                                <mo stretchy="false">)</mo>
+                                <mo>=</mo>
+                                <msup>
+                                    <mi>x</mi>
+                                    <mn>3</mn>
+                                </msup>
+                            </mrow>
+                            <annotation encoding="application/x-tex">f(x) = x^3</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.10764em;">f</span><span class="mopen">(</span><span
+                            class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                            style="height: 0.8141em;"></span><span class="mord"><span
+                                class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span
+                                        class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span
+                                                style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span></span>
+        is an odd function.</p>
+</div>

@@ -1,0 +1,692 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+    </style>
+</head>
+<h2>While changing variables from x, y to r, theta in a double integral, if original limits go from -infinite to
+    +infinite, then what would new limits go to?
+    Please explain step by step.
+</h2>
+
+<div class="markdown prose w-full break-words dark:prose-invert light">
+    <p>When changing variables from Cartesian coordinates (x, y) to polar coordinates (r, θ) in a double integral, the
+        limits of integration need to be adjusted accordingly. If the original limits for x and y extend from negative
+        infinity to positive infinity, it typically implies that you are integrating over the entire plane. In polar
+        coordinates, the corresponding region would be described using the radial coordinate (r) and the angular
+        coordinate (θ).</p>
+    <p>Let's go through the process step by step:</p>
+    <p>Original double integral:</p>
+    <p><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <msubsup>
+                                    <mo>∫</mo>
+                                    <mrow>
+                                        <mo>−</mo>
+                                        <mi mathvariant="normal">∞</mi>
+                                    </mrow>
+                                    <mi mathvariant="normal">∞</mi>
+                                </msubsup>
+                                <msubsup>
+                                    <mo>∫</mo>
+                                    <mrow>
+                                        <mo>−</mo>
+                                        <mi mathvariant="normal">∞</mi>
+                                    </mrow>
+                                    <mi mathvariant="normal">∞</mi>
+                                </msubsup>
+                                <mi>f</mi>
+                                <mo stretchy="false">(</mo>
+                                <mi>x</mi>
+                                <mo separator="true">,</mo>
+                                <mi>y</mi>
+                                <mo stretchy="false">)</mo>
+                                <mtext> </mtext>
+                                <mi>d</mi>
+                                <mi>x</mi>
+                                <mtext> </mtext>
+                                <mi>d</mi>
+                                <mi>y</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">\int_{-\infty}^{\infty} \int_{-\infty}^{\infty}
+                                f(x, y) \,dx\,dy</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1.2734em; vertical-align: -0.4142em;"></span><span class="mop"><span
+                                class="mop op-symbol small-op"
+                                style="margin-right: 0.19445em; position: relative; top: -0.0006em;">∫</span><span
+                                class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.8593em;"><span
+                                                style="top: -2.3442em; margin-left: -0.1945em; margin-right: 0.05em;"><span
+                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span class="mord mtight">−</span><span
+                                                            class="mord mtight">∞</span></span></span></span><span
+                                                style="top: -3.2579em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span
+                                                            class="mord mtight">∞</span></span></span></span></span><span
+                                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.4142em;"><span></span></span></span></span></span></span><span
+                            class="mspace" style="margin-right: 0.1667em;"></span><span class="mop"><span
+                                class="mop op-symbol small-op"
+                                style="margin-right: 0.19445em; position: relative; top: -0.0006em;">∫</span><span
+                                class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.8593em;"><span
+                                                style="top: -2.3442em; margin-left: -0.1945em; margin-right: 0.05em;"><span
+                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span class="mord mtight">−</span><span
+                                                            class="mord mtight">∞</span></span></span></span><span
+                                                style="top: -3.2579em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span
+                                                            class="mord mtight">∞</span></span></span></span></span><span
+                                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.4142em;"><span></span></span></span></span></span></span><span
+                            class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.10764em;">f</span><span class="mopen">(</span><span
+                            class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span><span class="mclose">)</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal">d</span><span
+                            class="mord mathnormal">x</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal">d</span><span
+                            class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span></span></span></span></span></p>
+    <p>Now, let's express the Cartesian coordinates (x, y) in terms of polar coordinates (r, θ):</p>
+    <p><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>x</mi>
+                                <mo>=</mo>
+                                <mi>r</mi>
+                                <mi>cos</mi>
+                                <mo>⁡</mo>
+                                <mo stretchy="false">(</mo>
+                                <mi>θ</mi>
+                                <mo stretchy="false">)</mo>
+                            </mrow>
+                            <annotation encoding="application/x-tex">x = r \cos(\theta)</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.4306em;"></span><span class="mord mathnormal">x</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.02778em;">r</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mop">cos</span><span
+                            class="mopen">(</span><span class="mord mathnormal"
+                            style="margin-right: 0.02778em;">θ</span><span
+                            class="mclose">)</span></span></span></span></span>
+        <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>y</mi>
+                                <mo>=</mo>
+                                <mi>r</mi>
+                                <mi>sin</mi>
+                                <mo>⁡</mo>
+                                <mo stretchy="false">(</mo>
+                                <mi>θ</mi>
+                                <mo stretchy="false">)</mo>
+                            </mrow>
+                            <annotation encoding="application/x-tex">y = r \sin(\theta)</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.625em; vertical-align: -0.1944em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.02778em;">r</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mop">sin</span><span
+                            class="mopen">(</span><span class="mord mathnormal"
+                            style="margin-right: 0.02778em;">θ</span><span
+                            class="mclose">)</span></span></span></span></span>
+    </p>
+    <p>Next, we need to express the differential area element <span class="math math-inline"><span class="katex"><span
+                    class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>d</mi>
+                                <mi>x</mi>
+                                <mtext> </mtext>
+                                <mi>d</mi>
+                                <mi>y</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">dx\,dy</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.8889em; vertical-align: -0.1944em;"></span><span
+                            class="mord mathnormal">d</span><span class="mord mathnormal">x</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal">d</span><span
+                            class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span></span></span></span></span> in terms of polar
+        coordinates. The area element in Cartesian coordinates is <span class="math math-inline"><span
+                class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>d</mi>
+                                <mi>x</mi>
+                                <mtext> </mtext>
+                                <mi>d</mi>
+                                <mi>y</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">dx\,dy</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.8889em; vertical-align: -0.1944em;"></span><span
+                            class="mord mathnormal">d</span><span class="mord mathnormal">x</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal">d</span><span
+                            class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span></span></span></span></span>, and in polar
+        coordinates, it becomes <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>r</mi>
+                                <mtext> </mtext>
+                                <mi>d</mi>
+                                <mi>r</mi>
+                                <mtext> </mtext>
+                                <mi>d</mi>
+                                <mi>θ</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">r\,dr\,d\theta</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.6944em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.02778em;">r</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal">d</span><span
+                            class="mord mathnormal" style="margin-right: 0.02778em;">r</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal">d</span><span
+                            class="mord mathnormal"
+                            style="margin-right: 0.02778em;">θ</span></span></span></span></span>. Therefore:</p>
+    <p><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>d</mi>
+                                <mi>x</mi>
+                                <mtext> </mtext>
+                                <mi>d</mi>
+                                <mi>y</mi>
+                                <mo>=</mo>
+                                <mi>r</mi>
+                                <mtext> </mtext>
+                                <mi>d</mi>
+                                <mi>r</mi>
+                                <mtext> </mtext>
+                                <mi>d</mi>
+                                <mi>θ</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">dx\,dy = r\,dr\,d\theta</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.8889em; vertical-align: -0.1944em;"></span><span
+                            class="mord mathnormal">d</span><span class="mord mathnormal">x</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal">d</span><span
+                            class="mord mathnormal" style="margin-right: 0.03588em;">y</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                            style="height: 0.6944em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.02778em;">r</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal">d</span><span
+                            class="mord mathnormal" style="margin-right: 0.02778em;">r</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal">d</span><span
+                            class="mord mathnormal"
+                            style="margin-right: 0.02778em;">θ</span></span></span></span></span></p>
+    <p>Now, substitute these expressions into the original integral:</p>
+    <p><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <msubsup>
+                                    <mo>∫</mo>
+                                    <mrow>
+                                        <mo>−</mo>
+                                        <mi mathvariant="normal">∞</mi>
+                                    </mrow>
+                                    <mi mathvariant="normal">∞</mi>
+                                </msubsup>
+                                <msubsup>
+                                    <mo>∫</mo>
+                                    <mrow>
+                                        <mo>−</mo>
+                                        <mi mathvariant="normal">∞</mi>
+                                    </mrow>
+                                    <mi mathvariant="normal">∞</mi>
+                                </msubsup>
+                                <mi>f</mi>
+                                <mo stretchy="false">(</mo>
+                                <mi>x</mi>
+                                <mo separator="true">,</mo>
+                                <mi>y</mi>
+                                <mo stretchy="false">)</mo>
+                                <mtext> </mtext>
+                                <mi>d</mi>
+                                <mi>x</mi>
+                                <mtext> </mtext>
+                                <mi>d</mi>
+                                <mi>y</mi>
+                                <mo>=</mo>
+                                <msubsup>
+                                    <mo>∫</mo>
+                                    <mn>0</mn>
+                                    <mrow>
+                                        <mn>2</mn>
+                                        <mi>π</mi>
+                                    </mrow>
+                                </msubsup>
+                                <msubsup>
+                                    <mo>∫</mo>
+                                    <mn>0</mn>
+                                    <mi mathvariant="normal">∞</mi>
+                                </msubsup>
+                                <mi>f</mi>
+                                <mo stretchy="false">(</mo>
+                                <mi>r</mi>
+                                <mi>cos</mi>
+                                <mo>⁡</mo>
+                                <mo stretchy="false">(</mo>
+                                <mi>θ</mi>
+                                <mo stretchy="false">)</mo>
+                                <mo separator="true">,</mo>
+                                <mi>r</mi>
+                                <mi>sin</mi>
+                                <mo>⁡</mo>
+                                <mo stretchy="false">(</mo>
+                                <mi>θ</mi>
+                                <mo stretchy="false">)</mo>
+                                <mo stretchy="false">)</mo>
+                                <mtext> </mtext>
+                                <mi>r</mi>
+                                <mtext> </mtext>
+                                <mi>d</mi>
+                                <mi>r</mi>
+                                <mtext> </mtext>
+                                <mi>d</mi>
+                                <mi>θ</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">\int_{-\infty}^{\infty} \int_{-\infty}^{\infty}
+                                f(x, y) \,dx\,dy = \int_{0}^{2\pi} \int_{0}^{\infty} f(r \cos(\theta), r \sin(\theta))
+                                \,r\,dr\,d\theta</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1.2734em; vertical-align: -0.4142em;"></span><span class="mop"><span
+                                class="mop op-symbol small-op"
+                                style="margin-right: 0.19445em; position: relative; top: -0.0006em;">∫</span><span
+                                class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.8593em;"><span
+                                                style="top: -2.3442em; margin-left: -0.1945em; margin-right: 0.05em;"><span
+                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span class="mord mtight">−</span><span
+                                                            class="mord mtight">∞</span></span></span></span><span
+                                                style="top: -3.2579em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span
+                                                            class="mord mtight">∞</span></span></span></span></span><span
+                                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.4142em;"><span></span></span></span></span></span></span><span
+                            class="mspace" style="margin-right: 0.1667em;"></span><span class="mop"><span
+                                class="mop op-symbol small-op"
+                                style="margin-right: 0.19445em; position: relative; top: -0.0006em;">∫</span><span
+                                class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.8593em;"><span
+                                                style="top: -2.3442em; margin-left: -0.1945em; margin-right: 0.05em;"><span
+                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span class="mord mtight">−</span><span
+                                                            class="mord mtight">∞</span></span></span></span><span
+                                                style="top: -3.2579em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span
+                                                            class="mord mtight">∞</span></span></span></span></span><span
+                                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.4142em;"><span></span></span></span></span></span></span><span
+                            class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.10764em;">f</span><span class="mopen">(</span><span
+                            class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span><span class="mclose">)</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal">d</span><span
+                            class="mord mathnormal">x</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal">d</span><span
+                            class="mord mathnormal" style="margin-right: 0.03588em;">y</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                            style="height: 1.3648em; vertical-align: -0.3558em;"></span><span class="mop"><span
+                                class="mop op-symbol small-op"
+                                style="margin-right: 0.19445em; position: relative; top: -0.0006em;">∫</span><span
+                                class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                            style="height: 1.009em;"><span
+                                                style="top: -2.3442em; margin-left: -0.1945em; margin-right: 0.05em;"><span
+                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span
+                                                            class="mord mtight">0</span></span></span></span><span
+                                                style="top: -3.2579em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span class="mord mtight">2</span><span
+                                                            class="mord mathnormal mtight"
+                                                            style="margin-right: 0.03588em;">π</span></span></span></span></span><span
+                                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.3558em;"><span></span></span></span></span></span></span><span
+                            class="mspace" style="margin-right: 0.1667em;"></span><span class="mop"><span
+                                class="mop op-symbol small-op"
+                                style="margin-right: 0.19445em; position: relative; top: -0.0006em;">∫</span><span
+                                class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.8593em;"><span
+                                                style="top: -2.3442em; margin-left: -0.1945em; margin-right: 0.05em;"><span
+                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span
+                                                            class="mord mtight">0</span></span></span></span><span
+                                                style="top: -3.2579em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span
+                                                            class="mord mtight">∞</span></span></span></span></span><span
+                                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.3558em;"><span></span></span></span></span></span></span><span
+                            class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.10764em;">f</span><span class="mopen">(</span><span
+                            class="mord mathnormal" style="margin-right: 0.02778em;">r</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mop">cos</span><span
+                            class="mopen">(</span><span class="mord mathnormal"
+                            style="margin-right: 0.02778em;">θ</span><span class="mclose">)</span><span
+                            class="mpunct">,</span><span class="mspace" style="margin-right: 0.1667em;"></span><span
+                            class="mord mathnormal" style="margin-right: 0.02778em;">r</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mop">sin</span><span
+                            class="mopen">(</span><span class="mord mathnormal"
+                            style="margin-right: 0.02778em;">θ</span><span class="mclose">))</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.02778em;">r</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal">d</span><span
+                            class="mord mathnormal" style="margin-right: 0.02778em;">r</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal">d</span><span
+                            class="mord mathnormal"
+                            style="margin-right: 0.02778em;">θ</span></span></span></span></span></p>
+    <p>In polar coordinates, the limits for <span class="math math-inline"><span class="katex"><span
+                    class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>r</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">r</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.4306em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.02778em;">r</span></span></span></span></span> typically start from 0
+        to <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi mathvariant="normal">∞</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">\infty</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.4306em;"></span><span class="mord">∞</span></span></span></span></span>,
+        and the limits for <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>θ</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">\theta</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.6944em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.02778em;">θ</span></span></span></span></span> range from 0 to <span
+            class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mn>2</mn>
+                                <mi>π</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">2\pi</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.6444em;"></span><span class="mord">2</span><span class="mord mathnormal"
+                            style="margin-right: 0.03588em;">π</span></span></span></span></span> to cover the entire
+        plane.</p>
+    <p>So, when changing variables from x, y to r, θ in a double integral where the original limits are from <span
+            class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mo>−</mo>
+                                <mi mathvariant="normal">∞</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">-\infty</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.6667em; vertical-align: -0.0833em;"></span><span class="mord">−</span><span
+                            class="mord">∞</span></span></span></span></span> to <span class="math math-inline"><span
+                class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mo>+</mo>
+                                <mi mathvariant="normal">∞</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">+\infty</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.6667em; vertical-align: -0.0833em;"></span><span class="mord">+</span><span
+                            class="mord">∞</span></span></span></span></span>, the new limits become:</p>
+    <p><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <msubsup>
+                                    <mo>∫</mo>
+                                    <mrow>
+                                        <mo>−</mo>
+                                        <mi mathvariant="normal">∞</mi>
+                                    </mrow>
+                                    <mi mathvariant="normal">∞</mi>
+                                </msubsup>
+                                <msubsup>
+                                    <mo>∫</mo>
+                                    <mrow>
+                                        <mo>−</mo>
+                                        <mi mathvariant="normal">∞</mi>
+                                    </mrow>
+                                    <mi mathvariant="normal">∞</mi>
+                                </msubsup>
+                                <mi>f</mi>
+                                <mo stretchy="false">(</mo>
+                                <mi>x</mi>
+                                <mo separator="true">,</mo>
+                                <mi>y</mi>
+                                <mo stretchy="false">)</mo>
+                                <mtext> </mtext>
+                                <mi>d</mi>
+                                <mi>x</mi>
+                                <mtext> </mtext>
+                                <mi>d</mi>
+                                <mi>y</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">\int_{-\infty}^{\infty} \int_{-\infty}^{\infty}
+                                f(x, y) \,dx\,dy</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1.2734em; vertical-align: -0.4142em;"></span><span class="mop"><span
+                                class="mop op-symbol small-op"
+                                style="margin-right: 0.19445em; position: relative; top: -0.0006em;">∫</span><span
+                                class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.8593em;"><span
+                                                style="top: -2.3442em; margin-left: -0.1945em; margin-right: 0.05em;"><span
+                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span class="mord mtight">−</span><span
+                                                            class="mord mtight">∞</span></span></span></span><span
+                                                style="top: -3.2579em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span
+                                                            class="mord mtight">∞</span></span></span></span></span><span
+                                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.4142em;"><span></span></span></span></span></span></span><span
+                            class="mspace" style="margin-right: 0.1667em;"></span><span class="mop"><span
+                                class="mop op-symbol small-op"
+                                style="margin-right: 0.19445em; position: relative; top: -0.0006em;">∫</span><span
+                                class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.8593em;"><span
+                                                style="top: -2.3442em; margin-left: -0.1945em; margin-right: 0.05em;"><span
+                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span class="mord mtight">−</span><span
+                                                            class="mord mtight">∞</span></span></span></span><span
+                                                style="top: -3.2579em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span
+                                                            class="mord mtight">∞</span></span></span></span></span><span
+                                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.4142em;"><span></span></span></span></span></span></span><span
+                            class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.10764em;">f</span><span class="mopen">(</span><span
+                            class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span><span class="mclose">)</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal">d</span><span
+                            class="mord mathnormal">x</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal">d</span><span
+                            class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span></span></span></span></span></p>
+    <p>becomes</p>
+    <p><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <msubsup>
+                                    <mo>∫</mo>
+                                    <mn>0</mn>
+                                    <mrow>
+                                        <mn>2</mn>
+                                        <mi>π</mi>
+                                    </mrow>
+                                </msubsup>
+                                <msubsup>
+                                    <mo>∫</mo>
+                                    <mn>0</mn>
+                                    <mi mathvariant="normal">∞</mi>
+                                </msubsup>
+                                <mi>f</mi>
+                                <mo stretchy="false">(</mo>
+                                <mi>r</mi>
+                                <mi>cos</mi>
+                                <mo>⁡</mo>
+                                <mo stretchy="false">(</mo>
+                                <mi>θ</mi>
+                                <mo stretchy="false">)</mo>
+                                <mo separator="true">,</mo>
+                                <mi>r</mi>
+                                <mi>sin</mi>
+                                <mo>⁡</mo>
+                                <mo stretchy="false">(</mo>
+                                <mi>θ</mi>
+                                <mo stretchy="false">)</mo>
+                                <mo stretchy="false">)</mo>
+                                <mtext> </mtext>
+                                <mi>r</mi>
+                                <mtext> </mtext>
+                                <mi>d</mi>
+                                <mi>r</mi>
+                                <mtext> </mtext>
+                                <mi>d</mi>
+                                <mi>θ</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">\int_{0}^{2\pi} \int_{0}^{\infty} f(r \cos(\theta),
+                                r \sin(\theta)) \,r\,dr\,d\theta</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1.3648em; vertical-align: -0.3558em;"></span><span class="mop"><span
+                                class="mop op-symbol small-op"
+                                style="margin-right: 0.19445em; position: relative; top: -0.0006em;">∫</span><span
+                                class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                            style="height: 1.009em;"><span
+                                                style="top: -2.3442em; margin-left: -0.1945em; margin-right: 0.05em;"><span
+                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span
+                                                            class="mord mtight">0</span></span></span></span><span
+                                                style="top: -3.2579em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span class="mord mtight">2</span><span
+                                                            class="mord mathnormal mtight"
+                                                            style="margin-right: 0.03588em;">π</span></span></span></span></span><span
+                                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.3558em;"><span></span></span></span></span></span></span><span
+                            class="mspace" style="margin-right: 0.1667em;"></span><span class="mop"><span
+                                class="mop op-symbol small-op"
+                                style="margin-right: 0.19445em; position: relative; top: -0.0006em;">∫</span><span
+                                class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.8593em;"><span
+                                                style="top: -2.3442em; margin-left: -0.1945em; margin-right: 0.05em;"><span
+                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span
+                                                            class="mord mtight">0</span></span></span></span><span
+                                                style="top: -3.2579em; margin-right: 0.05em;"><span class="pstrut"
+                                                    style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span
+                                                            class="mord mtight">∞</span></span></span></span></span><span
+                                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.3558em;"><span></span></span></span></span></span></span><span
+                            class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.10764em;">f</span><span class="mopen">(</span><span
+                            class="mord mathnormal" style="margin-right: 0.02778em;">r</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mop">cos</span><span
+                            class="mopen">(</span><span class="mord mathnormal"
+                            style="margin-right: 0.02778em;">θ</span><span class="mclose">)</span><span
+                            class="mpunct">,</span><span class="mspace" style="margin-right: 0.1667em;"></span><span
+                            class="mord mathnormal" style="margin-right: 0.02778em;">r</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mop">sin</span><span
+                            class="mopen">(</span><span class="mord mathnormal"
+                            style="margin-right: 0.02778em;">θ</span><span class="mclose">))</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.02778em;">r</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal">d</span><span
+                            class="mord mathnormal" style="margin-right: 0.02778em;">r</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal">d</span><span
+                            class="mord mathnormal"
+                            style="margin-right: 0.02778em;">θ</span></span></span></span></span></p>
+</div>

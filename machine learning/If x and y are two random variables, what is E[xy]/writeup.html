@@ -1,0 +1,520 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+    </style>
+</head>
+
+<span>Question: If x and y are two random variables, what is E[xy]?</span>
+
+<div class="markdown prose w-full break-words dark:prose-invert light">
+    <p>If <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>x</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">x</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.4306em;"></span><span
+                            class="mord mathnormal">x</span></span></span></span></span> and <span
+            class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>y</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">y</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.625em; vertical-align: -0.1944em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span></span></span></span></span> are two random
+        variables, the expected value of their product <span class="math math-inline"><span class="katex"><span
+                    class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>x</mi>
+                                <mi>y</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">xy</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.625em; vertical-align: -0.1944em;"></span><span
+                            class="mord mathnormal">x</span><span class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span></span></span></span></span> is given by:</p>
+    <p><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>E</mi>
+                                <mo stretchy="false">[</mo>
+                                <mi>x</mi>
+                                <mi>y</mi>
+                                <mo stretchy="false">]</mo>
+                                <mo>=</mo>
+                                <msub>
+                                    <mo>∑</mo>
+                                    <mi>i</mi>
+                                </msub>
+                                <msub>
+                                    <mo>∑</mo>
+                                    <mi>j</mi>
+                                </msub>
+                                <msub>
+                                    <mi>x</mi>
+                                    <mi>i</mi>
+                                </msub>
+                                <msub>
+                                    <mi>y</mi>
+                                    <mi>j</mi>
+                                </msub>
+                                <mi>P</mi>
+                                <mo stretchy="false">(</mo>
+                                <mi>X</mi>
+                                <mo>=</mo>
+                                <msub>
+                                    <mi>x</mi>
+                                    <mi>i</mi>
+                                </msub>
+                                <mo separator="true">,</mo>
+                                <mi>Y</mi>
+                                <mo>=</mo>
+                                <msub>
+                                    <mi>y</mi>
+                                    <mi>j</mi>
+                                </msub>
+                                <mo stretchy="false">)</mo>
+                            </mrow>
+                            <annotation encoding="application/x-tex">E[xy] = \sum_{i}\sum_{j} x_iy_j P(X=x_i, Y=y_j)
+                            </annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.05764em;">E</span><span class="mopen">[</span><span
+                            class="mord mathnormal">x</span><span class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span><span class="mclose">]</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                            style="height: 1.1858em; vertical-align: -0.4358em;"></span><span class="mop"><span
+                                class="mop op-symbol small-op" style="position: relative; top: 0em;">∑</span><span
+                                class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.162em;"><span
+                                                style="top: -2.4003em; margin-left: 0em; margin-right: 0.05em;"><span
+                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span
+                                                            class="mord mathnormal mtight">i</span></span></span></span></span><span
+                                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.2997em;"><span></span></span></span></span></span></span><span
+                            class="mspace" style="margin-right: 0.1667em;"></span><span class="mop"><span
+                                class="mop op-symbol small-op" style="position: relative; top: 0em;">∑</span><span
+                                class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.162em;"><span
+                                                style="top: -2.4003em; margin-left: 0em; margin-right: 0.05em;"><span
+                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mtight"><span class="mord mathnormal mtight"
+                                                            style="margin-right: 0.05724em;">j</span></span></span></span></span><span
+                                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.4358em;"><span></span></span></span></span></span></span><span
+                            class="mspace" style="margin-right: 0.1667em;"></span><span class="mord"><span
+                                class="mord mathnormal">x</span><span class="msupsub"><span
+                                    class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.3117em;"><span
+                                                style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span
+                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mathnormal mtight">i</span></span></span></span><span
+                                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.15em;"><span></span></span></span></span></span></span><span
+                            class="mord"><span class="mord mathnormal" style="margin-right: 0.03588em;">y</span><span
+                                class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.3117em;"><span
+                                                style="top: -2.55em; margin-left: -0.0359em; margin-right: 0.05em;"><span
+                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mathnormal mtight"
+                                                        style="margin-right: 0.05724em;">j</span></span></span></span><span
+                                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.2861em;"><span></span></span></span></span></span></span><span
+                            class="mord mathnormal" style="margin-right: 0.13889em;">P</span><span
+                            class="mopen">(</span><span class="mord mathnormal"
+                            style="margin-right: 0.07847em;">X</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                            style="height: 0.8778em; vertical-align: -0.1944em;"></span><span class="mord"><span
+                                class="mord mathnormal">x</span><span class="msupsub"><span
+                                    class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.3117em;"><span
+                                                style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span
+                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mathnormal mtight">i</span></span></span></span><span
+                                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.15em;"><span></span></span></span></span></span></span><span
+                            class="mpunct">,</span><span class="mspace" style="margin-right: 0.1667em;"></span><span
+                            class="mord mathnormal" style="margin-right: 0.22222em;">Y</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                            style="height: 1.0361em; vertical-align: -0.2861em;"></span><span class="mord"><span
+                                class="mord mathnormal" style="margin-right: 0.03588em;">y</span><span
+                                class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.3117em;"><span
+                                                style="top: -2.55em; margin-left: -0.0359em; margin-right: 0.05em;"><span
+                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                    class="sizing reset-size6 size3 mtight"><span
+                                                        class="mord mathnormal mtight"
+                                                        style="margin-right: 0.05724em;">j</span></span></span></span><span
+                                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                            style="height: 0.2861em;"><span></span></span></span></span></span></span><span
+                            class="mclose">)</span></span></span></span></span></p>
+    <p>In continuous cases, where <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>x</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">x</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.4306em;"></span><span
+                            class="mord mathnormal">x</span></span></span></span></span> and <span
+            class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>y</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">y</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.625em; vertical-align: -0.1944em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span></span></span></span></span> are continuous random
+        variables, this is expressed as an integral:</p>
+    <p><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>E</mi>
+                                <mo stretchy="false">[</mo>
+                                <mi>x</mi>
+                                <mi>y</mi>
+                                <mo stretchy="false">]</mo>
+                                <mo>=</mo>
+                                <mo>∫</mo>
+                                <mo>∫</mo>
+                                <mi>x</mi>
+                                <mi>y</mi>
+                                <mi>f</mi>
+                                <mo stretchy="false">(</mo>
+                                <mi>x</mi>
+                                <mo separator="true">,</mo>
+                                <mi>y</mi>
+                                <mo stretchy="false">)</mo>
+                                <mtext> </mtext>
+                                <mi>d</mi>
+                                <mi>x</mi>
+                                <mtext> </mtext>
+                                <mi>d</mi>
+                                <mi>y</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">E[xy] = \int\int xy f(x, y) \,dx\,dy</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.05764em;">E</span><span class="mopen">[</span><span
+                            class="mord mathnormal">x</span><span class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span><span class="mclose">]</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                            style="height: 1.1111em; vertical-align: -0.3061em;"></span><span
+                            class="mop op-symbol small-op"
+                            style="margin-right: 0.19445em; position: relative; top: -0.0006em;">∫∫</span><span
+                            class="mspace" style="margin-right: 0.1667em;"></span><span
+                            class="mord mathnormal">x</span><span class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span><span class="mord mathnormal"
+                            style="margin-right: 0.10764em;">f</span><span class="mopen">(</span><span
+                            class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span><span class="mclose">)</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal">d</span><span
+                            class="mord mathnormal">x</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal">d</span><span
+                            class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span></span></span></span></span></p>
+    <p>where <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>f</mi>
+                                <mo stretchy="false">(</mo>
+                                <mi>x</mi>
+                                <mo separator="true">,</mo>
+                                <mi>y</mi>
+                                <mo stretchy="false">)</mo>
+                            </mrow>
+                            <annotation encoding="application/x-tex">f(x, y)</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.10764em;">f</span><span class="mopen">(</span><span
+                            class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span><span
+                            class="mclose">)</span></span></span></span></span> is the joint probability density
+        function of <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>x</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">x</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.4306em;"></span><span
+                            class="mord mathnormal">x</span></span></span></span></span> and <span
+            class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>y</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">y</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.625em; vertical-align: -0.1944em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span></span></span></span></span>.</p>
+    <p>In simpler terms, the expected value of the product of two random variables is found by multiplying each pair of
+        possible values of <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>x</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">x</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.4306em;"></span><span
+                            class="mord mathnormal">x</span></span></span></span></span> and <span
+            class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>y</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">y</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.625em; vertical-align: -0.1944em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span></span></span></span></span> by the probability of
+        that particular combination occurring, and then summing or integrating over all possible pairs.</p>
+    <p>It's important to note that if <span class="math math-inline"><span class="katex"><span
+                    class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>x</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">x</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.4306em;"></span><span
+                            class="mord mathnormal">x</span></span></span></span></span> and <span
+            class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>y</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">y</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.625em; vertical-align: -0.1944em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span></span></span></span></span> are independent, then
+        <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>E</mi>
+                                <mo stretchy="false">[</mo>
+                                <mi>x</mi>
+                                <mi>y</mi>
+                                <mo stretchy="false">]</mo>
+                                <mo>=</mo>
+                                <mi>E</mi>
+                                <mo stretchy="false">[</mo>
+                                <mi>x</mi>
+                                <mo stretchy="false">]</mo>
+                                <mo>⋅</mo>
+                                <mi>E</mi>
+                                <mo stretchy="false">[</mo>
+                                <mi>y</mi>
+                                <mo stretchy="false">]</mo>
+                            </mrow>
+                            <annotation encoding="application/x-tex">E[xy] = E[x] \cdot E[y]</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.05764em;">E</span><span class="mopen">[</span><span
+                            class="mord mathnormal">x</span><span class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span><span class="mclose">]</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.05764em;">E</span><span class="mopen">[</span><span
+                            class="mord mathnormal">x</span><span class="mclose">]</span><span class="mspace"
+                            style="margin-right: 0.2222em;"></span><span class="mbin">⋅</span><span class="mspace"
+                            style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.05764em;">E</span><span class="mopen">[</span><span
+                            class="mord mathnormal" style="margin-right: 0.03588em;">y</span><span
+                            class="mclose">]</span></span></span></span></span>. If they are not independent, the
+        expected value of the product is influenced by the covariance between <span class="math math-inline"><span
+                class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>x</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">x</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.4306em;"></span><span
+                            class="mord mathnormal">x</span></span></span></span></span> and <span
+            class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>y</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">y</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.625em; vertical-align: -0.1944em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span></span></span></span></span>, and it can be
+        expressed as:
+    </p>
+    <p><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>E</mi>
+                                <mo stretchy="false">[</mo>
+                                <mi>x</mi>
+                                <mi>y</mi>
+                                <mo stretchy="false">]</mo>
+                                <mo>=</mo>
+                                <mi>E</mi>
+                                <mo stretchy="false">[</mo>
+                                <mi>x</mi>
+                                <mo stretchy="false">]</mo>
+                                <mo>⋅</mo>
+                                <mi>E</mi>
+                                <mo stretchy="false">[</mo>
+                                <mi>y</mi>
+                                <mo stretchy="false">]</mo>
+                                <mo>+</mo>
+                                <mtext>cov</mtext>
+                                <mo stretchy="false">(</mo>
+                                <mi>x</mi>
+                                <mo separator="true">,</mo>
+                                <mi>y</mi>
+                                <mo stretchy="false">)</mo>
+                            </mrow>
+                            <annotation encoding="application/x-tex">E[xy] = E[x] \cdot E[y] + \text{cov}(x, y)
+                            </annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.05764em;">E</span><span class="mopen">[</span><span
+                            class="mord mathnormal">x</span><span class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span><span class="mclose">]</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                            style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.05764em;">E</span><span class="mopen">[</span><span
+                            class="mord mathnormal">x</span><span class="mclose">]</span><span class="mspace"
+                            style="margin-right: 0.2222em;"></span><span class="mbin">⋅</span><span class="mspace"
+                            style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.05764em;">E</span><span class="mopen">[</span><span
+                            class="mord mathnormal" style="margin-right: 0.03588em;">y</span><span
+                            class="mclose">]</span><span class="mspace" style="margin-right: 0.2222em;"></span><span
+                            class="mbin">+</span><span class="mspace"
+                            style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord text"><span
+                                class="mord">cov</span></span><span class="mopen">(</span><span
+                            class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span><span
+                            class="mclose">)</span></span></span></span></span></p>
+    <p>where <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mtext>cov</mtext>
+                                <mo stretchy="false">(</mo>
+                                <mi>x</mi>
+                                <mo separator="true">,</mo>
+                                <mi>y</mi>
+                                <mo stretchy="false">)</mo>
+                            </mrow>
+                            <annotation encoding="application/x-tex">\text{cov}(x, y)</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord text"><span
+                                class="mord">cov</span></span><span class="mopen">(</span><span
+                            class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace"
+                            style="margin-right: 0.1667em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span><span
+                            class="mclose">)</span></span></span></span></span> is the covariance between <span
+            class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>x</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">x</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.4306em;"></span><span
+                            class="mord mathnormal">x</span></span></span></span></span> and <span
+            class="math math-inline"><span class="katex"><span class="katex-mathml"><math
+                        xmlns="http://www.w3.org/1998/Math/MathML">
+                        <semantics>
+                            <mrow>
+                                <mi>y</mi>
+                            </mrow>
+                            <annotation encoding="application/x-tex">y</annotation>
+                        </semantics>
+                    </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                            style="height: 0.625em; vertical-align: -0.1944em;"></span><span class="mord mathnormal"
+                            style="margin-right: 0.03588em;">y</span></span></span></span></span>.</p>
+</div>
+
+<div class="separator" style="clear: both;"><a
+        href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinYCiY6XTV9dn1EMLr_EmUn-4tulJh43mSbmfPNfcexbpCkPDLCdY1fa5AoeRWuqqwQIV_6LOBZjUUwa1fENyrTXmvoX6LXO5PWrt-EMnO9T31Xgmh55eUffa0O0XT_6igW1GX7oq6qDaaxn-fFW4evG-Dn69kRaWq0XJ2hz3gdCKziz2w8qRynZ6rbxyI/s633/Screenshot%20from%202023-12-29%2015-59-33.png"
+        style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+            data-original-height="560" data-original-width="633"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinYCiY6XTV9dn1EMLr_EmUn-4tulJh43mSbmfPNfcexbpCkPDLCdY1fa5AoeRWuqqwQIV_6LOBZjUUwa1fENyrTXmvoX6LXO5PWrt-EMnO9T31Xgmh55eUffa0O0XT_6igW1GX7oq6qDaaxn-fFW4evG-Dn69kRaWq0XJ2hz3gdCKziz2w8qRynZ6rbxyI/s600/Screenshot%20from%202023-12-29%2015-59-33.png" /></a>
+</div>

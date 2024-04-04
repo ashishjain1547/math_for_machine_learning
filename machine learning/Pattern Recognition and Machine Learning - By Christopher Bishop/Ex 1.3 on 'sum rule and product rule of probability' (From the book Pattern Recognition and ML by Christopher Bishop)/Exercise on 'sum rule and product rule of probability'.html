@@ -1,0 +1,110 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+
+<pre>Let's quiz you for the basic concepts of probability theory by considering a simple example. 
+    
+Imagine we have two boxes, one red and one blue, and in the red box we have 2 apples and 6 oranges, and in the blue box we have 3 apples and 1 orange.
+
+This is illustrated in Figure 1.9. Now suppose we randomly pick one of the boxes and from that box we randomly select an item of fruit, and having observed which sort of fruit it is we replace it in the box from which it came. We could imagine repeating this process many times. 
+
+Let us suppose that in so doing we pick the red box 40% of the time and we pick the blue box 60% of the time, and that when we remove an item of fruit from a box we are equally likely to select any of the pieces of fruit in the box.
+
+In this example, the identity of the box that will be chosen is a random variable, which we shall denote by B. This random variable can take one of two possible values, namely r (corresponding to the red box) or b (corresponding to the blue box). Similarly, the identity of the fruit is also a random variable and will be denoted by F . It can take either of the values a (for apple) or o (for orange).
+
+To begin with, we shall deﬁne the probability of an event to be the fraction of times that event occurs out of the total number of trials, in the limit that the total number of trials goes to inﬁnity. Thus the probability of selecting the red box is 4/10 and the probability of selecting the blue box is 6/10. We write these probabilities as: 
+p(B = r) = 4/10 and p(B = b) = 6/10. 
+
+Note that, by deﬁnition, probabilities must lie in the interval [0, 1]. Also, if the events are mutually exclusive and if they include all possible outcomes (for instance, in this example the box must be either red or blue), then we see that the probabilities for those events must sum to one.
+
+We can now ask questions such as: 
+“what is the overall probability that the selection procedure will pick an apple?”, 
+
+or 
+
+“given that we have chosen an orange, what's the probability that the box we chose was the blue one?”
+
+We can answer questions such as these, and indeed much more complex questions associated with
+problems in pattern recognition, once we have equipped ourselves with the two elementary rules of probability, known as the sum rule and the product rule. 
+
+<h2>Sum Rule and Product Rule</h2>
+
+<div class="separator" style="clear: both;"><a
+    href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9oAyvCe4XX6Q2CI875mkDfOL0o1-tbKxAFsPXRjHSTf98kTWCcoCUmkygwnkV_QAUEpZBBFv53DZOhlVkWJ3duO1euukxpli5JOdc_v-5R96QzczVpSVC5zhNFZRloboLpXEaBABeg9B_SyzaNGJJ_VaG55Jyo7yS5LRw7VIWJ8HTfqO4MuxFTyXySnQt/s588/Rules%20of%20probability.png"
+    style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+        data-original-height="171" data-original-width="588"
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9oAyvCe4XX6Q2CI875mkDfOL0o1-tbKxAFsPXRjHSTf98kTWCcoCUmkygwnkV_QAUEpZBBFv53DZOhlVkWJ3duO1euukxpli5JOdc_v-5R96QzczVpSVC5zhNFZRloboLpXEaBABeg9B_SyzaNGJJ_VaG55Jyo7yS5LRw7VIWJ8HTfqO4MuxFTyXySnQt/s600/Rules%20of%20probability.png" /></a>
+</div>
+
+Here p(X, Y ) is a joint probability and is verbalized as “the probability of X and Y ”. Similarly, the quantity p(Y |X) is a conditional probability and is verbalized as “the probability of Y given X”, whereas the quantity p(X) is a marginal probability and is simply “the probability of X”.
+
+Let us now return to our example involving boxes of fruit. For the moment, we
+shall once again be explicit about distinguishing between the random variables and
+their instantiations. We have seen that the probabilities of selecting either the red or
+the blue boxes are given by
+p(B = r) = 4/10
+p(B = b) = 6/10
+
+respectively. Note that these satisfy p(B = r) + p(B = b) = 1.
+Now suppose that we pick a box at random, and it turns out to be the blue box.
+Then the probability of selecting an apple is just the fraction of apples in the blue
+box which is 3/4, and so p(F = a|B = b) = 3/4. In fact, we can write out all four
+conditional probabilities for the type of fruit, given the selected box
+p(F = a|B = r) = 1/4
+p(F = o|B = r) = 3/4
+p(F = a|B = b) = 3/4
+p(F = o|B = b) = 1/4
+
+<div class="separator" style="clear: both;"><a
+    href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjhVqfUhP7LSa6N6Qw3A-Oy96rK98PdmU56zavXK4Qa8fiLGBdHAHN5OCifrKehUF4Y7Hz8xZtxsdOWtuKB85PBVuD6xhrRGfpbrxmYIJY98rTK6hvn91HpMQ5G8rGQg8uHxmGaghhMGJ3OR7bG6BApi2nXM5Zy65G6IP8-SQ-UrQNfCG3ERIV6iqWlR69/s614/IMG2.png"
+    style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+        data-original-height="289" data-original-width="614"
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjhVqfUhP7LSa6N6Qw3A-Oy96rK98PdmU56zavXK4Qa8fiLGBdHAHN5OCifrKehUF4Y7Hz8xZtxsdOWtuKB85PBVuD6xhrRGfpbrxmYIJY98rTK6hvn91HpMQ5G8rGQg8uHxmGaghhMGJ3OR7bG6BApi2nXM5Zy65G6IP8-SQ-UrQNfCG3ERIV6iqWlR69/s600/IMG2.png" /></a>
+</div>
+<div class="separator" style="clear: both;"><a
+    href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNYgjptpaP6lfsZGLtU3TA_YSAgnJ40yGSt6lqOTW-3HS9X3Y94m90mWUQtMQYVxbf8QhYT68w6zofKiB0vnSucGI7DkCGz4eVsX8XMll7oN3LpyuXGvwrKpmo4y_pPUJ1a5xEQK0HdCfhcsRxHTwJiTRwE6eLRVZoi5Tx05-BV4skwltYYKzlTTaaop9c/s626/IMG3.png"
+    style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+        data-original-height="225" data-original-width="626"
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNYgjptpaP6lfsZGLtU3TA_YSAgnJ40yGSt6lqOTW-3HS9X3Y94m90mWUQtMQYVxbf8QhYT68w6zofKiB0vnSucGI7DkCGz4eVsX8XMll7oN3LpyuXGvwrKpmo4y_pPUJ1a5xEQK0HdCfhcsRxHTwJiTRwE6eLRVZoi5Tx05-BV4skwltYYKzlTTaaop9c/s600/IMG3.png" /></a>
+</div>
+
+<h2>Practice Exercise</h2>
+
+Suppose that we have three coloured boxes r (red), b (blue), and g (green).
+
+Box r contains 3 apples, 4 oranges, and 3 limes, box b contains 1 apple, 1 orange, and 0 limes, and box g contains 3 apples, 3 oranges, and 4 limes. If a box is chosen at random with probabilities p(r) = 0.2, p(b) = 0.2, p(g) = 0.6, and a piece of fruit is removed from the box (with equal probability of selecting any of the items in the box), then what is the probability of selecting an apple? 
+If we observe that the selected fruit is in fact an orange, what is the probability that it came from the green box?
+
+<h2>Solution</h2>
+
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBEwWBb2O-5OPRwgy6DUjxc6CPg4nU2PJIXpUlI4hMgizBaRBdN1WH4JMfPcJRRUR27Lh-o2GYQHmprF3pB9CHbUAy9W7lv4IaacecWfy8-pSuvvhP13rNrcd4O30gkIA3vwQFlKc0opRLeoZBPhrE0Wr8X2m6tbwnrdpiLd-j5OzrmXkX1g8C96DylIDv/s977/sol1.jpeg" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" height="600" data-original-height="977" data-original-width="692" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBEwWBb2O-5OPRwgy6DUjxc6CPg4nU2PJIXpUlI4hMgizBaRBdN1WH4JMfPcJRRUR27Lh-o2GYQHmprF3pB9CHbUAy9W7lv4IaacecWfy8-pSuvvhP13rNrcd4O30gkIA3vwQFlKc0opRLeoZBPhrE0Wr8X2m6tbwnrdpiLd-j5OzrmXkX1g8C96DylIDv/s600/sol1.jpeg"/></a></div>
+
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi77kSKED0v3xAFuVYJpKMojqZVkakgn2FLcqwoqXrWhF9c0f5FocMz7a9cySR-C-hmWJo0XlXjKQrxRxt1VnVooF_DRjJkmlOrba2zaMTILwKxU_kYLvEeqZzCPKbfaIGChXvKrLW3wpa82-0sO9jVh8ZwOQS4NVLFMsX59CyI4WW_szuUCvjH0F16z3js/s686/sol2.jpeg" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600" data-original-height="638" data-original-width="686" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi77kSKED0v3xAFuVYJpKMojqZVkakgn2FLcqwoqXrWhF9c0f5FocMz7a9cySR-C-hmWJo0XlXjKQrxRxt1VnVooF_DRjJkmlOrba2zaMTILwKxU_kYLvEeqZzCPKbfaIGChXvKrLW3wpa82-0sO9jVh8ZwOQS4NVLFMsX59CyI4WW_szuUCvjH0F16z3js/s600/sol2.jpeg"/></a></div>
+
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjS0bKbEk1-6f8ACzdGCtr-t-BFaHBSK2lgfgvboZBMggezmDp_gL036DDrGj8ujIavx7LbPj1lSLsrTqv8HGG4kLO0pvB6i8tZtfbhTMjRIpmqDpNtvNstNBYmNj2PvGLtK0r-eEOzn_frpUk1fzGcuV__1UTOVWx9P8EnkNVKy97UtScxj3e_gCpURdR6/s931/sol3.jpeg" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" height="600" data-original-height="931" data-original-width="591" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjS0bKbEk1-6f8ACzdGCtr-t-BFaHBSK2lgfgvboZBMggezmDp_gL036DDrGj8ujIavx7LbPj1lSLsrTqv8HGG4kLO0pvB6i8tZtfbhTMjRIpmqDpNtvNstNBYmNj2PvGLtK0r-eEOzn_frpUk1fzGcuV__1UTOVWx9P8EnkNVKy97UtScxj3e_gCpURdR6/s600/sol3.jpeg"/></a></div>
+
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8OqnVMd_4jLU-KFwZDotoN7q4R-MPU1Aoy8Q1Pau4gHejD23CL2SxHOS3yYpJXh3B5d6W6V1oj8MOOep82LmnIZwb12olOMe8NE6eRAkU93Ntga50crlY8oa66GiFW-vaLASkyy4pAKYH0yY6EtNQ5iJ-5OyY4bLDyEnCbRC71TGsw9lpCwsR3plbqAN-/s792/sol4.jpeg" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" height="600" data-original-height="792" data-original-width="687" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8OqnVMd_4jLU-KFwZDotoN7q4R-MPU1Aoy8Q1Pau4gHejD23CL2SxHOS3yYpJXh3B5d6W6V1oj8MOOep82LmnIZwb12olOMe8NE6eRAkU93Ntga50crlY8oa66GiFW-vaLASkyy4pAKYH0yY6EtNQ5iJ-5OyY4bLDyEnCbRC71TGsw9lpCwsR3plbqAN-/s600/sol4.jpeg"/></a></div>
+
+Ref: <a href="https://chat.openai.com/share/5039a64a-e8ad-4801-8d92-954ca9e865d5" target="_blank">ChatGPT</a>
+</pre>
+

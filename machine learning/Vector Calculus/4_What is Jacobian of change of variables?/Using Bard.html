@@ -1,0 +1,71 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+    </style>
+</head>
+
+<pre><span>Question: What is Jacobian of change of variables?</span>
+
+<b>Answer:</b>
+
+In multivariable calculus, the Jacobian of a change of variables is a determinant that represents the local scaling factor of a transformation from one coordinate system to another. It's essential for evaluating multiple integrals after a change of variables.
+
+Here's a breakdown of key concepts:
+
+Change of Variables:
+
+    It involves switching from one set of variables (e.g., x and y) to a new set (e.g., u and v) to simplify a problem.
+    This often involves functions like x = g(u, v) and y = h(u, v).
+
+Jacobian Matrix:
+
+    A matrix containing the partial derivatives of the new variables with respect to the original ones: 
+| ∂x/∂u ∂x/∂v | 
+| ∂y/∂u ∂y/∂v |
+
+Jacobian Determinant:
+
+    The determinant of this matrix, denoted as J(u, v) or ∂(x, y)/∂(u, v).
+
+Role in Integrals:
+
+    When changing variables in a double integral, the Jacobian is used to adjust the area element: 
+    ∬f(x, y) dx dy = ∬f(g(u, v), h(u, v)) |J(u, v)| du dv
+    It ensures the integral's value remains consistent after the transformation.
+
+Geometric Interpretation:
+
+    The Jacobian's absolute value represents the factor by which a small area element in the u-v plane transforms into a corresponding area element in the x-y plane.
+
+Key Points:
+
+    The Jacobian is a 2x2 determinant for 2D transformations, 3x3 for 3D, and so on.
+    If the Jacobian is zero at a point, the transformation might distort or fold space, potentially leading to issues in integration.
+
+Example:
+
+    For polar coordinates (x = r cosθ, y = r sinθ), the Jacobian is r. This means a small square in the r-θ plane transforms into a corresponding sector in the x-y plane with area r times larger.
+
+</pre>
