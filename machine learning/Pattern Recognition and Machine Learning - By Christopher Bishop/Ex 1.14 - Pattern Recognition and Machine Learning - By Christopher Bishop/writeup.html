@@ -1,0 +1,119 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<a href="https://survival8.blogspot.com/2024/01/index-of-machine-learning.html#customMachineLearningByChristopherBishop" class="customLink" target="_blank">
+    Index of all exercises from the book "Pattern Recognition and Machine Learning"
+</a>
+<br>
+<pre>
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIUfMDKcs2Ns5ye82FONA-xguhyphenhyphenqZbmPXRk0ORUumB-5I7TpKoXykiq39KSNds_eHWWVeXuh5gUhzM8De_dqP-T6-ky9kj78l1Ijn_aL_lEgKzlWKyFC9d3MXzja2vQzFEZ8ZobaeZOmbD-zK1sb_75oslIGjG2rBeMZ4vVoW2wyRuT5fqflRNmukcDsgj/s609/problem.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600" data-original-height="367" data-original-width="609" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIUfMDKcs2Ns5ye82FONA-xguhyphenhyphenqZbmPXRk0ORUumB-5I7TpKoXykiq39KSNds_eHWWVeXuh5gUhzM8De_dqP-T6-ky9kj78l1Ijn_aL_lEgKzlWKyFC9d3MXzja2vQzFEZ8ZobaeZOmbD-zK1sb_75oslIGjG2rBeMZ4vVoW2wyRuT5fqflRNmukcDsgj/s600/problem.png"/></a></div>
+
+<h2>Can you show that an arbitrary square matrix can be written as a sum of a symmetric and anti-symmetric matrices?</h2>
+
+<div _ngcontent-ng-c3133301266="" class="markdown markdown-main-panel" dir="ltr" style="--animation-duration: 600ms; --fade-animation-function: linear; --first-token-animation-duration: 600ms;"><p data-sourcepos="1:1-1:179">Yes, absolutely! An arbitrary square matrix can indeed be written as the sum of a symmetric and an anti-symmetric matrix. This is known as the <strong>symmetric decomposition theorem</strong>.</p><p data-sourcepos="3:1-3:27">Here's how we can prove it:</p><p data-sourcepos="5:1-5:51">Let's denote the arbitrary square matrix as <strong>A</strong>.</p><p data-sourcepos="7:1-7:48">We can define two new matrices, <strong>P</strong> and <strong>Q</strong>:</p><ul data-sourcepos="9:1-11:0">
+<li data-sourcepos="9:1-9:45"><strong>P (symmetric matrix):</strong> P = (1/2)(A + Aᵀ)</li>
+<li data-sourcepos="10:1-11:0"><strong>Q (anti-symmetric matrix):</strong> Q = (1/2)(A - Aᵀ)</li>
+</ul><p data-sourcepos="12:1-12:5">Here:</p><ul data-sourcepos="14:1-15:0">
+<li data-sourcepos="14:1-15:0">Aᵀ  represents the transpose of matrix A (where rows and columns are swapped).</li>
+</ul><p data-sourcepos="16:1-16:38"><strong>Explanation for P being symmetric:</strong></p><ul data-sourcepos="18:1-22:0">
+<li data-sourcepos="18:1-18:185">(A + Aᵀ) will have all diagonal elements doubled because when a matrix is added to its transpose, the diagonal elements become the sum of their corresponding values in both matrices.</li>
+<li data-sourcepos="19:1-19:62">Dividing by 2 ensures we get the original diagonal elements.</li>
+<li data-sourcepos="20:1-20:113">Since adding the transpose doesn't change the elements above or below the diagonal, they remain the same in P.</li>
+<li data-sourcepos="21:1-22:0">As the elements above the diagonal are mirrored below the diagonal in a symmetric matrix, P is also symmetric.</li>
+</ul><p data-sourcepos="23:1-23:43"><strong>Explanation for Q being anti-symmetric:</strong></p><ul data-sourcepos="25:1-29:0">
+<li data-sourcepos="25:1-25:102">Subtracting the transpose flips the signs of all elements above and below the diagonal in (A - Aᵀ).</li>
+<li data-sourcepos="26:1-26:60">Dividing by 2 ensures the absolute values remain the same.</li>
+<li data-sourcepos="27:1-27:98">The diagonal elements become zero because subtracting a term from itself always results in zero.</li>
+<li data-sourcepos="28:1-29:0">Therefore, Q will have all elements above (or below) the diagonal with opposite signs, making it anti-symmetric.</li>
+</ul><p data-sourcepos="30:1-30:22"><strong>Verifying the sum:</strong></p><p data-sourcepos="32:1-32:59">Now, let's see if A can be expressed as the sum of P and Q:</p><p data-sourcepos="34:1-34:33">A = (1/2)(A + Aᵀ) + (1/2)(A - Aᵀ)</p><p data-sourcepos="36:1-36:56">Since matrix addition is distributive, we can rearrange:</p><p data-sourcepos="38:1-38:43">A = 1/2 * A + 1/2 * Aᵀ - 1/2 * Aᵀ + 1/2 * A</p><p data-sourcepos="40:1-40:21">Combining like terms:</p><p data-sourcepos="42:1-42:5">A = A</p><p data-sourcepos="44:1-44:152">Therefore, we have successfully shown that the original matrix A can be expressed as the sum of a symmetric matrix (P) and an anti-symmetric matrix (Q).</p><p data-sourcepos="46:1-46:19"><strong>Important Note:</strong></p><p data-sourcepos="48:1-48:145">This decomposition is unique, meaning there is only one way to express a specific matrix as the sum of a symmetric and an anti-symmetric matrix.</p></div>
+
+<h3>Example</h3>
+
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhywMkWe_2866QvD0CBJlv9Zf_DZYenWXmJTj2Us7IiW_mho7hz_QP9EKXE-vNB1Ii8toqq_pYAfFxfImHLYCaKifg0-uRninOUQbOiQB8RHKVGKx1paj7J-oA-omcSpJKZ0qF2fciN7XY5MtcrYMi9hU_hPfLMXd8KClC1WxU0D_5E2MbVyxOd3dr7Jxkf/s1016/1.jpeg" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" height="600" data-original-height="1016" data-original-width="672" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhywMkWe_2866QvD0CBJlv9Zf_DZYenWXmJTj2Us7IiW_mho7hz_QP9EKXE-vNB1Ii8toqq_pYAfFxfImHLYCaKifg0-uRninOUQbOiQB8RHKVGKx1paj7J-oA-omcSpJKZ0qF2fciN7XY5MtcrYMi9hU_hPfLMXd8KClC1WxU0D_5E2MbVyxOd3dr7Jxkf/s600/1.jpeg"/></a></div>
+
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJskxOAOcQdad635a3CcrbOU6xpdzOyNqwRtUQVaNUek5F9w1yL1sE4gkZVEuMFC5cxrjYBKcivJIc03X_TqO4DG2t0Jc4Z5TF8dL7ZMEMx3L-RhYQLte-UZg_aMWLf3p07t9h6oq1iQrZAZQZoQY05zbtfhOtuW-oHoG92JCTOJxRW5gGiYoo-gBnQgNI/s949/2.jpeg" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" height="600" data-original-height="949" data-original-width="686" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJskxOAOcQdad635a3CcrbOU6xpdzOyNqwRtUQVaNUek5F9w1yL1sE4gkZVEuMFC5cxrjYBKcivJIc03X_TqO4DG2t0Jc4Z5TF8dL7ZMEMx3L-RhYQLte-UZg_aMWLf3p07t9h6oq1iQrZAZQZoQY05zbtfhOtuW-oHoG92JCTOJxRW5gGiYoo-gBnQgNI/s600/2.jpeg"/></a></div>
+
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjn3tiXllOtffSXf_k1XZUc-IsdlrQ0_6hG1huaztp-d_tw6c2_fvEoaGgjq9SPIt81hqym2J0wAwtk0CKMX4s8PBnFZgyX_BbQVoIWrHyapAnBCtWdenkIxBAnzDgUe5pY6B4uRggHqqLyrLHRcR27uPNbvNNrrHFBpD0RnULiJ8v1-D8p_4X-qtCHThz/s625/3.jpeg" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600" data-original-height="469" data-original-width="625" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjn3tiXllOtffSXf_k1XZUc-IsdlrQ0_6hG1huaztp-d_tw6c2_fvEoaGgjq9SPIt81hqym2J0wAwtk0CKMX4s8PBnFZgyX_BbQVoIWrHyapAnBCtWdenkIxBAnzDgUe5pY6B4uRggHqqLyrLHRcR27uPNbvNNrrHFBpD0RnULiJ8v1-D8p_4X-qtCHThz/s600/3.jpeg"/></a></div>
+
+<h2>Now consider the second order term in a higher order polynomial in D dimensions. Show that the contribution from the anti-symmetric matrix vanishes.</h2>
+
+<div _ngcontent-ng-c3133301266="" class="markdown markdown-main-panel" dir="ltr" style="--animation-duration: 600ms; --fade-animation-function: linear; --first-token-animation-duration: 600ms;"><p data-sourcepos="1:1-1:50">Absolutely, here's the mathematical demonstration:</p><p data-sourcepos="3:1-3:32"><strong>1. Setting Up the Framework:</strong></p><p data-sourcepos="5:1-5:13">Let's denote:</p><ul data-sourcepos="7:1-12:0">
+<li data-sourcepos="7:1-7:61"><strong>D:</strong> Number of dimensions in the higher-order polynomial.</li>
+<li data-sourcepos="8:1-8:92"><strong>x:</strong> A D-dimensional vector representing a point in that space (x = [x₁, x₂, ..., x_D]).</li>
+<li data-sourcepos="9:1-9:50"><strong>A:</strong> An arbitrary square matrix of size D x D.</li>
+<li data-sourcepos="10:1-10:45"><strong>P (symmetric matrix):</strong> P = (1/2)(A + Aᵀ)</li>
+<li data-sourcepos="11:1-12:0"><strong>Q (anti-symmetric matrix):</strong> Q = (1/2)(A - Aᵀ)</li>
+</ul><p data-sourcepos="13:1-13:25"><strong>2. Second-Order Term:</strong></p><p data-sourcepos="15:1-15:346">We're interested in the second-order term of a higher-order polynomial. This term can be represented by all possible products of two variables from the D-dimensional vector x raised to the power of one each. Mathematically, for any two dimensions i and j (1 &lt;= i, j &lt;= D), the second-order term involving these dimensions can be written as:</p><p data-sourcepos="17:1-17:13"><strong>x_i * x_j</strong></p><p data-sourcepos="19:1-19:51"><strong>3. Contribution from Anti-Symmetric Matrix (Q):</strong></p><p data-sourcepos="21:1-21:130">We need to show this term (x_i * x_j) doesn't contribute to the part of the matrix arising from the anti-symmetric component (Q).</p><p data-sourcepos="23:1-23:176">Remember, elements in Q come from the difference of corresponding terms in A and its transpose (Aᵀ). Let's analyze the product of two arbitrary elements (a_ij and a_ji) from A:</p><ul data-sourcepos="25:1-28:0">
+<li data-sourcepos="25:1-26:0">
+<p data-sourcepos="25:3-25:245"><strong>Diagonal Elements (i = j):</strong> In this case, a_ij and a_ji represent the same element on the diagonal of A. Since diagonals remain unchanged during transposition (Aᵀ = A for diagonal elements), their difference (a_ij - a_ji) in Q becomes zero.</p>
+</li>
+<li data-sourcepos="27:1-28:0">
+<p data-sourcepos="27:3-27:184"><strong>Off-Diagonal Elements (i ≠ j):</strong> Here, a_ij represents the element in row i and column j of A, and a_ji represents the element in row j and column i. Their difference in Q will be:</p>
+</li>
+</ul><p data-sourcepos="29:1-29:13">(a_ij - a_ji)</p><p data-sourcepos="31:1-31:116">This difference captures the asymmetry between the values at positions (i, j) and (j, i) in the original matrix (A).</p><p data-sourcepos="33:1-33:37"><strong>4. Relating to Second-Order Term:</strong></p><p data-sourcepos="35:1-35:176">Now, let's see how this relates to the second-order term (x_i * x_j). We only care about the contribution of Q to the element at position (i, j) or (j, i) in the final matrix.</p><ul data-sourcepos="37:1-40:0">
+<li data-sourcepos="37:1-38:0">
+<p data-sourcepos="37:3-37:181">If i = j (diagonal element): As shown earlier, the difference in Q for diagonal elements is zero. Therefore, Q doesn't contribute to the second-order term on the diagonal (x_i^2).</p>
+</li>
+<li data-sourcepos="39:1-40:0">
+<p data-sourcepos="39:3-39:288">If i ≠ j (off-diagonal element): The difference in Q captures the asymmetry between (i, j) and (j, i) in A. However, the second-order term (x_i * x_j) only considers the product of variables in specific dimensions (i and j) and doesn't inherently care about the order (i, j) or (j, i).</p>
+</li>
+</ul><p data-sourcepos="41:1-41:15"><strong>Conclusion:</strong></p><p data-sourcepos="43:1-43:314">In both cases, the contribution from the anti-symmetric component (Q) to the second-order term in the matrix is zero. This demonstrates that when considering the second-order terms of a higher-order polynomial in D dimensions and performing the symmetric decomposition, the anti-symmetric matrix (Q) has no effect.</p></div>
+
+<h2>Show that the number of independent parameters in the matrix is given by D(D + 1)/2</h2>
+
+<div _ngcontent-ng-c3133301266="" class="markdown markdown-main-panel" dir="ltr" style="--animation-duration: 600ms; --fade-animation-function: linear; --first-token-animation-duration: 600ms;"><p data-sourcepos="1:1-1:208">Absolutely, here's why the number of independent parameters in a matrix wij (where w represents an arbitrary element and i, j represent indices for rows and columns) of dimension D x D is given by D(D + 1)/2:</p><p data-sourcepos="3:1-3:28"><strong>1. Considering Symmetry:</strong></p><p data-sourcepos="5:1-5:143">The key concept here is <strong>symmetry</strong>. We can analyze the matrix based on whether it's symmetric (w_ij = w_ji) or anti-symmetric (w_ij = -w_ji).</p><ul data-sourcepos="7:1-10:0">
+<li data-sourcepos="7:1-8:0">
+<p data-sourcepos="7:3-7:211"><strong>Symmetric Matrix:</strong> If the matrix is symmetric, then w_ij = w_ji for all i and j. This means the upper triangular part of the matrix (excluding the diagonal) is a mirror image of the lower triangular part.</p>
+</li>
+<li data-sourcepos="9:1-10:0">
+<p data-sourcepos="9:3-9:303"><strong>Anti-Symmetric Matrix:</strong> If the matrix is anti-symmetric, then w_ij = -w_ji for all i and j. In this case, the upper triangular part (excluding the diagonal) has elements with opposite signs compared to the corresponding elements in the lower triangular part, and the diagonal elements are all zero.</p>
+</li>
+</ul><p data-sourcepos="11:1-11:30"><strong>2. Independent Parameters:</strong></p><p data-sourcepos="13:1-13:154">We're interested in the number of independent parameters, which refers to the minimum number of values we need to specify to completely define the matrix.</p><ul data-sourcepos="15:1-16:0">
+<li data-sourcepos="15:1-16:0"><strong>Symmetric Matrix:</strong> For a symmetric matrix, we only need to specify the unique elements. These include the diagonal elements (D of them) and the elements in the upper triangular part (excluding the diagonal). The upper triangular part has D rows, and for each row, we need to specify D - (row index) elements (since the rest are mirrored from the lower triangle). So, the total number of unique elements for the upper triangle is:</li>
+</ul><p data-sourcepos="17:1-17:44">D + (D - 1) + (D - 2) + ... + 1 = D(D + 1)/2</p><p data-sourcepos="19:1-19:134">Therefore, in a symmetric matrix wij, the number of independent parameters is D (diagonal) + D(D - 1)/2 (upper triangle) = D(D + 1)/2.</p><ul data-sourcepos="21:1-22:0">
+<li data-sourcepos="21:1-22:0"><strong>Anti-Symmetric Matrix:</strong>  For an anti-symmetric matrix, we only need to specify the elements in the upper triangular part (excluding the diagonal), as the lower triangle elements are negative counterparts of the upper triangle and the diagonal elements are zero. Similar to the symmetric case, the number of independent parameters in the upper triangle is D(D + 1)/2.</li>
+</ul><p data-sourcepos="23:1-23:39"><strong>3. General Case (Arbitrary Matrix):</strong></p><p data-sourcepos="25:1-25:492">An arbitrary matrix wij can be decomposed into a symmetric component (by adding the matrix and its transpose and dividing by 2) and an anti-symmetric component (by subtracting the matrix and its transpose and dividing by 2). As shown above, both the symmetric and anti-symmetric parts have D(D + 1)/2 independent parameters. Since any arbitrary matrix can be represented by the sum of these components, the total number of independent parameters in the original matrix wij is also D(D + 1)/2.</p><p data-sourcepos="27:1-27:294"><strong>In conclusion,</strong> irrespective of whether the matrix is symmetric, anti-symmetric, or neither, the number of independent parameters required to define a D x D matrix is D(D + 1)/2. This considers the interplay between diagonal elements and the unique elements in the upper triangular part.</p></div>
+</pre>
