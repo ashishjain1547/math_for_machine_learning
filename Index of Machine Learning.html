@@ -1,0 +1,1351 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: "https://raw.githubusercontent.com/ashishjain1547/pubLessonsInTechnology/main/links_to_tech_clubs.json",
+                success: function (result) {
+                    let grouplink = JSON.parse(result)['Beta Tech Club'];
+                    $("#customWhatsAppGroupLinkWrapper").html(
+                        `
+                            <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                                <span>Join us on:</span>
+                                <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                                </a>
+                            </h2>
+                            `
+                    );
+                }
+            });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+        }
+    </style>
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        i.ibb {
+            display: block;
+            background-color: black;
+            color: white;
+        }
+
+        i.ibg {
+            display: block;
+            background-color: rgb(50, 50, 50);
+            color: white;
+        }
+
+
+        ul.no-bullets {
+            list-style-type: none;
+            /* Remove bullets */
+            padding: 0;
+            /* Remove padding */
+            margin: 0;
+            /* Remove margins */
+        }
+
+        ol.customOl li a {
+            display: block;
+            padding: 5px 0px;
+        }
+
+        li.customLi {
+            float: left;
+        }
+
+        li.customLi>span.customSpan {
+            display: block;
+            padding: 8px;
+            background-color: #dddddd;
+        }
+
+        .customOl {
+            font-size: 15px;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        .arrow {
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+
+        .right {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+
+        .left {
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+        }
+
+        .up {
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+        }
+
+        .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<span class="customLink toggleBtn">Toggle All Sections</span>
+
+<div class="separator" style="clear: both;"><a
+        href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVlG2hoGgr949QdcXqNuLG-UlKcMrHcQcUjdpAb1gZOeBspkGZ3fUoEtTPWlNLVxeCEID8iKuREeT7pQxwc-bfTMTAVNrMwZZ8SV823t0jEXJDKXoWvAc8qu2GecW62u9lmKUNAjlpsMevYERNPuIcxsRg3VlsztmcnNkRazLH5IveWWxwlPX1nGbDXblm/s617/machine%20learning%20cover.jpg"
+        style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+            data-original-height="310" data-original-width="617"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVlG2hoGgr949QdcXqNuLG-UlKcMrHcQcUjdpAb1gZOeBspkGZ3fUoEtTPWlNLVxeCEID8iKuREeT7pQxwc-bfTMTAVNrMwZZ8SV823t0jEXJDKXoWvAc8qu2GecW62u9lmKUNAjlpsMevYERNPuIcxsRg3VlsztmcnNkRazLH5IveWWxwlPX1nGbDXblm/s600/machine%20learning%20cover.jpg" /></a>
+</div>
+
+<h2>THEORY</h2>
+
+<h3 class="customLogisticRegressionHeader"><span class="arrow up"></span> Logistic Regression</h3>
+<div id="customLogisticRegression">
+    <ol class="customOl">
+        <li>
+            <a href="https://survival8.blogspot.com/2024/07/logistic-regression-equation.html" target="_blank">
+                Logistic Regression Equation
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2024/07/logistic-regression-is-binary.html" target="_blank">
+                Logistic Regression is a binary classification algorithm</a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2024/07/practice-problems-on-logistic-regression.html"
+                target="_blank">
+                Practice problems on Logistic Regression for interview preparation
+            </a>
+        </li>
+    </ol>
+</div>
+
+<br>
+<h3 class="customIntegrationHeader"><span class="arrow up"></span> Integration</h3>
+<div id="customIntegration">
+    <ol class="customOl">
+        <li>
+            <a href="https://survival8.blogspot.com/2024/01/what-happens-when-we-reverse-limits-of.html"
+                target="_blank">
+                What happens when we reverse the limits of a definite integral?
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2024/01/can-you-give-example-of-odd-integrand.html" target="_blank">
+                Can you give the example of an odd integrand and prove that it is odd?
+            </a>
+        </li>
+
+        <li>
+            <a href="https://math-eight.blogspot.com/2024/01/what-is-differentiation-and-integration.html"
+                target="_blank">
+                What is the differentiation and integration of f(x)=1 wrt dx
+            </a>
+        </li>
+
+        <li>
+            <a href="https://math-eight.blogspot.com/2024/01/show-step-by-step-integration-of-exp-x.html"
+                target="_blank">
+                Show step by step integration of exp(-x by a)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://math-eight.blogspot.com/2024/01/change-in-limits-when-chaning-from.html" target="_blank">
+                Change in limits of integration when changing from cartesian to polar coordinates
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2024/01/gaussian-integral-integrate-exp-x2-from.html"
+                target="_blank">
+                Gaussian Integral: Integrate exp(-x^2) from -infinite to +infinite
+            </a>
+        </li>
+    </ol>
+</div>
+
+<h3 class="customVectorCalculusHeader"><span class="arrow up"></span> Vector Calculus</h3>
+<div id="customVectorCalculus">
+    <ol class="customOl">
+        <li>
+            <a href="https://math-eight.blogspot.com/2023/12/y-wx-where-w-and-x-are-vectors-what-is.html"
+                target="_blank">
+                y = w.x Where w and x are vectors. What is the derivative of y wrt w?
+            </a>
+        </li>
+
+        <li>
+            <a href="https://math-eight.blogspot.com/2023/12/x-is-vector-and-y-euclideannormx-what.html"
+                target="_blank">
+                x is a vector and y = euclidean_norm(x). What is the derivative of y wrt x?
+            </a>
+        </li>
+
+        <li>
+            <a href="https://math-eight.blogspot.com/2023/12/y-normx2-what-is-derivative-of-y-wrt-x.html"
+                target="_blank">
+                y = (norm(x))^2. What is the derivative of y wrt x?
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2024/01/can-you-show-derivative-x-transposex.html" target="_blank">
+                Can you show the derivative X-transpose.X wrt x?
+            </a>
+        </li>
+
+        <li>
+            <a href="https://math-eight.blogspot.com/2023/12/what-is-jacobian-of-change-of-variables.html"
+                target="_blank">
+                What is Jacobian of change of variables?
+            </a>
+        </li>
+
+
+        <li>
+            <a href="https://math-eight.blogspot.com/2024/01/derive-jacobian-when-we-are-changing.html" target="_blank">
+                Derive Jacobian when we are changing from 2D cartesian coordinates to polar coordinates.
+            </a>
+        </li>
+
+
+        <li>
+            <a href="https://math-eight.blogspot.com/2024/01/derive-generalized-gaussian-integral.html" target="_blank">
+                Derive generalized Gaussian Integral from the Special Case of Gaussian Integral for Mu = 0 and Sigma =
+                1-by-sqrt(2)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://math-eight.blogspot.com/2024/01/solving-2d-gaussian-integral-wrt-x-and.html"
+                target="_blank">
+                Solving 2D Gaussian Integral w.r.t x and y and also w.r.t polar coordinates
+            </a>
+        </li>
+
+    </ol>
+</div>
+
+<h3 class="customMachineLearningByChristopherBishopHeader"><span class="arrow up"></span> Exercises from the book
+    "Pattern Recognition and Machine Learning" by Christopher Bishop</h3>
+<div id="customMachineLearningByChristopherBishop">
+    <ol class="customOl">
+        <li>
+            <a href="https://survival8.blogspot.com/2024/01/exercise-11-from-pattern-recognition.html" target="_blank">
+                Exercise 1.1 On Linear Equations for Regression - From Pattern Recognition and ML - By Christopher
+                Bishop
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2024/01/exercise-12-pattern-recognition-and-ml.html"
+                target="_blank">
+                Exercise 1.2 On Regularization in Linear Regression - Pattern Recognition and ML - By Christopher Bishop
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2024/01/exercise-13-on-sum-rule-and-product.html" target="_blank">
+                Exercise 1.3 on 'sum rule and product rule of probability' (From the book Pattern Recognition and ML by
+                Christopher Bishop)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2024/01/exercise-14-pattern-recognition-and-ml.html"
+                target="_blank">
+                Exercise 1.4 On Probability Densities - Pattern Recognition and ML - By Christopher Bishop
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2024/01/exercise-15-pattern-recognition-and-ml.html"
+                target="_blank">
+                Exercise 1.5 On Concept of Variance From Statistics - Pattern Recognition and ML - By Christopher Bishop
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2024/01/exercise-16-pattern-recognition-and-ml.html"
+                target="_blank">
+                Exercise 1.6 On Covariance - Pattern Recognition and ML - By Christopher Bishop
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2024/01/exercise-17-pattern-recognition-and-ml.html"
+                target="_blank">
+                Exercise 1.7 - Identifying normalization constant for Gaussian Distribution and Proving that it's
+                integral equals 1 - From Pattern Recognition and ML - By Christopher Bishop
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2024/01/ex-18-show-that-mean-value-of-gaussian.html"
+                target="_blank">
+                Ex 1.8 - Show that the mean value of Gaussian distribution is µ. (Pattern Recognition and ML by
+                Christopher Bishop)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2024/01/ex-19b-show-that-mode-of-multivariate.html" target="_blank">
+                Ex 1.9 - Show that the mode of the multivariate Gaussian is given by µ. (Pattern Recognition and ML by
+                Christopher Bishop)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2024/01/ex-110-on-mean-and-variance-of-two.html" target="_blank">
+                Ex 1.10 - On mean and variance of two variables (Pattern Recognition and ML by Christopher Bishop)
+            </a>
+        </li>
+
+        <li>
+            <ul>
+                <li>
+                    <a href="https://survival8.blogspot.com/2024/02/question-from-ex-111-on-gaussian.html"
+                        target="_blank">
+                        Question 1.11 - On Gaussian Distribution and it's Log Likelihood (Pattern Recognition and ML by
+                        Christopher Bishop)
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://survival8.blogspot.com/2024/02/solution-111-on-gaussian-distribution.html"
+                        target="_blank">
+                        Solution 1.11
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2024/02/ex-112-pattern-recognition-and-ml-by.html" target="_blank">
+                Ex 1.12 - Pattern Recognition and ML by Christopher Bishop
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2024/05/ex-113-pattern-recognition-and-ml-by.html" target="_blank">
+                Ex 1.13 - Pattern Recognition and Machine Learning - By Christopher Bishop
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2024/05/ex-114-pattern-recognition-and-machine.html"
+                target="_blank">
+                Ex 1.14 - Pattern Recognition and Machine Learning - By Christopher Bishop
+            </a>
+        </li>
+    </ol>
+</div>
+
+<h3 class="customStatisticsHeader"><span class="arrow up"></span> Statistics</h3>
+<div id="customStatistics">
+    <ol class="customOl">
+        <li>
+            <a href="https://math-eight.blogspot.com/2023/12/if-x-and-y-are-two-random-variables.html" target="_blank">
+                If x and y are two random variables, what is E[xy]?
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2024/04/from-simple-mean-to-exponential.html" target="_blank">
+                From Simple Mean to Exponential Weighting: Unveiling the EMA (Exponential Moving Average)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://math-eight.blogspot.com/2024/01/unit-test-5-exploring-bivariate.html" target="_blank">
+                Unit Test 5 - Exploring bivariate numerical data (From Khan Academy)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://math-eight.blogspot.com/2023/12/unit-11-confidence-intervals-statistics.html"
+                target="_blank">
+                Unit 11 - Confidence intervals (Statistics)
+            </a>
+        </li>
+
+        <li>
+            Significance tests (hypothesis testing)
+            <ul>
+                <li>
+                    <a href="https://survival8.blogspot.com/2024/01/unit-12-hypothesis-testing-ch-1-idea-of.html"
+                        target="_blank">
+                        Lesson 12.1: The idea of significance tests (Statistics)
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://survival8.blogspot.com/2024/01/statistics-unit-12-significance-tests.html"
+                        target="_blank">
+                        Lesson 12.2: Error probabilities and power
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ol>
+</div>
+
+<br>
+<h2>PRACTICALS</h2>
+<br>
+
+<div id="customMachineLearning">
+    <h4>ML1: Category Encoding</h4>
+    <ol>
+        <li>
+            <a href="https://survival8.blogspot.com/2022/10/installing-category-encoders-using-pip.html"
+                target="_blank">
+                Installing 'Category Encoders' Python Package Using Pip And Conda
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/p/category-encoders-analysis-in-python.html" target="_blank">
+                Category Encoders Analysis (in Python)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/10/one-hot-encoding-using-pandas.html" target="_blank">
+                One Hot Encoding Using Pandas' get_dummies() Method on Titanic Dataset
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/10/do-we-need-all-one-hot-features.html" target="_blank">
+                Do we need all the one hot features?
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2020/07/one-hot-encoding-from-pyspark-pandas.html" target="_blank">
+                One Hot Encoding from PySpark, Pandas, Category Encoders and skLearn
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/p/comparing-stringindexer-pyspark.html" target="_blank">
+                Comparing StringIndexer (PySpark), LabelEncoder (skLearn), OrdinalEncoder (skLearn), OrdinalEncoder
+                (category_encoders) <i>[Tags: Machine Learning, Spark]</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/p/effect-of-pysparks-stringindexer-on.html" target="_blank">
+                Effect of PySpark's StringIndexer on clustering of data <i>[Tags: Machine Learning, Spark]</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2021/11/two-ways-to-get-frequency-based-order.html" class=""
+                target="_blank">
+                Two ways to get Frequency Based Order of Categorical Data (Python)
+            </a>
+        </li>
+    </ol> <!-- Category Encoding Ends -->
+
+    <h4>ML2: Data Preprocessing</h4>
+    <ol>
+        <li>
+            <a href="https://survival8.blogspot.com/2023/05/binning-of-column-or-1d-numerical-data.html"
+                target="_blank">
+                Binning (of a column or 1D Numerical Data)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/p/feature-scaling-in-machine-learning.html" target="_blank">
+                Feature Scaling in Machine Learning (when to use which among MinMaxScaler and StandardScaler)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/04/similarity-and-dissimilarity-in-data.html" target="_blank">
+                Similarity and Dissimilarity for Numerical (interval-scaled) variables, Asymmetric binary variables,
+                Categorical variables, For text
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/p/correlation-between-continuous-numeric.html" target="_blank">
+                Correlation between continuous-numeric columns, and between categorical columns
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2020/06/importance-of-posing-right-question-for.html"
+                target="_blank">
+                Importance of posing right question for machine learning, data analysis and data preprocessing <i>[Tags:
+                    Machine Learning, Spark]</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2020/06/working-with-sklearns-minmax-scaler-and.html"
+                target="_blank">
+                Working with skLearn's MinMax scaler and defining our own
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/p/data-preprocessing-using-python-package.html" target="_blank">
+                Data Preprocessing Using Python package Pandas (Use case: Creating a Nifty50 SIP Simulator)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/p/loading-data-from-pandas-to-postgresql.html" target="_blank">
+                Loading data from Pandas to PostgreSQL <i>[Tags: Databases, Machine Learning]</i></a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/p/exploring-sklearns-countvectorizer.html" target="_blank">
+                Exploring skLearn's CountVectorizer </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2020/08/using-snorkel-to-create-test-data-and.html" target="_blank">
+                Using Snorkel to create test data and classifying using Scikit-Learn
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/pandas-dataframe-filtering-using-eval.html" target="_blank">
+                Pandas DataFrame Filtering Using eval()
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/three-types-of-input-data-format-for.html" target="_blank">
+                Three Types of Input Data Format For Apriori Algorithm (Association Analysis)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/05/bagging-in-overcoming-variance-of.html" target="_blank">
+                Bagging in overcoming variance of a classifier, clustering algorithm or regressor
+            </a>
+        </li>
+    </ol> <!-- Data Preprocessing Ends -->
+
+    <h4>ML3: Data visualization</h4>
+    <h4>ML3.1: Misc</h4>
+    <ol>
+        <li>
+            <a href="https://survival8.blogspot.com/2020/10/data-visualizations-basic-theory.html" target="_blank">
+                Data Visualization's Basic Theory
+            </a>
+        </li>
+
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/04/box-plot-anomaly-detection-in-1d.html" target="_blank">
+                Box Plot and Anomaly Detection in 1D <i>[Tags: Data Visualization, Anomaly Detection]</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/10/social-analysis-soan-using-python-3.html" target="_blank">
+                Social Analysis (SOAN using Python 3) Report <i>[Tags: Data Visualization, NLP]</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/p/plotting-correlation-matrix-in-three.html" target="_blank">
+                Plotting Correlation Matrix in Three Ways Using Pandas, Matplotlib and Seaborn
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/p/creating-heatmap-from-pandas-dataframe.html" target="_blank">
+                Creating Heatmap from Pandas DataFrame correlation matrix
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2020/09/binomial-probability-distribution.html" target="_blank">
+                Binomial Probability Distribution (visualization using Seaborn) <i>[Tags: Machine Learning, NumPy]</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2020/10/google-analytics-for-beginners.html" target="_blank">
+                Google Analytics for Beginners (Assessments Dump, Oct 2020)
+            </a>
+        </li>
+
+        <li>
+            <a class="" href="https://survival8.blogspot.com/2021/06/audience-around-world-jun-2021.html"
+                target="_blank">
+                survival8 Audience Around The World (Jun 2021)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/06/creating-taxonomy-for-bbc-news-articles_29.html" class=""
+                target="_blank">
+                Topic modeling using Latent Dirichlet Allocation from sklearn and visualization using pyLDAvis
+                <br>
+                <i>[Tags: Data Visualization, Natural Language Processing]</i>
+            </a>
+        </li>
+    </ol>
+
+    <h4>ML3.2: Using PowerBI</h4>
+    <ol>
+        <li>
+            <a href="https://survival8.blogspot.com/2020/10/powerbis-html-content-visualization.html" target="_blank">
+                PowerBI's HTML Content Visualization <i>[Tags: Data Visualization, PowerBI]</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2020/10/sorting-html-content-visual-in-powerbi.html"
+                target="_blank">
+                Sorting an 'HTML Content' Visual in PowerBI <i>[Tags: Data Visualization, PowerBI]</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2020/10/concatenate-two-tables-using-r-in.html" target="_blank">
+                Concatenate Two Tables using R in PowerBI <i>[Tags: Data Visualization, PowerBI, R Language]</i>
+            </a>
+        </li>
+
+        <li class="">
+            <a href="https://survival8.blogspot.com/2020/11/timeline-view-using-html-content-visual.html"
+                target="_blank">
+                Timeline View Using HTML Content Visual in PowerBI <i>[Tags: Data Visualization, PowerBI, Python]</i>
+            </a>
+        </li>
+    </ol>
+
+    <h4>ML3.3: Line Chart</h4>
+
+    <ol>
+        <li>
+            <a href="https://survival8.blogspot.com/2022/06/creating-and-editing-line-chart-in.html" target="_blank">
+                Creating and Editing Line Chart in LibreOffice Calc <i>[Tags: Data Visualization, FOSS]</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/09/line-plot-with-multiple-lines-for-page.html"
+                target="_blank">
+                Line plot with multiple lines for page views for survival8 (Sep 2022)
+            </a>
+        </li>
+    </ol>
+
+    <h4>ML3.4: Pie Plot</h4>
+    <ol>
+        <li>
+            <a href="https://survival8.blogspot.com/2022/11/stratified-sampling-and-fixed-size.html" target="_blank">
+                Stratified sampling and fixed size sampling plus visualization using pie plot (Nov 2022)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2020/07/plotting-changes-in-nifty50s-top-5.html" target="_blank">
+                Plotting changes in Nifty50's top-5 sectors after last three market crashes Using Pie Plot, Bar Chart
+                and Grouped Bar Chart
+            </a>
+        </li>
+    </ol>
+
+    <h4>ML3.5: Choropleth and Cartography</h4>
+    <pre>Choropleth: A choropleth map is a type of statistical thematic map that uses pseudocolor, i.e., color corresponding with an aggregate summary of a geographic characteristic within spatial enumeration units, such as population density or per-capita income. <br>Cartography: the science or practice of drawing maps.</pre>
+    <br>
+    <ol>
+        <li>
+            <a href="https://survival8.blogspot.com/2020/10/drawing-world-heat-map-using-cartopy.html" target="_blank">
+                Drawing a world heat map using 'cartopy'
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/05/ownership-of-bicycle-2-wheeler-and-car.html"
+                target="_blank">
+                Ownership of Bicycle, 2-wheeler and car in India by percentages (2022)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/11/global-footprint-of-survival8-nov-2022.html"
+                target="_blank">
+                Global Footprint of Survival8 (Nov 2022)
+            </a>
+        </li>
+    </ol>
+
+    <h4>ML3.6: Histogram</h4>
+    <ol>
+        <li>
+            <a href="https://survival8.blogspot.com/2020/08/differences-between-bar-graph-and.html">
+                Differences between 'bar graph' and histogram
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/11/histogram-report-and-binning-on-sales.html" target="_blank">
+                Histogram report and binning on Sales data
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2020/06/an-exercise-in-visualization-plotting.html" target="_blank">
+                An exercise in visualization (plotting line plot and multicolored histogram with -ve and +ve values)
+                using Pandas and Matplotlib
+            </a>
+        </li>
+    </ol>
+    <!-- Data Visualization Ends -->
+
+    <h4>ML4: Outlier Detection / Anomaly Detection </h4>
+    <ol>
+        <li>
+            <a href="https://survival8.blogspot.com/2022/04/box-plot-anomaly-detection-in-1d.html" target="_blank">
+                Box Plot and Anomaly Detection in 1D <i>[Tags: Data Visualization, Anomaly Detection]</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://drive.google.com/open?id=1VKfUWMMpGArHPWpqlWotNTSWs0ZNhCvc" target="_blank">
+                DCSO: Dynamic Combination of Detector Scores for Outlier Ensembles (Research paper, 2018)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/p/unsupervised-outlier-detection-using.html" target="_blank">
+                Unsupervised Outlier Detection Using PyOD
+            </a>
+        </li>
+
+        <li>
+            <a href="https://drive.google.com/open?id=1iA-1tJuQMma8dMtWotMT6ejA44dHcXlY" target="_blank">
+                Isolation based anomaly detection using iForest (2133360.2133363 / Research Paper)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://drive.google.com/open?id=1lWnJPkjpMYws82MeT944rQ2B7JEULZ7G" target="_blank">
+                Density-based algorithm for anomaly detection (Adeel Hashmi / Research Paper)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/p/isolation-forest-implementation-using.html" target="_blank">
+                Isolation Forest Implementation using skLearn, PyOD, and spark-iForest
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2020/07/anomaly-detection-using-scikit-learn.html">
+                Anomaly Detection using Scikit-Learn and "eif" PyPI package (for Extended Isolation Forest)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2020/07/distributed-deep-learning-using-python.html">
+                Distributed Deep Learning Using Python Packages Elephas, Keras, Tensorflow and PySpark <i>[Tags: Anomaly
+                    Detection, Deep Learning, Spark]</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/anomalies-in-survival8-viewers-stats.html" target="_blank">
+                Anomalies in 'survival8' Viewers' Stats (Mar 2022)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2024/05/estimating-contamination-factor-for.html" target="_blank">
+                Estimating the Contamination Factor For Unsupervised Anomaly Detection
+            </a>
+        </li>
+    </ol> <!-- Outlier Detection / Anomaly Detection Ends -->
+
+    <h4>ML5: Classification</h4>
+    <h4>ML5.1: Decision Tree</h4>
+    <ol>
+        <li>
+            <a href="https://survival8.blogspot.com/2022/02/decision-tree-learning.html" target="_blank">
+                Decision Tree Learning
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/interpretation-of-decision-tree-j48.html" target="_blank">
+                Interpretation of Decision Tree J48 Classifier output in Weka <i>[Tags: FOSS, Machine Learning,
+                    Weka]</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/calculations-for-info-gain-and-gini.html" target="_blank">
+                Calculations for Info Gain and Gini Coefficient for Building Decision Tree
+            </a>
+        </li>
+    </ol>
+
+    <h4>ML5.2: Miscellaneous of Classification</h4>
+    <ol>
+        <li>
+            <a href="https://survival8.blogspot.com/p/creating-ml-model-saving-it-and.html" target="_blank">
+                Creating ML model, saving it, and creating Flask API <i>[Tags: Flask, Machine Learning,
+                    Classification]</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/p/knn-using-mapreduce.html" target="_blank">
+                kNN classification parallelized using MapReduce <i>[Tags: Hadoop / Spark, Machine Learning]</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2020/08/elbow-method-for-identifying-k-in.html" target="_blank">
+                Elbow Method for identifying k in kMeans (clustering) and kNN (classification)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2020/09/snorkels-analysis-package-overview-v096.html"
+                target="_blank">
+                Snorkel's Analysis Package Overview (v0.9.6, Sep 2020). <i>This dicusses how to interpret classification
+                    results</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2020/09/improving-classifier-ml-using-snorkels.html"
+                target="_blank">
+                Improving a Classifier (ML) Using Snorkel's Slicing Technique
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2021/01/multi-label-classification-using-python.html"
+                target="_blank">
+                Multi-label Classification using Python
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2021/07/naive-bayes-classifier-for-spam.html" target="_blank">
+                Naïve Bayes Classifier for Spam Filtering
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/weka-classification-experiment-on-iris.html"
+                target="_blank">
+                Weka classification experiment on Iris dataset <i>[Tags: FOSS, Machine Learning, Weka]</i>
+            </a>
+        </li>
+    </ol> <!-- Classification Ends -->
+
+    <h4>ML6: Clustering</h4>
+    <ol>
+        <li>
+            <a href="https://survival8.blogspot.com/2020/08/elbow-method-for-identifying-k-in.html" target="_blank">
+                Elbow Method for identifying k in kMeans (clustering) and kNN (classification)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/weka-clustering-experiment-on-iris.html" target="_blank">
+                Weka clustering experiment on Iris dataset <i>[Tags: FOSS, Machine Learning, Weka]</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/05/supervised-classification-oriented.html" target="_blank">
+                'Supervised classification-oriented measures' for Cluster Analysis
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/05/similarity-oriented-measures-for.html" target="_blank">
+                Similarity-oriented measures for cluster analysis
+            </a>
+        </li>
+
+    </ol>
+
+    <h4>ML7: Regression</h4>
+    <ol>
+        <li>
+            <a href="https://survival8.blogspot.com/2021/07/linear-regression-theory.html" target="_blank">
+                Linear Regression (Theory)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2021/07/improvements-over-ols-forward-stepwise.html"
+                target="_blank">
+                Improvements over OLS (Forward Stepwise, Ridge, Lasso and LARS forms of Regression)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2023/05/descriptive-statistics-and-linear.html" target="_blank">
+                Descriptive Statistics and Linear Regression Using 'statistics' module and 'statsmodels' module
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2023/02/hands-on-5-regression-algorithms-using.html"
+                target="_blank">
+                Hands-on 5 Regression Algorithms Using Scikit-Learn
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/demo-of-linear-regression-on-boston.html" target="_blank">
+                Demo of Linear Regression on Boston Housing Data Using Weka <i>[Tags: FOSS, Machine Learning]</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/saving-model-loading-model-and-making.html" target="_blank">
+                Saving Model, Loading Model and Making Predictions for Linear Regression (in Weka)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/linear-regression-using-java-code-and.html" target="_blank">
+                Linear Regression Using Java Code And Weka JAR <i>[Tags: FOSS, Java, Machine Learning, Weka]</i>
+            </a>
+        </li>
+    </ol>
+
+    <h4>ML8: Association Mining Between Attributes</h4>
+    <ol>
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/three-types-of-input-data-format-for.html" target="_blank">
+                Three Types of Input Data Format For Apriori Algorithm (Association Analysis)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/04/the-concept-of-lift-in-association.html" target="_blank">
+                The Concept of Lift in Association Rules Mining
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/apriori-algorithm-associationi-mining.html" target="_blank">
+                Apriori Algorithm For Association Mining Using Weka's Supermarket Dataset
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/running-weka-apriori-on-9txn5items.html" target="_blank">
+                Running Weka's Apriori on 9_TXN_5_ITEMS Dataset
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/interpretation-of-output-from-weka-for.html"
+                target="_blank">
+                Interpretation of output from Weka for Apriori Algorithm
+            </a>
+        </li>
+    </ol>
+
+    <h4>ML9: Weka Tool</h4>
+    <ol>
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/demo-of-linear-regression-on-boston.html" target="_blank">
+                Demo of Linear Regression on Boston Housing Data Using Weka <i>[Tags: FOSS, Machine Learning, Weka]</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/interpretation-of-decision-tree-j48.html" target="_blank">
+                Interpretation of Decision Tree J48 Classifier output in Weka <i>[Tags: FOSS, Machine Learning,
+                    Weka]</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/weka-classification-experiment-on-iris.html"
+                target="_blank">
+                Weka classification experiment on Iris dataset <i>[Tags: FOSS, Machine Learning, Weka]</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/weka-clustering-experiment-on-iris.html" target="_blank">
+                Weka clustering experiment on Iris dataset <i>[Tags: FOSS, Machine Learning, Weka]</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/demo-of-linear-regression-on-boston.html" target="_blank">
+                Demo of Linear Regression on Boston Housing Data Using Weka <i>[Tags: FOSS, Machine Learning]</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/saving-model-loading-model-and-making.html" target="_blank">
+                Saving Model, Loading Model and Making Predictions for Linear Regression (in Weka)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/linear-regression-using-java-code-and.html" target="_blank">
+                Linear Regression Using Java Code And Weka JAR <i>[Tags: FOSS, Java, Machine Learning, Weka]</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/apriori-algorithm-associationi-mining.html" target="_blank">
+                Apriori Algorithm For Association Mining Using Weka's Supermarket Dataset
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/running-weka-apriori-on-9txn5items.html" target="_blank">
+                Running Weka's Apriori on 9_TXN_5_ITEMS Dataset
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/interpretation-of-output-from-weka-for.html"
+                target="_blank">
+                Interpretation of output from Weka for Apriori Algorithm
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/machine-learning-and-weka-interview-5.html" target="_blank">
+                Machine Learning and Weka Interview (5 Questions) <i>[Tags: Machine Learning Q&A, Weka Tool]</i>
+            </a>
+        </li>
+    </ol>
+
+    <h4>ML10: Traffic Prediction on my Blog</h4>
+
+    <ol>
+        <li>
+            <a href="https://survival8.blogspot.com/2023/10/traffic-prediction-on-my-blog-oct-2023.html"
+                target="_blank">
+                Traffic Prediction on my Blog (Oct 2023)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2024/04/when-not-to-use-poisson-distribution.html" target="_blank">
+                When not to use Poisson Distribution for prediction?
+            </a>
+        </li>
+        <li>
+            <a href="https://survival8.blogspot.com/2024/04/time-series-analysis-and-forecasting.html" target="_blank">
+                Time Series Analysis and Forecasting Using Exponential Moving Average (A use case of traffic prediction
+                on my blog)
+            </a>
+        </li>
+    </ol>
+    <h4>ML11: Questions and Answers </h4>
+    <ol>
+        <li>
+            <a href="https://survival8.blogspot.com/p/ml-dose-with-ten-q-set-1.html" target="_blank">
+                Machine Learning dose with ten Q&A (Set 1) </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/p/machine-learning-q-set-2.html" target="_blank">
+                Machine Learning Q&A (Set 2)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/p/machine-learning-q-set-3.html" target="_blank">
+                Machine Learning Q&A (Set 3)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2021/08/linkedin-machine-learning-assessment.html" target="_blank">
+                LinkedIn Machine Learning Assessment Dump (Aug 2021)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/03/machine-learning-and-weka-interview-5.html" target="_blank">
+                Machine Learning and Weka Interview (5 Questions) <i>[Tags: Machine Learning Q&A, Weka Tool]</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/10/arima-forecast-for-timeseries-is-one.html" target="_blank">
+                ARIMA forecast for timeseries is one step ahead. Why? (Solved Interview Problem)
+            </a>
+        </li>
+    </ol>
+
+    <h4>ML12: Miscellaneous </h4>
+    <ol>
+        <li>
+            <a href="https://survival8.blogspot.com/p/simple-demonstration-of-how-important.html" target="_blank">
+                Simple demonstration of how important data is for machine learning </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/p/reading-json-file-from-google-drive-in.html" target="_blank">
+                Reading a JSON file from the Google Drive in the Google Colab
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/p/a-case-of-cyclic-dependencies-between.html" target="_blank">
+                A case of cyclic dependencies between PyPI packages <i>[Tags: Machine Learning, Python]</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2020/10/extracting-information-from-search.html" target="_blank">
+                Extracting Information From Search Engines <i>[Tags: Machine Learning, Python]</i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2022/07/digging-deeper-into-your-toolbox.html" class=""
+                target="_blank">
+                Digging deeper into your toolbox (Viewing LDiA code of sklearn) <br>
+                <i>[Tags: FOSS, Machine Learning, Natural Language Processing]</i>
+            </a>
+        </li>
+    </ol> <!-- Miscellaneous (Ends) -->
+
+    <h4>ML13: Articles </h4>
+    <ol>
+        <li>
+            <a href="https://survival8.blogspot.com/p/machine-learning-resources-dec-2019.html" target="_blank">
+                Machine Learning Resources (Dec 2019)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/p/machine-learning-evolution-jan-2020.html" target="_blank">
+                Machine Learning Evolution (Jan 2020)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2020/08/data-science-timeline-aug-2020.html" target="_blank">
+                Data Science Timeline (Aug 2020)</i>
+            </a>
+        </li>
+    </ol> <!-- ML Articles (Ends) -->
+
+    <h4>ML14: Our 'Machine Learning' Videos on YouTube</h4>
+    <ol>
+        <li>
+            <a href="https://www.youtube.com/watch?v=NZQx6-j2auU" target="_blank">
+                Session 1 - Linear Regression (OLS Method and Theory) - 20210716
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.youtube.com/watch?v=jj_mQNCa2VU" target="_blank">
+                Session 2 - Improvements over Linear Regression method of OLS (Forward Stepwise, Ridge, Lasso, LARS)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.youtube.com/watch?v=qS3HhMV8YG0" target="_blank">
+                Linear Regression Theory (2022-02-15)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.youtube.com/watch?v=IhnKJpCRH3c" target="_blank">
+                Pandas and Linear Regression in Code (Dated: 2022-Feb-16)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.youtube.com/watch?v=84IoHhTy1H8" target="_blank">
+                Naive Bayes Classifier / Application: Spam Filtering / Dated: 2022 Feb 17
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.youtube.com/watch?v=IMPDmMjRjMM" target="_blank">
+                Decision Trees Learning (2022 Feb 22)
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.youtube.com/watch?v=DceKvoIXT9w" target="_blank">
+                Perceptron in Machine Learning (24 Apr 2022)
+            </a>
+        </li>
+    </ol> <!-- 'Machine Learning' Videos - End Here -->
+
+</div> <!-- Machine Learning -->
+
+<script>
+
+    $('h3.customLogisticRegressionHeader').click(function () {
+        $("div#customLogisticRegression").fadeToggle();
+        $("h3.customLogisticRegressionHeader > .arrow").toggleClass('up').toggleClass('down');
+    });
+
+
+    $('h3.customIntegrationHeader').click(function () {
+        $("div#customIntegration").fadeToggle();
+        $("h3.customIntegrationHeader > .arrow").toggleClass('up').toggleClass('down');
+    });
+
+
+    $('h3.customVectorCalculusHeader').click(function () {
+        $("div#customVectorCalculus").fadeToggle();
+        $("h3.customVectorCalculusHeader > .arrow").toggleClass('up').toggleClass('down');
+    });
+
+    $('h3.customMachineLearningByChristopherBishopHeader').click(function () {
+        $("div#customMachineLearningByChristopherBishop").fadeToggle();
+        $("h3.customMachineLearningByChristopherBishopHeader > .arrow").toggleClass('up').toggleClass('down');
+    });
+
+    $('h3.customStatisticsHeader').click(function () {
+        $("div#customStatistics").fadeToggle();
+        $("h3.customStatisticsHeader > .arrow").toggleClass('up').toggleClass('down');
+    });
+
+    $(".customLink.toggleBtn").click(function () {
+        $("h3[class$='Header']").click();
+    }); 
+</script>
+<span style="display: none;">Tags: Machine Learning,Mathematical Foundations for Data Science,Technology,Index</span>

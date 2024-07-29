@@ -1,0 +1,136 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: "https://raw.githubusercontent.com/ashishjain1547/pubLessonsInTechnology/main/links_to_tech_clubs.json",
+                success: function (result) {
+                    let grouplink = JSON.parse(result)['Beta Tech Club'];
+                    $("#customWhatsAppGroupLinkWrapper").html(
+                        `
+                        <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                            <span>Join us on:</span>
+                            <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                            </a>
+                        </h2>
+                        `
+                    );
+                }
+            });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+To See All ML Articles: <a class="customLink" href="https://survival8.blogspot.com/2024/01/index-of-machine-learning.html" target="_blank">Index of Machine Learning</a>
+
+<pre>
+<h2>#1</h2>
+
+Can we use the function “1 / (1 + x^(-1))” to build a binary classifier like we used Logistic in Logistic Regression?
+Explain why or why not?
+
+<h2>#2</h2>
+
+What is Logistic Regression?
+
+And since it is a classifier, why do we call this model “Regression”?
+
+<h2>#3</h2>
+
+Choose the correct option:
+What does the decision boundary of a Logistic Regression based model look like:
+1. For 2D data, a line.
+2. For 2D data, a curve.
+</pre>

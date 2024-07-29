@@ -1,0 +1,172 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: "https://raw.githubusercontent.com/ashishjain1547/pubLessonsInTechnology/main/links_to_tech_clubs.json",
+                success: function (result) {
+                    let grouplink = JSON.parse(result)['Beta Tech Club'];
+                    $("#customWhatsAppGroupLinkWrapper").html(
+                        `
+                        <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                            <span>Join us on:</span>
+                            <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                            </a>
+                        </h2>
+                        `
+                    );
+                }
+            });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+To See All ML Articles: <a class="customLink" href="https://survival8.blogspot.com/2024/01/index-of-machine-learning.html" target="_blank">Index of Machine Learning</a>
+
+<!-- Logistic Regression is a binary classification algorithm -->
+
+<pre>
+<h2>We Saw Previously: What is Logistic Regression?</h2>
+
+1. Logistic Regression is a binary classification algorithm. 
+
+However, its multi-class variant also exists and is called Softmax Regression.
+
+2. It is a supervised learning algorithm.
+
+3. Logistic Regression is a probabilistic model.
+
+4. It is applicable for linearly separable data. 
+
+However, it can be tuned to accommodate for noise in the data.
+
+<h2>What is a ‘Classification Algorithm’ or a Classifier?</h2>
+
+Classification Algorithm or Classifier helps you identify the class of a data point.
+
+As in:
+Cat vs Dog
+
+Loan Default vs Not_Default
+
+Healthy vs Unhealthy
+
+<h2>There are other types of algorithms / problems as well...</h2>
+
+- Classification : This we are covering right now.
+
+- Regression : Predict a real-valued function such as house price or monthly expenses.
+This we saw in Linear Regression video.
+
+- Clustering : Grouping of data (which we call clusters) based on their features, similarities and differences.
+
+- Outlier Detection : Identifying data point which deviate from the pattern that other 95-98% of majority data points follow.
+
+- Dimensionality Reduction : We reduce the number of features in this type of problem through mathematical transformations.
+
+<h2>Binary Classifier vs Multi-class Classifier</h2>
+
+In Binary Classification, there are two classes.
+Such as in the example we saw: 
+Team_Wins vs Team_Loses, Loan Default vs Not_Default, Healthy vs Unhealthy.
+
+But there are Multi-class Classification problems as well:
+In this there are more than two classes.
+
+Such as in image recognition for cat vs dog vs pig, or problems such as object detection in which we look for all sorts of objects like table, chair, book, car, traffic lights, etc.
+
+Another example of Multi-class classification that is worth remembering is Named Entity Recognition (or NER for short) that aims at classifying a word into one of the four/five categories:
+Person, Place, Organization, Miscellaneous and Not_A_Named_Entity.
+</pre>

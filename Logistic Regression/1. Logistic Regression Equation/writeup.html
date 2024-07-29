@@ -1,0 +1,293 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+  
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: "https://raw.githubusercontent.com/ashishjain1547/pubLessonsInTechnology/main/links_to_tech_clubs.json", 
+                success: function (result) {
+                    let grouplink = JSON.parse(result)['Beta Tech Club'];
+                    $("#customWhatsAppGroupLinkWrapper").html(
+                        `
+                        <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                            <span>Join us on:</span>
+                            <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                            </a>
+                        </h2>
+                        `    
+                    );
+                }
+            });
+        });
+    </script>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+  
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+  
+        .customLink:hover {
+            text-decoration: none;
+        }
+  
+        div.code-block-decoration.footer {
+            display: none;
+        }
+  
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+  
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+  
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+  
+        .custom_link_h2 a:active {
+            color: black;
+        }
+  
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+  
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+      .customul {
+        list-style: none;
+      }
+  
+      [aria-hidden='true'] {
+        display: none;
+      }
+    </style>
+  
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+To See All ML Articles: <a class="customLink" href="https://survival8.blogspot.com/2024/01/index-of-machine-learning.html" target="_blank">Index of Machine Learning</a>
+
+<pre>
+<h2>What is Logistic Regression?</h2>
+
+1. Logistic Regression is a binary classification algorithm. 
+However, its multi-class variant also is there called Softmax Regression.
+
+2. It is a supervised learning algorithm.
+
+3. Logistic Regression is a probabilistic model.
+
+4. It is applicable for linearly separable data. 
+However, it can be tuned to accommodate for noise in the data.
+
+<h2>We would arrive at the Logistic Regression equation by the end of this video...</h2>
+
+Giving you a glimpse of end result, first:
+
+<div class="separator" style="clear: both;"><a
+    href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXXkr5o8ELHXGnMi2WXb2c0wjbV1zZr6CbDu7-y5yQQ5G1fkCVAIGbzFzxgWK3JVanFy1-xF91VfZe4wCWTtES3uXeiSNab0-b_9RDA7ffx6D5vj01wxw7kXo7Nn2p20NnVZuCyMo9XZPz825Cyvjiiqxk5fsfmfV6MDa6u3G215ux0fgkhMMaMHdrU8n1/s271/3.png"
+    style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+        data-original-height="106" data-original-width="271"
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXXkr5o8ELHXGnMi2WXb2c0wjbV1zZr6CbDu7-y5yQQ5G1fkCVAIGbzFzxgWK3JVanFy1-xF91VfZe4wCWTtES3uXeiSNab0-b_9RDA7ffx6D5vj01wxw7kXo7Nn2p20NnVZuCyMo9XZPz825Cyvjiiqxk5fsfmfV6MDa6u3G215ux0fgkhMMaMHdrU8n1/s600/3.png" /></a>
+</div>
+
+<h2>y = x </h2>
+
+<b>This is a simple function. Presented here for the completeness of slides.</b>
+
+<div class="separator" style="clear: both;"><a
+    href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFr9OiBjWDI97Vxk4Y4hrwtezbTSKFE53JlHCIW49LKTyzKHrl-SzjLen-1qUX9C64XvMs3AcN_xi1r7OFl0Ny_mgNm7_mASPm8MvX9lgQ4u2qqFHnHZGwhEOr79ymrc4T3_pxn9u6uaBzNwRcHaMaLH-lkagPjwEYgFIa2a0Cy6e74aZ4x7WB-_BPkNpw/s640/4.png"
+    style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+        data-original-height="480" data-original-width="640"
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFr9OiBjWDI97Vxk4Y4hrwtezbTSKFE53JlHCIW49LKTyzKHrl-SzjLen-1qUX9C64XvMs3AcN_xi1r7OFl0Ny_mgNm7_mASPm8MvX9lgQ4u2qqFHnHZGwhEOr79ymrc4T3_pxn9u6uaBzNwRcHaMaLH-lkagPjwEYgFIa2a0Cy6e74aZ4x7WB-_BPkNpw/s600/4.png" /></a>
+</div>
+
+<h2>y = np.exp(x)</h2>
+
+<div class="separator" style="clear: both;"><a
+    href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKlA3yGZVgaYVL-0bvL7tM8ki6vCnjd8O42dv4GOsZMnFcr2lkJg_7TqszJb3-6x8emqXkOijTusuTDQ0wI7LQM_wvpZVooB9-_vL128sMDbOjrAcxDMdiaWH0uStm-sZkSkG3sYjazgSkcUwkJRTdnp5igywr1RIlpSpI5Dm5LcLwpNvub_1nwpugTx_x/s640/5.png"
+    style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+        data-original-height="480" data-original-width="640"
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKlA3yGZVgaYVL-0bvL7tM8ki6vCnjd8O42dv4GOsZMnFcr2lkJg_7TqszJb3-6x8emqXkOijTusuTDQ0wI7LQM_wvpZVooB9-_vL128sMDbOjrAcxDMdiaWH0uStm-sZkSkG3sYjazgSkcUwkJRTdnp5igywr1RIlpSpI5Dm5LcLwpNvub_1nwpugTx_x/s600/5.png" /></a>
+</div>
+
+Note:
+
+np.exp(x) is equal to e^x or math.e**x in Python.
+
+This is monotonically increasing function.
+
+Next, we change it to 1 / (e^x) or equivalently to e^(-x). 
+
+<h2>y = np.exp(-x)</h2>
+
+<div class="separator" style="clear: both;"><a
+    href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguFaqxNlCp7hSu2W2tuyq3fY6Kf2Ucj96qYJYpo2SQ2CVh8EjkRn7a5qYt3g42EH5F8rLh22vSpYofOTAsd06AJTbxrwUmG9oiAL8k7O02jjkv4JH5ss3mp3PN7UES914ycQ9Zib1VBVNovL2E93Bxd1YISyRbOmJ51qfAWntuIEeuGI0eLsjJXyAQDcgl/s640/6a.png"
+    style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+        data-original-height="480" data-original-width="640"
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguFaqxNlCp7hSu2W2tuyq3fY6Kf2Ucj96qYJYpo2SQ2CVh8EjkRn7a5qYt3g42EH5F8rLh22vSpYofOTAsd06AJTbxrwUmG9oiAL8k7O02jjkv4JH5ss3mp3PN7UES914ycQ9Zib1VBVNovL2E93Bxd1YISyRbOmJ51qfAWntuIEeuGI0eLsjJXyAQDcgl/s600/6a.png" /></a>
+</div>
+
+<div class="separator" style="clear: both;"><a
+    href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4GtvJ7oj5o-AB6aYU52PuqpKO97RYEd0u-lC3bXDWR0Ly3OTL6Pd8YszQglCS-sqY7GV6krqEYOGdLw0SPVI2u2JED7yDzP_1enNHtk1lcODOzWW4HE5K8T6UZi_Whwc_mVaQQyxfbLggDaMecBI80Cl0iFZeVsI04-clIkZ4JO1qkA91IH64wRrJDUSA/s640/6b.png"
+    style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+        data-original-height="480" data-original-width="640"
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4GtvJ7oj5o-AB6aYU52PuqpKO97RYEd0u-lC3bXDWR0Ly3OTL6Pd8YszQglCS-sqY7GV6krqEYOGdLw0SPVI2u2JED7yDzP_1enNHtk1lcODOzWW4HE5K8T6UZi_Whwc_mVaQQyxfbLggDaMecBI80Cl0iFZeVsI04-clIkZ4JO1qkA91IH64wRrJDUSA/s600/6b.png" /></a>
+</div>
+
+np.exp(-x) ==> e^-x ==> 1/(e^x) 
+Note two things about it:
+1: It is monotonically decreasing.
+2: The minimum value it takes is 0.
+So next, we would shift it by 1.
+
+<h2>y = 1 + np.exp(-x)</h2>
+
+
+<div class="separator" style="clear: both;"><a
+    href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_9np7OFtNDkhLmZR-bLE-rhMjmfX8TWr7am715EiuKryC49B_B57w6qU9omTg6G_VSdLBtlR0gFK1a-ExOEGL1dWtDeD_lDfIUZMXXEGVkmqyg5qEBKQl1cw8AjGrbx1JT0nMvaQSYmtDZFkmnyAWSpUgNwfagi-eho7v1aTEjDHHprSXUMzKu11N1cF9/s640/7a.png"
+    style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+        data-original-height="480" data-original-width="640"
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_9np7OFtNDkhLmZR-bLE-rhMjmfX8TWr7am715EiuKryC49B_B57w6qU9omTg6G_VSdLBtlR0gFK1a-ExOEGL1dWtDeD_lDfIUZMXXEGVkmqyg5qEBKQl1cw8AjGrbx1JT0nMvaQSYmtDZFkmnyAWSpUgNwfagi-eho7v1aTEjDHHprSXUMzKu11N1cF9/s600/7a.png" /></a>
+</div>
+
+<div class="separator" style="clear: both;"><a
+    href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiEW6r6AkYrMBzRjkBMPEi8W-ecqEGejx3qUUEUuuYFKifny46x6T_7V4unehc7jrOSo0cEO5wfZj88qti76TNzmFHeh3zgCo4UMoXejvfqPPFCR6EiCQwmp349qbUfAgMHdgCTkmG4IMYe59PuuLUXUDk-ZWZvVBw9ycmj_Mmna2mL1JWv-787JFfh70g/s640/7b.png"
+    style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+        data-original-height="480" data-original-width="640"
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiEW6r6AkYrMBzRjkBMPEi8W-ecqEGejx3qUUEUuuYFKifny46x6T_7V4unehc7jrOSo0cEO5wfZj88qti76TNzmFHeh3zgCo4UMoXejvfqPPFCR6EiCQwmp349qbUfAgMHdgCTkmG4IMYe59PuuLUXUDk-ZWZvVBw9ycmj_Mmna2mL1JWv-787JFfh70g/s600/7b.png" /></a>
+</div>
+
+This is just np.exp(-x) shifted by 1.
+Note two things about it:
+1: It is also monotonically decreasing.
+2: The minimum value it takes is 1.
+So next, we would move it to denominator.
+
+<h2>y = 1/(1 + np.exp(-x))</h2>
+
+<div class="separator" style="clear: both;"><a
+    href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoVjgYJHFVN7HF9-dpzb6wXIv9uTusNzVfhOwIksRu9yxr-XMh0BwgmD6ALqan6q_0KCkwfJ7DQWeLEdBZOL4_Vug0yLqy45bG8kN7f04zA8ewCcTFRIV7PIOVO0VT9qAmZR2Dc8doOBMcVtZbH785J5rSs4GSuYcIzREr_k-6iBFH0kDH9wwzT-1nYQS-/s640/8a.png"
+    style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+        data-original-height="480" data-original-width="640"
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoVjgYJHFVN7HF9-dpzb6wXIv9uTusNzVfhOwIksRu9yxr-XMh0BwgmD6ALqan6q_0KCkwfJ7DQWeLEdBZOL4_Vug0yLqy45bG8kN7f04zA8ewCcTFRIV7PIOVO0VT9qAmZR2Dc8doOBMcVtZbH785J5rSs4GSuYcIzREr_k-6iBFH0kDH9wwzT-1nYQS-/s600/8a.png" /></a>
+</div>
+
+<div class="separator" style="clear: both;"><a
+    href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4cteYRzw-IDDd44es1LDtAg_oFv-blPI53L6-URGKpFuiIvt7fC64oXvYDx_X4z-EIVWjkPQgvj3tlH4aEEkn3Q1gnhHss2yaV_e_6JuMqL73bBTDtmvvxm39hl2wHTXv-etrGrGGIlHMHD5uA2HCDAM60YP9OjUWLy-D29R9U7rqOwe5kg9UFmYvYKaU/s640/8b.png"
+    style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+        data-original-height="480" data-original-width="640"
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4cteYRzw-IDDd44es1LDtAg_oFv-blPI53L6-URGKpFuiIvt7fC64oXvYDx_X4z-EIVWjkPQgvj3tlH4aEEkn3Q1gnhHss2yaV_e_6JuMqL73bBTDtmvvxm39hl2wHTXv-etrGrGGIlHMHD5uA2HCDAM60YP9OjUWLy-D29R9U7rqOwe5kg9UFmYvYKaU/s600/8b.png" /></a>
+</div>
+
+<h2>Properties of y = 1/(1 + np.exp(-x))</h2>
+
+y = 1/(1 + np.exp(-x))
+Implies: y = 1/(1 + 1/e^x) 
+
+1. It is a continuous function.
+2. It is differentiable everywhere. 
+Derivative of sigmoid (σ) is: σ(x)(1−σ(x))
+
+3. max(y) = 1
+4. min(y) = 0
+5. It is rotationally symmetric 
+around it’s midpoint at (0, 0.5).
+
+What it means in plain English is:
+1. Sigmoid has well-defined output range,
+2. Easy to optimize, and 
+3. Has a clear probabilistic interpretation.
+
+<div class="separator" style="clear: both;"><a
+    href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsI6uSsMPTQB6r3Pq1bUZS9wU4r4_zm3J4RpKMs5uVAA-cLd1BVmqxRFD6_R4KO_lFqfLSswfWisjKJNftTPrLISPUOL05e9vGIhBC38mLo9B1nv_6It61gWHEHL3d4IS_nNqPFVqSt-tkdvzHv4jxtEpSISCA0DRj8TS_ChGXtblqMU_mTugOQEzSgGPP/s640/9.png"
+    style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+        data-original-height="480" data-original-width="640"
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsI6uSsMPTQB6r3Pq1bUZS9wU4r4_zm3J4RpKMs5uVAA-cLd1BVmqxRFD6_R4KO_lFqfLSswfWisjKJNftTPrLISPUOL05e9vGIhBC38mLo9B1nv_6It61gWHEHL3d4IS_nNqPFVqSt-tkdvzHv4jxtEpSISCA0DRj8TS_ChGXtblqMU_mTugOQEzSgGPP/s600/9.png" /></a>
+</div>
+
+<h2>What’s with the theta-transpose expression?</h2>
+
+<div class="separator" style="clear: both;"><a
+    href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXXkr5o8ELHXGnMi2WXb2c0wjbV1zZr6CbDu7-y5yQQ5G1fkCVAIGbzFzxgWK3JVanFy1-xF91VfZe4wCWTtES3uXeiSNab0-b_9RDA7ffx6D5vj01wxw7kXo7Nn2p20NnVZuCyMo9XZPz825Cyvjiiqxk5fsfmfV6MDa6u3G215ux0fgkhMMaMHdrU8n1/s271/3.png"
+    style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+        data-original-height="106" data-original-width="271"
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXXkr5o8ELHXGnMi2WXb2c0wjbV1zZr6CbDu7-y5yQQ5G1fkCVAIGbzFzxgWK3JVanFy1-xF91VfZe4wCWTtES3uXeiSNab0-b_9RDA7ffx6D5vj01wxw7kXo7Nn2p20NnVZuCyMo9XZPz825Cyvjiiqxk5fsfmfV6MDa6u3G215ux0fgkhMMaMHdrU8n1/s600/3.png" /></a>
+</div>
+
+Note: “Theta-transpose x” means nothing but dot product of two column (or row) vectors: 
+Vector 1 → θ: [θ1, θ2,…, θn]
+Vector 2 → x: [x1, x2,…, xn]
+
+Then “Theta-transpose x” means: θ1*x1 + θ2*x2 + … + θn*xn 
+
+<h2>Interpretation</h2>
+
+<div class="separator" style="clear: both;"><a
+    href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjaxxVZ3D8g6pBqoa4v666r8PARHEgpNij0PW8QhB1nDzc2ntJbqwxhoR1YhRzySoSi3rG8CMwzcwEycgP_7jNbencL72mDNPvBPxYsAhF8oiera26rlCOFU8lEtIvd7icDyBrAHfMXtmcKJU6-8HjPdGpHP7RFE8K73p0IfrDVCeeetU3WmXmdbx6LU1or/s786/11.png"
+    style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+        data-original-height="154" data-original-width="786"
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjaxxVZ3D8g6pBqoa4v666r8PARHEgpNij0PW8QhB1nDzc2ntJbqwxhoR1YhRzySoSi3rG8CMwzcwEycgP_7jNbencL72mDNPvBPxYsAhF8oiera26rlCOFU8lEtIvd7icDyBrAHfMXtmcKJU6-8HjPdGpHP7RFE8K73p0IfrDVCeeetU3WmXmdbx6LU1or/s600/11.png" /></a>
+</div>
+
+What this means is:
+If value from logistic function > 0.5: Class of input is 1
+If value from logistic function < 0.5: Class of input is 0
+
+<b>Ref: <a href="http://ufldl.stanford.edu/tutorial/supervised/LogisticRegression/" target="_blank">stanford.edu</a></b>
+
+<div class="separator" style="clear: both;"><a
+    href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQIoY3SBY0PgjbLWbZ3GIEo1c1AT-ulGaZcWadPo0Ri5ItWXNGkpFe8wtGX2uqVEj4faZwXYJ3jjz9BVB2vmRL4OyBUl_0DVwTjdp66hoNJiW7qmEbAKxYzkeWfs-AI5anqT4L0OhWLqVghQhseblMx2jOrm3l1iRL88aqfP9fSqkDd6ko08cmBDGV9OXU/s1073/12.png"
+    style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+        data-original-height="566" data-original-width="1073"
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQIoY3SBY0PgjbLWbZ3GIEo1c1AT-ulGaZcWadPo0Ri5ItWXNGkpFe8wtGX2uqVEj4faZwXYJ3jjz9BVB2vmRL4OyBUl_0DVwTjdp66hoNJiW7qmEbAKxYzkeWfs-AI5anqT4L0OhWLqVghQhseblMx2jOrm3l1iRL88aqfP9fSqkDd6ko08cmBDGV9OXU/s600/12.png" /></a>
+</div>
+</pre>
+
+<span style="display: none;">Tags: Machine Learning,Mathematical Foundations for Data Science,</span>
+
+
