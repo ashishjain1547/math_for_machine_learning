@@ -201,12 +201,13 @@
             transform: rotate(45deg);
             -webkit-transform: rotate(45deg);
         }
+
+        .customH2 {
+            text-align: center;
+            text-transform: capitalize;
+        }
     </style>
 </head>
-
-<div id="customWhatsAppGroupLinkWrapper"></div>
-
-<span class="customLink toggleBtn">Toggle All Sections</span>
 
 <div class="separator" style="clear: both;"><a
         href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVlG2hoGgr949QdcXqNuLG-UlKcMrHcQcUjdpAb1gZOeBspkGZ3fUoEtTPWlNLVxeCEID8iKuREeT7pQxwc-bfTMTAVNrMwZZ8SV823t0jEXJDKXoWvAc8qu2GecW62u9lmKUNAjlpsMevYERNPuIcxsRg3VlsztmcnNkRazLH5IveWWxwlPX1nGbDXblm/s617/machine%20learning%20cover.jpg"
@@ -215,7 +216,22 @@
             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVlG2hoGgr949QdcXqNuLG-UlKcMrHcQcUjdpAb1gZOeBspkGZ3fUoEtTPWlNLVxeCEID8iKuREeT7pQxwc-bfTMTAVNrMwZZ8SV823t0jEXJDKXoWvAc8qu2GecW62u9lmKUNAjlpsMevYERNPuIcxsRg3VlsztmcnNkRazLH5IveWWxwlPX1nGbDXblm/s600/machine%20learning%20cover.jpg" /></a>
 </div>
 
-<h2>THEORY</h2>
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<span class="customLink toggleBtn">Toggle All Sections</span>
+
+<h2 class="customH2">THEORY</h2>
+
+<h3 class="customWhatIsMachineLearningHeader"><span class="arrow up"></span> What is Machine Learning?</h3>
+<div id="customWhatIsMachineLearning">
+    <ol class="customOl">
+        <li>
+            <a href="https://survival8.blogspot.com/2024/08/what-is-machine-learning-learn-from.html" target="_blank">
+                What is Machine Learning (With Video and Interview Questions)
+            </a>
+        </li>
+    </ol>
+</div>
 
 <h3 class="customLogisticRegressionHeader"><span class="arrow up"></span> Logistic Regression</h3>
 <div id="customLogisticRegression">
@@ -257,6 +273,19 @@
         </li>
     </ol>
 </div>
+
+
+<h3 class="customDecisionTreeHeader"><span class="arrow up"></span> Decision Tree</h3>
+<div id="customDecisionTree">
+    <ol class="customOl">
+        <li>
+            <a href="https://survival8.blogspot.com/2024/08/decision-tree-using-gini-impurity-with.html" target="_blank">
+                Decision Tree (Using Gini Impurity) - With Video and Interview Questions
+            </a>
+        </li>
+    </ol>
+</div>
+
 
 <br>
 <h3 class="customIntegrationHeader"><span class="arrow up"></span> Integration</h3>
@@ -531,7 +560,7 @@
 </div>
 
 <br>
-<h2>PRACTICALS</h2>
+<h2 class="customH2">PRACTICALS</h2>
 <br>
 
 <div id="customMachineLearning">
@@ -1334,10 +1363,19 @@
 </div> <!-- Machine Learning -->
 
 <script>
+    $('h3.customWhatIsMachineLearningHeader').click(function () {
+        $("div#customWhatIsMachineLearning").fadeToggle();
+        $("h3.customWhatIsMachineLearningHeader > .arrow").toggleClass('up').toggleClass('down');
+    });
 
     $('h3.customLogisticRegressionHeader').click(function () {
         $("div#customLogisticRegression").fadeToggle();
         $("h3.customLogisticRegressionHeader > .arrow").toggleClass('up').toggleClass('down');
+    });
+
+    $('h3.customDecisionTreeHeader').click(function () {
+        $("div#customDecisionTree").fadeToggle();
+        $("h3.customDecisionTreeHeader > .arrow").toggleClass('up').toggleClass('down');
     });
 
 
