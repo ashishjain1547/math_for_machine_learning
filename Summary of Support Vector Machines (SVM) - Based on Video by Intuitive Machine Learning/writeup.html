@@ -1,0 +1,219 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: "https://raw.githubusercontent.com/ashishjain1547/pubLessonsInTechnology/main/links_to_tech_clubs.json",
+                success: function (result) {
+                    let grouplink = JSON.parse(result)['Beta Tech Club'];
+                    $("#customWhatsAppGroupLinkWrapper").html(
+                        `
+                        <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                            <span>Join us on:</span>
+                            <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                            </a>
+                        </h2>
+                        `
+                    );
+                }
+            });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        i.ib {
+            color: blue;
+        }
+
+        i.ig {
+            color: green;
+        }
+
+        .customTable td {
+            padding: 2px;
+        }
+
+        i.igrey {
+            color: #333;
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+To See All ML Articles: <a class="customLink" href="https://survival8.blogspot.com/2024/01/index-of-machine-learning.html" target="_blank">Index of Machine Learning</a>
+
+<pre><iframe class="custom_iframe" src="https://www.youtube.com/embed/ny1iZ5A8ilA" title="Support Vector Machines: All you need to know!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Support Vector Machines (SVM) are among the top non-linear supervised learning models.
+
+SVMs help identify the optimal hyperplane to categorize data. In one dimension, a hyperplane is a point; in two dimensions, it’s a line; and in three dimensions, it’s a surface that separates positive and negative categories.
+
+Linear Model: For linearly separable data, there are multiple ways to draw a hyperplane that separates positive and negative samples. 
+
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCut8yRCsSiSSQjuv5PB9Wgw2fF059BiZPMzhUEAdEw7qbQtlANVdLT-ZepZaq0Sq5Sx-Iq6f-T1inr-2yuSpVdXsOBijzF0XAr98wFX9JQFYYA5qlm4jhE34fWVaac4orbeX1EwJR2SdMZaJOUaqKVLF-s0EVZ0LJ50H-Ee_hlaP8i9YEK3_26FCRBxvV/s2753/SVM1.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600" data-original-height="818" data-original-width="2753" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCut8yRCsSiSSQjuv5PB9Wgw2fF059BiZPMzhUEAdEw7qbQtlANVdLT-ZepZaq0Sq5Sx-Iq6f-T1inr-2yuSpVdXsOBijzF0XAr98wFX9JQFYYA5qlm4jhE34fWVaac4orbeX1EwJR2SdMZaJOUaqKVLF-s0EVZ0LJ50H-Ee_hlaP8i9YEK3_26FCRBxvV/s600/SVM1.png"/></a></div>
+
+While all hyperplanes separate the categories, SVMs help choose the best one by maximizing the margin, earning them the name “maximum margin classifier.”
+
+What is a support vector? Support vectors are the data points closest to the hyperplane. 
+
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzxXIFnwl4If2YDos32yUtPol521CSj9Jiotmy3qMMzb6cgV36vBzG1VKLAmLCZxzEQ8kjCrsb_bvsypKoZ1ykHSWpbtgFMkrr5FFBnJol9vBuoU9LWZc_cpsXwXTHdtkW1uxSsC6thbKIfo0LqaaNvPBnetSgvG6rGce3ub-uOw4j-Yhse9Tv1sFK0Xe1/s963/SVM2.JPG" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600" data-original-height="668" data-original-width="963" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzxXIFnwl4If2YDos32yUtPol521CSj9Jiotmy3qMMzb6cgV36vBzG1VKLAmLCZxzEQ8kjCrsb_bvsypKoZ1ykHSWpbtgFMkrr5FFBnJol9vBuoU9LWZc_cpsXwXTHdtkW1uxSsC6thbKIfo0LqaaNvPBnetSgvG6rGce3ub-uOw4j-Yhse9Tv1sFK0Xe1/s600/SVM2.JPG"/></a></div>
+
+Identifying these crucial data points, whether negative or positive, is a key challenge that SVMs address.
+
+Unlike other models like linear regression or neural networks, where all data points influence the final optimization, in SVMs, only support vectors impact the final decision boundary. When a support vector moves, the decision boundary changes, but moving other vectors has no effect.
+
+Similar to other machine learning models: 
+
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioQ8IhDDx1yGyQaqDLzBYs9D3YGf8hwXe9kjhAOgBbw511mmp2Nd23Ts8QtryRjqd8Ouu4iaONvhT4VN1eOOwhAE4A_qwuudeqOYmX8DP4da5B6WvNz4SbFlAkb-7zBy-rSFVqJ6nh7Z7jCOfXtWnAJBUkZUckwDneVu1wBRwkYXfgEL8WidDDqrCWUETl/s1083/SVM3.JPG" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600" data-original-height="885" data-original-width="1083" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioQ8IhDDx1yGyQaqDLzBYs9D3YGf8hwXe9kjhAOgBbw511mmp2Nd23Ts8QtryRjqd8Ouu4iaONvhT4VN1eOOwhAE4A_qwuudeqOYmX8DP4da5B6WvNz4SbFlAkb-7zBy-rSFVqJ6nh7Z7jCOfXtWnAJBUkZUckwDneVu1wBRwkYXfgEL8WidDDqrCWUETl/s600/SVM3.JPG"/></a></div>
+
+SVMs optimize weights so that only support vectors determine the weights and the decision boundary.
+
+Understanding the mathematical process behind SVMs requires knowledge of linear algebra and optimization theory. Before diving into model calculations, it’s important to understand H0, H1, H2, and W, as shown in the image. W is drawn perpendicular to H0. 
+
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4cIQVpAYn9_bnJgdHRxSwaYWZt2BHZ_jVdwokBkPrrVENSgicRQVCivGUrE8YzNKoQ5Kj-NZLJENind00y2z-_UTdw2X4kz2o0TOitIBTbwW0V0NF2N3cliwfDlXb3zbOLwFNV4bP7UjQoobd9kj_g-WRqpwlGJ7KDfVLdtv_JPiatOD3beDhcTul401E/s1017/SVM4.JPG" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600" data-original-height="735" data-original-width="1017" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4cIQVpAYn9_bnJgdHRxSwaYWZt2BHZ_jVdwokBkPrrVENSgicRQVCivGUrE8YzNKoQ5Kj-NZLJENind00y2z-_UTdw2X4kz2o0TOitIBTbwW0V0NF2N3cliwfDlXb3zbOLwFNV4bP7UjQoobd9kj_g-WRqpwlGJ7KDfVLdtv_JPiatOD3beDhcTul401E/s600/SVM4.JPG"/></a></div>
+
+<h3>Equation for ( H_0 )</h3>
+
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggcXdVfzD7vLG0lq_N5nHr1m_8qsHF49FznkZJMGuJ_OjSRq4k41Mq4EeBPLD-zD7BfIvlajWizUtmWG5Szw02VjkPZv0koXOnmIgP3Pdohxkzhxg9gCuLfOE9-SzK1gWfkJwTBusuV1QGcw1Pa6JATESk-xlfe5ajGb3k7fAmSx7QuutA2RgvuHoKA5hc/s195/SVM5.JPG" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600" data-original-height="64" data-original-width="195" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggcXdVfzD7vLG0lq_N5nHr1m_8qsHF49FznkZJMGuJ_OjSRq4k41Mq4EeBPLD-zD7BfIvlajWizUtmWG5Szw02VjkPZv0koXOnmIgP3Pdohxkzhxg9gCuLfOE9-SzK1gWfkJwTBusuV1QGcw1Pa6JATESk-xlfe5ajGb3k7fAmSx7QuutA2RgvuHoKA5hc/s600/SVM5.JPG"/></a></div>
+
+The equation for the hyperplane ( H_0 ) is ( W dot X + b = 0 ). This applies to any number of dimensions. For example, in a two-dimensional scenario, the equation becomes ( W_1 dot X_1 + W_2 dot X_2 + b = y ).
+
+Since ( H_0 ) is defined as ( W dot X + b = 0 ):
+
+( H_1 ) is ( W dot X + b \geq 0 ), which can be rewritten as ( W dot X + b = k ), where ( k ) is a variable. For easier mathematical calculations, we set ( k = 1 ), so ( W dot X + b = 1 ).
+( H_2 ) is ( W dot X + b &lt; 0 ), which can be rewritten as ( W dot X + b = -k ). Again, setting ( k = 1 ), we get ( W dot X + b = -1 ).
+
+<h3>Applying Lagrange Multipliers</h3>
+
+Lagrange Multipliers help identify local maxima and minima subject to equality constraints, forming the decision rule. The assumption here is that the data is linearly separable with no outliers, known as Hard Margin SVM. 
+
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNegUOS35MLH2AORO7ZcFYIEC9VOEf7kTOngvh7lioAdJ_0OmBnzgG2XTsKlIKHf_iFHKtjggWbH9p0YBT3W1cOZh-fjfWSBOVbXH4KCpXLyhbbhdVojSJ8J_FnfyuZnBlbCksZV7QTlpFYJKXWS3p5wQnZ10OWNhKSyN7AdQ17Ku2L47Ifm3edQyMw8Bx/s797/SVM6.JPG" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600" data-original-height="747" data-original-width="797" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNegUOS35MLH2AORO7ZcFYIEC9VOEf7kTOngvh7lioAdJ_0OmBnzgG2XTsKlIKHf_iFHKtjggWbH9p0YBT3W1cOZh-fjfWSBOVbXH4KCpXLyhbbhdVojSJ8J_FnfyuZnBlbCksZV7QTlpFYJKXWS3p5wQnZ10OWNhKSyN7AdQ17Ku2L47Ifm3edQyMw8Bx/s600/SVM6.JPG"/></a></div>
+
+<h3>Handling Noise and Outliers</h3>
+
+If the data contains noise or outliers, Hard Margin SVM fails to optimize. To address this, Soft Margin SVM is used.
+
+By adding “theta” as constraints to the optimization problem, it becomes possible to satisfy constraints even if outliers do not meet the original constraints. However, this requires a large volume of data where all examples satisfy the constraints.
+
+<h3>Regularization:</h3>
+
+One technique to handle this problem is Regularization. L1 regularization can be used to penalize large values of theta, with a constant “C” as the regularization parameter. If ( C ) is small, theta is significant; otherwise, it is less important.
+
+Setting ( C ) to a positive infinite value results in the same output as Hard Margin SVM.
+A smaller ( C ) value results in a wider margin, while a larger ( C ) value results in a narrower margin. A narrow margin is less tolerant to outliers.
+This way, Soft Margin SVM can handle non-linearly separable data with outliers and noise.
+
+<h3>Kernel Trick</h3>
+
+When data is inherently non-linearly separable, as shown in the example below, the solution is to use the kernel trick. 
+
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1k6arXk-zsdphe8j3mceFpPFYh9cx_jY5dXlp5Lf8JncVlAPnCCvqdcRhbvHYWtY6CETxzLzbuyx2KUxivOCAv4Y9TKuuIE_kRzuS_CAzBgiJcg-TcGPdxxiW2L-UTAYi0ZRW6nIMf43Q5L5eCgS2BAxnHUcBMJHkkVr__X_kZ2p83uvaG7qJEaZ5sjy8/s893/SVM7.JPG" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600" data-original-height="662" data-original-width="893" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1k6arXk-zsdphe8j3mceFpPFYh9cx_jY5dXlp5Lf8JncVlAPnCCvqdcRhbvHYWtY6CETxzLzbuyx2KUxivOCAv4Y9TKuuIE_kRzuS_CAzBgiJcg-TcGPdxxiW2L-UTAYi0ZRW6nIMf43Q5L5eCgS2BAxnHUcBMJHkkVr__X_kZ2p83uvaG7qJEaZ5sjy8/s600/SVM7.JPG"/></a></div>
+
+The kernel trick introduces a variable ( k ) that squares ( x ), helping to solve the problem. This approach is derived from applying the Lagrange equation. By squaring ( x ), we can achieve a clear separation of the data, allowing us to draw a separating line. 
+
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJ7qWQXq1hDu5Ays5uH6BdUrJJRCWRX9rXVmEo97x2nO0EM1Xap8R_sxqBG3GNqxEAun5OCeEfSVUr8FkeLdgELmORmBpR5rT5deIsLo6SKEHrTvtV3IhhH8pZsrSWMbnPu1G4lRWQIYYaAa8V4JtuUmbWEhWtdOAn3LKxYNrTtBTYZd3uMD-ap-bUsyPp/s894/SCM8.JPG" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600" data-original-height="578" data-original-width="894" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJ7qWQXq1hDu5Ays5uH6BdUrJJRCWRX9rXVmEo97x2nO0EM1Xap8R_sxqBG3GNqxEAun5OCeEfSVUr8FkeLdgELmORmBpR5rT5deIsLo6SKEHrTvtV3IhhH8pZsrSWMbnPu1G4lRWQIYYaAa8V4JtuUmbWEhWtdOAn3LKxYNrTtBTYZd3uMD-ap-bUsyPp/s600/SCM8.JPG"/></a></div>
+
+<h3>Polynomial Kernel</h3>
+
+This kernel uses two parameters: a constant ( C ) and the degree of freedom ( d ). A larger ( d ) value makes the boundary more complex, which might result in overfitting. 
+
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibhRu4qLQVURLnrqHInW0l9u_dtApmjoPsBawIbBF5ILwsQsVkrDdnxDJr1mDeMQznPMTLFCuUpyYTSJLVNEIJSLYsKsM-r8OSrKUB7kAXI4aW_OeRB5JZOcgTlNXL5_i7WVNJ7W2OKgYUEzy6AUt2ymHTNNq1XAX42C9hUCv1a-OiUrm794iDtE-8964A/s1614/SCM9.JPG" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600" data-original-height="699" data-original-width="1614" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibhRu4qLQVURLnrqHInW0l9u_dtApmjoPsBawIbBF5ILwsQsVkrDdnxDJr1mDeMQznPMTLFCuUpyYTSJLVNEIJSLYsKsM-r8OSrKUB7kAXI4aW_OeRB5JZOcgTlNXL5_i7WVNJ7W2OKgYUEzy6AUt2ymHTNNq1XAX42C9hUCv1a-OiUrm794iDtE-8964A/s600/SCM9.JPG"/></a></div>
+
+<h3>RBF Kernel (Gaussian Kernel)</h3>
+
+The RBF kernel has one parameter, ( gamma ). A smaller ( gamma ) value leads to a linear SVM, while a larger value heavily impacts the support vectors and may result in overfitting.
+
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNUIYRFDobANGeNi5RXNxrDokHe5Vr2RpFfbfl52p5yhdMtrlAXcMGl9ZDrRD46c9mDJkHBT2iQRp5Y30tn-vi4lYXxJI1WDmkFg4jXsZgzjQITkNijGuneebc5dBqF69UbOUsb6919DuVisasQ_Hcf1rEJlWPn825g_h3JLG6PpdQkUW-8rNI-m7Pglo1/s1605/SVM10.JPG" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600" data-original-height="717" data-original-width="1605" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNUIYRFDobANGeNi5RXNxrDokHe5Vr2RpFfbfl52p5yhdMtrlAXcMGl9ZDrRD46c9mDJkHBT2iQRp5Y30tn-vi4lYXxJI1WDmkFg4jXsZgzjQITkNijGuneebc5dBqF69UbOUsb6919DuVisasQ_Hcf1rEJlWPn825g_h3JLG6PpdQkUW-8rNI-m7Pglo1/s600/SVM10.JPG"/></a></div>
+</pre>
+
+<span style="display: none;">Tags: Machine Learning,Mathematical Foundations for Data Science,Mariswaran</span>
